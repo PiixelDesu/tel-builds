@@ -238,5 +238,29 @@
     "status": "approved",
     "updated": "2026-10-05",
     "notes": ""
+  },
+  {
+    "id": "support-harbringer",
+    "profession": "necromancer",
+    "category": "support",
+    "name": "Support Harbringer",
+    "specialization": "Harbringer",
+    "description": "Support Harbringer is a Guild Wars 2 WvW Support build for Necromancer, focused on providing utility and control.",
+    "gw2skills": "https://gw2skills.net/editor/?PSgAEZlhyWZYMEWLO8T1RVA-DWJYjR1/pEkANTFV1ChYmB66NRICwe418gLNAA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "power-virtuoso",
+    "profession": "mesmer",
+    "category": "damage",
+    "name": "Power Virtuoso",
+    "specialization": "Virtuoso",
+    "description": "Power Virtuoso is a Guild Wars 2 WvW Damage build for Mesmer, focused on dealing high damage with devastating attacks  .",
+    "gw2skills": "https://gw2skills.net/editor/?PigEEiWWBTlxysYn4ocVGNB-DWRYzRFmOsCppIIzUoiCw2zCBQg9wNAJx/W0/MCA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
   }
 ]
