@@ -25,6 +25,32 @@ def fetch_url(url, accept='text/html,application/xhtml+xml'):
 
 def fetch(url): return fetch_url(normalize_url(url))
 
+def gw2_api(path):
+    return json.loads(fetch_url('https://api.guildwars2.com/v2/'+path,'application/json'))
+
+def resolve_official_items(names):
+    """Resolve synced GW2Skills names to official GW2 item metadata/icons.
+    The API has no name-search endpoint, so scan the public item catalogue in 200-item pages
+    and stop once every requested name has been found. This runs only in the GitHub Action.
+    """
+    wanted={str(n).strip() for n in names if n and str(n).strip()}
+    if not wanted:return {}
+    found={}
+    try:
+        ids=gw2_api('items')
+        for off in range(0,len(ids),200):
+            batch=ids[off:off+200]
+            rows=gw2_api('items?ids='+','.join(map(str,batch)))
+            for item in rows:
+                name=item.get('name','')
+                if name in wanted and name not in found:
+                    found[name]={'id':item.get('id'),'name':name,'icon':item.get('icon',''),'type':item.get('type',''),'details':item.get('details') or {}}
+            if wanted.issubset(found):break
+        print(f'Official GW2 items: resolved {len(found)}/{len(wanted)} names')
+    except Exception as e:
+        print('WARN official item icon resolution failed:',e)
+    return found
+
 def variants(text):
     seen=set(); queue=[text]
     for _ in range(4):
@@ -130,6 +156,31 @@ def equipment_from(preload,db):
     result['enrichment']=upgrade(first(first(((eq.get('trinket') or {}).get('amulet') or {}).get('up') or [],[])))
     return {k:v for k,v in result.items() if v not in ('',[],None)}
 
+def collect_item_names(eq):
+    names=[]
+    for group in ('armor','weapons','trinkets'):
+        for x in eq.get(group,[]):
+            if x.get('rune'): names.append(x['rune'])
+            names += list(x.get('sigils') or []) + list(x.get('infusions') or [])
+    for k in ('relic','enrichment','food','utility'):
+        if eq.get(k): names.append(eq[k])
+    return names
+
+def enrich_equipment(eq,items):
+    def obj(v):
+        if not v:return v
+        m=items.get(v)
+        return {'name':v,'id':m.get('id'),'icon':m.get('icon',''),'type':m.get('type','')} if m else {'name':v}
+    out=json.loads(json.dumps(eq))
+    for group in ('armor','weapons','trinkets'):
+        for x in out.get(group,[]):
+            if x.get('rune'):x['rune']=obj(x['rune'])
+            if x.get('sigils'):x['sigils']=[obj(v) for v in x['sigils']]
+            if x.get('infusions'):x['infusions']=[obj(v) for v in x['infusions']]
+    for k in ('relic','enrichment','food','utility'):
+        if out.get(k):out[k]=obj(out[k])
+    return out
+
 def main():
     builds=json.loads(BUILDS.read_text(encoding='utf-8'))
     try: old=json.loads(OUT.read_text(encoding='utf-8'))
@@ -154,6 +205,12 @@ def main():
                 result[bid]=old[bid]; print(f'KEEP {bid}: {e}')
             else: failures.append(f'{bid}: {e}'); print(f'ERROR {bid}: {e}')
         time.sleep(.15)
+    # Resolve real ArenaNet item icons once all builds have been parsed.
+    names=[]
+    for entry in result.values(): names += collect_item_names(entry.get('equipment') or {})
+    item_meta=resolve_official_items(names)
+    for entry in result.values():
+        if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     if failures:
         print('\nGW2Skills sync failed:'); [print(' -',x) for x in failures]; raise SystemExit(1)
