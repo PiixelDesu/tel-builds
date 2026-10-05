@@ -44,48 +44,12 @@
  };
  try{
    const id=TEL.qs("id");
-   const [professions,builds,icons]=await Promise.all([
-     TEL.json("data/professions.json"),
-     TEL.json("data/builds.json"),
-     TEL.gw2Icons()
-   ]);
-   const b=builds.find(x=>x.id===id);
-   if(!b) throw new Error(`Build "${id||""}" was not found in data/builds.json.`);
-   const p=professions.find(x=>x.id===b.profession);
-   document.title=`${b.name} · TEL Builds`;
-
-   const safeGw=/^https:\/\/([a-z]{2}\.)?gw2skills\.(net|com)\//i.test(b.gw2skills||"");
-   const gw2=safeGw
-    ? `<a class="button primary" href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open full build on GW2Skills ↗</a>`
-    : `<span class="button disabled" title="Add a GW2Skills QuickLink in data/builds.json">GW2Skills link not added</span>`;
-   const gw2Embed=safeGw ? `
-    <section class="gw2skills-panel">
-      <div class="gw2skills-panel-head">
-        <div><p class="eyebrow">INTERACTIVE BUILD</p><h2>GW2Skills build</h2></div>
-        <a class="gw2skills-external" href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open separately ↗</a>
-      </div>
-      <div class="gw2skills-frame-wrap">
-        <iframe class="gw2skills-frame" src="${TEL.esc(b.gw2skills)}" title="${TEL.esc(b.name)} on GW2Skills" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
-      <p class="gw2skills-fallback">If the editor does not appear, GW2Skills may be blocking embedded pages in your browser. Use <a href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open separately</a>.</p>
-    </section>` : ``;
-
-   view.innerHTML=`
-    <div class="build-kicker"><span class="tag">${TEL.esc(p?.name||b.profession)}</span><span class="tag">${TEL.esc(b.specialization||"")}</span><span class="tag">${TEL.esc(b.category)}</span></div>
-    <div class="build-title-row">${TEL.iconForBuild(b,icons)?`<img class="build-title-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="">`:``}<h1>${TEL.esc(b.name)}</h1></div>
-    <p class="build-summary">${TEL.esc(b.description||"")}</p>
-    <p class="build-meta">${TEL.esc(b.status||"")} ${b.updated?`· Updated ${TEL.esc(b.updated)}`:""}</p>
-    <div class="build-actions">${gw2}<a class="button ghost" href="./">Back to matrix</a></div>
-    <div id="official-build"></div>
-    ${gw2Embed}
-    <div class="detail-grid">
-      <section class="detail-card"><h3>Build information</h3><div class="detail-list">
-       <div class="detail-row"><span>Profession</span><strong>${TEL.esc(p?.name||b.profession)}</strong></div>
-       <div class="detail-row"><span>Specialization</span><strong>${TEL.esc(b.specialization||"—")}</strong></div>
-       <div class="detail-row"><span>Role</span><strong>${TEL.esc(b.category)}</strong></div>
-      </div></section>
-      <section class="detail-card wide"><h3>TEL notes</h3><div class="notes">${TEL.esc(b.notes||"No TEL notes yet.")}</div></section>
-    </div>`;
+   const [professions,builds,icons]=await Promise.all([TEL.json("data/professions.json"),TEL.json("data/builds.json"),TEL.gw2Icons()]);
+   const b=builds.find(x=>x.id===id); if(!b)throw new Error(`Build "${id||""}" was not found in data/builds.json.`);
+   const p=professions.find(x=>x.id===b.profession); document.title=`${b.name} · TEL Builds`;
+   const safeGw=safeGw2.test(b.gw2skills||"");
+   const gw2=safeGw?`<a class="button primary" href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open full build on GW2Skills ↗</a>`:`<span class="button disabled" title="Add a GW2Skills QuickLink in data/builds.json">GW2Skills link not added</span>`;
+   view.innerHTML=`<div class="build-kicker"><span class="tag">${TEL.esc(p?.name||b.profession)}</span><span class="tag">${TEL.esc(b.specialization||"")}</span><span class="tag">${TEL.esc(b.category)}</span></div><div class="build-title-row">${TEL.iconForBuild(b,icons)?`<img class="build-title-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="">`:``}<h1>${TEL.esc(b.name)}</h1></div><p class="build-summary">${TEL.esc(b.description||"")}</p><p class="build-meta">${TEL.esc(b.status||"")} ${b.updated?`· Updated ${TEL.esc(b.updated)}`:""}</p><div class="build-actions">${gw2}<a class="button ghost" href="./">Back to matrix</a></div><div id="official-build"></div><div class="detail-grid"><section class="detail-card"><h3>Build information</h3><div class="detail-list"><div class="detail-row"><span>Profession</span><strong>${TEL.esc(p?.name||b.profession)}</strong></div><div class="detail-row"><span>Specialization</span><strong>${TEL.esc(b.specialization||"—")}</strong></div><div class="detail-row"><span>Role</span><strong>${TEL.esc(b.category)}</strong></div></div></section><section class="detail-card wide"><h3>TEL notes</h3><div class="notes">${TEL.esc(b.notes||"No TEL notes yet.")}</div></section></div>`;
    renderOfficialBuild(b);
  }catch(err){console.error(err);view.innerHTML=`<div class="data-error"><strong>Build could not be loaded.</strong><span>${TEL.esc(err.message)}</span><a class="button ghost" href="./">Back to matrix</a></div>`;}
 })();
