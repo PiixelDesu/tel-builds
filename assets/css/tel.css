@@ -270,4 +270,85 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   .matrix-profession + .matrix-cell + .matrix-cell{border-left:1px solid var(--border2);border-radius:0 0 10px 10px}
   .matrix-list .matrix-build-item strong{font-size:12px}
 }
-\n\n/* =========================================================\n   GW2 profession + elite specialization icons\n   ========================================================= */\n.profession-glyph{overflow:hidden;background:rgba(255,255,255,.018)}\n.profession-glyph img{width:82%;height:82%;object-fit:contain;display:block;filter:drop-shadow(0 1px 4px rgba(0,0,0,.35))}\n.matrix-build-item{flex-direction:row!important;align-items:center!important;justify-content:center;gap:9px;text-align:left!important}\n.matrix-build-item .spec-icon{width:30px;height:30px;flex:0 0 30px;object-fit:contain;filter:drop-shadow(0 1px 4px rgba(0,0,0,.45))}\n.matrix-build-item .build-label{min-width:0;display:flex;flex-direction:column;justify-content:center}\n.matrix-build-item .build-label strong,.matrix-build-item .build-label small{max-width:100%}\n.build-title-row{display:flex;align-items:center;gap:16px;margin:0 0 4px}\n.build-title-row h1{margin:0}\n.build-title-icon{width:58px;height:58px;flex:0 0 58px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}\n\n@media (min-width:1000px) and (min-height:800px){\n .matrix-build-item .spec-icon{width:25px;height:25px;flex-basis:25px}\n .matrix-build-item{gap:7px}\n}\n@media (max-width:760px){\n .matrix-profession .profession-glyph{display:grid!important}\n .matrix-build-item .spec-icon{width:25px;height:25px;flex-basis:25px}\n .matrix-build-item{gap:5px;padding-left:5px!important;padding-right:5px!important}\n .matrix-build-item .build-label{align-items:flex-start;text-align:left}\n .build-title-icon{width:46px;height:46px;flex-basis:46px}\n}\n@media (max-width:430px){\n .matrix-build-item .spec-icon{width:28px;height:28px;flex-basis:28px}\n}\n
+
+
+/* =========================================================
+   GW2 ICONS — fixed sizing; icons never drive tile/row size
+   ========================================================= */
+.profession-glyph{
+  width:28px!important;height:28px!important;flex:0 0 28px!important;
+  display:grid!important;place-items:center;overflow:hidden;
+  background:transparent!important;border:0!important;
+}
+.profession-glyph img{
+  width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;
+  object-fit:contain;display:block;
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));
+}
+
+.matrix-build-item{
+  min-width:0;
+  display:grid!important;
+  grid-template-columns:28px minmax(0,1fr);
+  align-items:center!important;
+  justify-content:stretch!important;
+  column-gap:8px;
+  text-align:left!important;
+}
+.matrix-build-item .spec-icon{
+  width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important;
+  min-width:28px;min-height:28px;
+  object-fit:contain;display:block;
+  align-self:center;justify-self:center;
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.45));
+}
+.matrix-build-item .build-label{
+  min-width:0;max-width:100%;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+}
+.matrix-build-item .build-label strong{
+  width:100%;max-width:100%;font-size:clamp(11px,.78vw,14px);line-height:1.08;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.matrix-build-item .build-label small{
+  width:100%;max-width:100%;font-size:7px;line-height:1.1;margin-top:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* Detail page icon: noticeable, but not oversized. */
+.build-title-row{display:flex;align-items:center;gap:12px;margin:0 0 4px;min-width:0}
+.build-title-row h1{margin:0;min-width:0}
+.build-title-icon{
+  width:44px!important;height:44px!important;max-width:44px!important;max-height:44px!important;
+  flex:0 0 44px;object-fit:contain;
+  filter:drop-shadow(0 2px 7px rgba(0,0,0,.45));
+}
+
+/* Dense desktop matrix: slightly smaller icons when 3–4 builds share a cell. */
+@media (min-width:1000px) and (min-height:800px){
+  .profession-glyph{width:26px!important;height:26px!important;flex-basis:26px!important}
+  .profession-glyph img{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important}
+  .matrix-list.build-count-3 .spec-icon,
+  .matrix-list.build-count-4 .spec-icon{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;min-width:22px;min-height:22px}
+  .matrix-list.build-count-3 .matrix-build-item,
+  .matrix-list.build-count-4 .matrix-build-item{grid-template-columns:22px minmax(0,1fr);column-gap:6px;padding:5px 7px}
+  .matrix-list.build-count-3 .build-label strong,
+  .matrix-list.build-count-4 .build-label strong{font-size:11px}
+}
+
+@media (max-width:760px){
+  .profession-glyph{width:26px!important;height:26px!important;flex-basis:26px!important}
+  .profession-glyph img{width:23px!important;height:23px!important;max-width:23px!important;max-height:23px!important}
+  .matrix-build-item{grid-template-columns:24px minmax(0,1fr);column-gap:5px;padding:6px!important}
+  .matrix-build-item .spec-icon{width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;min-width:24px;min-height:24px}
+  .matrix-build-item .build-label strong{font-size:10px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .matrix-build-item .build-label small{font-size:7px}
+  .build-title-icon{width:38px!important;height:38px!important;max-width:38px!important;max-height:38px!important;flex-basis:38px}
+  .build-title-row{gap:9px}
+}
+
+@media (max-width:430px){
+  .matrix-build-item{grid-template-columns:26px minmax(0,1fr);column-gap:7px}
+  .matrix-build-item .spec-icon{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important;min-width:26px;min-height:26px}
+  .matrix-build-item .build-label strong{font-size:11px}
+}
