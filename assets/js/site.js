@@ -21,9 +21,9 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
    ]);
 
    const cell=(p,cat)=>{
-     const list=builds.filter(x=>x.profession===p.id&&x.category===cat);
+     const list=builds.filter(x=>x.profession===p.id&&x.category===cat).slice(0,4);
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
-     return `<div class="matrix-cell matrix-list">${list.map(b=>`
+     return `<div class="matrix-cell matrix-list build-count-${list.length}">${list.map(b=>`
        <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
          <strong>${TEL.esc(b.name)}</strong>
          <small>${TEL.esc(b.specialization||"")}</small>
@@ -34,12 +34,11 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      <div class="matrix-head profession-col">Profession</div>
      <div class="matrix-head">Damage</div>
      <div class="matrix-head">Support</div>
-     <div class="matrix-head">Additional</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
          <div class="profession-glyph">${TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
        </div>
-       ${cell(p,"damage")}${cell(p,"support")}${cell(p,"additional")}
+       ${cell(p,"damage")}${cell(p,"support")}
      `).join("")}`;
  }catch(err){
    console.error(err);
