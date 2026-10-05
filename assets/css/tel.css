@@ -387,3 +387,73 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   .matrix-build-item .spec-icon{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important;min-width:26px;min-height:26px}
   .matrix-build-item .build-label strong{font-size:11px}
 }
+
+/* =========================================================
+   READ-ONLY GW2SKILLS BUILD PREVIEW
+   GW2Skills does not permit framing; this is a screenshot only.
+   ========================================================= */
+.build-visual{
+  margin:26px 0 22px;
+  padding:18px;
+  border:1px solid var(--border2);
+  border-radius:var(--radius-lg,14px);
+  background:var(--surface, #221e1a);
+}
+.build-visual-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:13px;
+}
+.build-visual-head .eyebrow{
+  display:block;
+  margin-bottom:3px;
+  color:var(--gold-muted,#a9915f);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.build-visual-head h2{margin:0;font-size:20px;line-height:1.1}
+.visual-open{color:var(--gold,#d8bd78);font-size:12px;font-weight:700;white-space:nowrap}
+.build-snapshot-link{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  min-height:260px;
+  border:1px solid rgba(216,189,120,.22);
+  border-radius:10px;
+  background:#100e0d;
+}
+.build-snapshot{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:680px;
+  object-fit:cover;
+  object-position:top center;
+  background:#100e0d;
+}
+.snapshot-hint{
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  padding:7px 10px;
+  border:1px solid rgba(216,189,120,.25);
+  border-radius:7px;
+  background:rgba(16,14,13,.9);
+  color:#eeeae0;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.snapshot-note{margin:10px 2px 0;color:var(--text-muted,#9d9790);font-size:11px;line-height:1.5}
+@media(max-width:700px){
+  .build-visual{margin:20px 0 18px;padding:12px}
+  .build-visual-head{align-items:flex-start;flex-direction:column;gap:7px}
+  .build-visual-head h2{font-size:18px}
+  .build-snapshot-link{min-height:180px}
+  .build-snapshot{max-height:520px}
+  .snapshot-hint{position:static;display:block;border:0;border-top:1px solid rgba(216,189,120,.18);border-radius:0;background:#171412;text-align:center}
+}
