@@ -1321,5 +1321,13 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/99997.png"
+  },
+  "Relic of Altruism": {
+    "id": 104491,
+    "name": "Relic of Altruism",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104491.png"
   }
 }
