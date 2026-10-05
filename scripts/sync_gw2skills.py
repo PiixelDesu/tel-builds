@@ -192,12 +192,74 @@ def equipment_from(preload,db):
     def buff(bid):
         row=buffs.get(bid); return str(row[bidx['name']] or '') if row and 'name' in bidx else ''
     def first(x,default=None): return x[0] if isinstance(x,list) and x else default
+
+    # GW2Skills keeps the equipped weapon identity in the equipment preload,
+    # separate from the official GW2 build-template chat code.  The exact DB
+    # table/field has changed between GW2Skills revisions, so resolve it
+    # defensively instead of hard-coding one revision's table name.
+    weapon_names={
+        'axe':'Axe','dagger':'Dagger','focus':'Focus','greatsword':'Greatsword',
+        'hammer':'Hammer','longbow':'Longbow','mace':'Mace','pistol':'Pistol',
+        'rifle':'Rifle','scepter':'Scepter','shield':'Shield','shortbow':'Shortbow',
+        'spear':'Spear','staff':'Staff','sword':'Sword','torch':'Torch',
+        'warhorn':'Warhorn','harpoon gun':'Harpoon Gun','harpoongun':'Harpoon Gun',
+        'trident':'Trident'
+    }
+    named_db_tables=[]
+    for table_name,table in db.items():
+        if not isinstance(table,dict): continue
+        desc=table.get('desc') or []
+        if 'id' not in desc or 'name' not in desc: continue
+        id_i,name_i=desc.index('id'),desc.index('name')
+        rows={}
+        for row in table.get('rows') or []:
+            if isinstance(row,list) and len(row)>max(id_i,name_i): rows[row[id_i]]=row[name_i]
+        if rows: named_db_tables.append((table_name,rows))
+
+    def canonical_weapon_name(value):
+        if value is None:return ''
+        text=str(value).strip()
+        low=re.sub(r'[_-]+',' ',text).strip().lower()
+        if low in weapon_names:return weapon_names[low]
+        # Some DB revisions prefix labels (for example "Weapon: Greatsword").
+        for key,label in weapon_names.items():
+            if re.search(r'(^|[^a-z])'+re.escape(key)+r'([^a-z]|$)',low): return label
+        return ''
+
+    def weapon_type(piece):
+        if not isinstance(piece,dict):return ''
+        # Prefer an explicit textual field when present.
+        for key in ('weaponType','weapon_type','weapontype','type','weapon','name'):
+            val=piece.get(key)
+            if isinstance(val,str):
+                hit=canonical_weapon_name(val)
+                if hit:return hit
+        # Gather scalar IDs from the slot payload. item[0] is normally the stat
+        # profile, so later item values are checked first.
+        candidates=[]
+        item=piece.get('item')
+        if isinstance(item,list): candidates.extend(item[1:]); candidates.extend(item[:1])
+        for key,val in piece.items():
+            if key in ('item','up','inf'):continue
+            if isinstance(val,(int,float,str)) and str(val).isdigit():candidates.append(int(val))
+            elif isinstance(val,list):candidates.extend(x for x in val if isinstance(x,(int,float)) or (isinstance(x,str) and x.isdigit()))
+        for raw in candidates:
+            try: cid=int(raw)
+            except Exception: continue
+            for _table,rows in named_db_tables:
+                if cid not in rows:continue
+                hit=canonical_weapon_name(rows[cid])
+                if hit:return hit
+        return ''
+
     def piece_data(piece,kind):
         if not piece:return None
         item=piece.get('item') or []; out={'stat':stat(first(item))}
         ups=piece.get('up') or []; inf=piece.get('inf') or []
         if kind=='armor': out['rune']=upgrade(first(first(ups,[])))
-        if kind=='weapon': out['sigils']=[upgrade(first(x)) for x in ups if first(x)]
+        if kind=='weapon':
+            out['sigils']=[upgrade(first(x)) for x in ups if first(x)]
+            out['weaponType']=weapon_type(piece)
         out['infusions']=[upgrade(x) for x in inf if x]
         return {k:v for k,v in out.items() if v not in ('',[],None)}
     result={'armor':[],'weapons':[],'trinkets':[]}
@@ -206,7 +268,9 @@ def equipment_from(preload,db):
         if d: result['armor'].append({'slot':label,**d})
     for key,label in WEAPONS.items():
         d=piece_data((eq.get('weapon') or {}).get(key),'weapon')
-        if d: result['weapons'].append({'slot':label,**d})
+        if d:
+            if not d.get('weaponType'): print(f'WARN weapon type unresolved for {key}; slot data kept without guessing')
+            result['weapons'].append({'slot':label,**d})
     for key,label in TRINKETS.items():
         d=piece_data((eq.get('trinket') or {}).get(key),'trinket')
         if d: result['trinkets'].append({'slot':label,**d})
