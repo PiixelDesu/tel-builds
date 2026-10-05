@@ -1,42 +1,18 @@
 [
   {
-    "id": "guardian-power",
+    "id": "guardian-damage",
     "profession": "guardian",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-condi",
-    "profession": "guardian",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-utility",
-    "profession": "guardian",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-cloud",
-    "profession": "guardian",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-zerg",
-    "profession": "guardian",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "guardian-support",
     "profession": "guardian",
-    "slot": "support",
+    "category": "support",
     "placeholder": false,
     "title": "Support Firebrand",
     "specialization": "Firebrand",
-    "summary": "Primary stability and defensive support template for organized TEL squads.",
+    "summary": "TEL's organized WvW support slot for Guardian.",
     "weapons": [
       "Mace / Shield",
       "Staff"
@@ -49,451 +25,111 @@
       "Midrange"
     ],
     "scale": [
-      "Group",
-      "Full Squad",
-      "GvG"
+      "Full Squad"
     ],
     "archetype": [
-      "Protector",
-      "Enhancer",
-      "Healer"
+      "Support"
     ],
     "status": "TEL draft",
     "updated": "2026-10-05",
     "gw2skills": "",
-    "notes": "Replace this sample with TEL's current approved support setup.\n\nDocument stability cadence, cleanse expectations, positioning and emergency cooldowns here."
+    "notes": "Replace this example with TEL's approved support build and guild-specific notes."
   },
   {
-    "id": "guardian-pick",
-    "profession": "guardian",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-bomb",
-    "profession": "guardian",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-specialist",
-    "profession": "guardian",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-power",
+    "id": "revenant-damage",
     "profession": "revenant",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-condi",
-    "profession": "revenant",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-utility",
-    "profession": "revenant",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-cloud",
-    "profession": "revenant",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-zerg",
-    "profession": "revenant",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "revenant-support",
     "profession": "revenant",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "revenant-pick",
-    "profession": "revenant",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-bomb",
-    "profession": "revenant",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-specialist",
-    "profession": "revenant",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-power",
+    "id": "warrior-damage",
     "profession": "warrior",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-condi",
-    "profession": "warrior",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-utility",
-    "profession": "warrior",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-cloud",
-    "profession": "warrior",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-zerg",
-    "profession": "warrior",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "warrior-support",
     "profession": "warrior",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "warrior-pick",
-    "profession": "warrior",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-bomb",
-    "profession": "warrior",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-specialist",
-    "profession": "warrior",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-power",
+    "id": "engineer-damage",
     "profession": "engineer",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-condi",
-    "profession": "engineer",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-utility",
-    "profession": "engineer",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-cloud",
-    "profession": "engineer",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-zerg",
-    "profession": "engineer",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "engineer-support",
     "profession": "engineer",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "engineer-pick",
-    "profession": "engineer",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-bomb",
-    "profession": "engineer",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-specialist",
-    "profession": "engineer",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-power",
+    "id": "ranger-damage",
     "profession": "ranger",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-condi",
-    "profession": "ranger",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-utility",
-    "profession": "ranger",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-cloud",
-    "profession": "ranger",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-zerg",
-    "profession": "ranger",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "ranger-support",
     "profession": "ranger",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "ranger-pick",
-    "profession": "ranger",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-bomb",
-    "profession": "ranger",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-specialist",
-    "profession": "ranger",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "thief-power",
+    "id": "thief-damage",
     "profession": "thief",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "thief-condi",
-    "profession": "thief",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "thief-utility",
-    "profession": "thief",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "thief-cloud",
-    "profession": "thief",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "thief-zerg",
-    "profession": "thief",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "thief-support",
     "profession": "thief",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "thief-pick",
-    "profession": "thief",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "thief-bomb",
-    "profession": "thief",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "thief-specialist",
-    "profession": "thief",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-power",
+    "id": "elementalist-damage",
     "profession": "elementalist",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-condi",
-    "profession": "elementalist",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-utility",
-    "profession": "elementalist",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-cloud",
-    "profession": "elementalist",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-zerg",
-    "profession": "elementalist",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "elementalist-support",
     "profession": "elementalist",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "elementalist-pick",
-    "profession": "elementalist",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-bomb",
-    "profession": "elementalist",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-specialist",
-    "profession": "elementalist",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-power",
+    "id": "mesmer-damage",
     "profession": "mesmer",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-condi",
-    "profession": "mesmer",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-utility",
-    "profession": "mesmer",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-cloud",
-    "profession": "mesmer",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-zerg",
-    "profession": "mesmer",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": true
   },
   {
     "id": "mesmer-support",
     "profession": "mesmer",
-    "slot": "support",
+    "category": "support",
     "placeholder": true
   },
   {
-    "id": "mesmer-pick",
-    "profession": "mesmer",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-bomb",
-    "profession": "mesmer",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-specialist",
-    "profession": "mesmer",
-    "slot": "specialist",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-power",
+    "id": "necromancer-damage",
     "profession": "necromancer",
-    "slot": "power",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-condi",
-    "profession": "necromancer",
-    "slot": "condi",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-utility",
-    "profession": "necromancer",
-    "slot": "utility",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-cloud",
-    "profession": "necromancer",
-    "slot": "cloud",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-zerg",
-    "profession": "necromancer",
-    "slot": "zerg",
+    "category": "damage",
     "placeholder": false,
-    "title": "Zerg Scourge",
+    "title": "Damage Scourge",
     "specialization": "Scourge",
-    "summary": "Large-scale pressure and boon-removal placeholder for TEL's squad composition.",
+    "summary": "TEL's organized WvW damage slot for Necromancer.",
     "weapons": [
-      "Weapon set TBD",
-      "Weapon set TBD"
+      "TBD",
+      "TBD"
     ],
     "damage": [
       "Power"
@@ -502,41 +138,20 @@
       "Midrange"
     ],
     "scale": [
-      "Group",
-      "Full Squad",
-      "GvG"
+      "Full Squad"
     ],
     "archetype": [
-      "Nuker",
-      "Disruptor"
+      "Damage"
     ],
     "status": "TEL draft",
     "updated": "2026-10-05",
     "gw2skills": "",
-    "notes": "Placeholder only. Add TEL's actual build code, weapon sets, positioning and spike notes."
+    "notes": "Replace this example with TEL's approved damage build and guild-specific notes."
   },
   {
     "id": "necromancer-support",
     "profession": "necromancer",
-    "slot": "support",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-pick",
-    "profession": "necromancer",
-    "slot": "pick",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-bomb",
-    "profession": "necromancer",
-    "slot": "bomb",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-specialist",
-    "profession": "necromancer",
-    "slot": "specialist",
+    "category": "support",
     "placeholder": true
   }
 ]

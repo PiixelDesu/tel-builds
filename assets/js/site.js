@@ -13,9 +13,9 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
   const builds=await TEL.json("./data/builds.json");
   const grid=document.querySelector("#profession-grid");
   grid.innerHTML=professions.map(p=>{
-    const filled=builds.filter(b=>b.profession===p.id && !b.placeholder).length;
+    const mine=builds.filter(b=>b.profession===p.id); const damage=mine.some(b=>b.category==="damage"&&!b.placeholder); const support=mine.some(b=>b.category==="support"&&!b.placeholder);
     return `<a class="profession-card" style="--profession:${p.color}" href="./profession.html?p=${p.id}">
-      <div class="profession-top"><div><p class="eyebrow">${filled}/9 SLOTS FILLED</p><h3>${p.name}</h3></div><div class="profession-glyph">${p.glyph}</div></div>
+      <div class="profession-top"><div><p class="eyebrow">DAMAGE · SUPPORT</p><h3>${p.name}</h3></div><div class="profession-glyph">${p.glyph}</div></div>
       <p>${p.blurb}</p>
       <div class="mini-stats">${TEL.tags(p.focus)}</div>
       <span class="card-link">Open matrix →</span>

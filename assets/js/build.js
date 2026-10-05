@@ -9,7 +9,7 @@
   document.querySelector("#build-back").href=`./profession.html?p=${b.profession}`;
   const link=b.gw2skills?`<a class="button primary" href="${b.gw2skills}" target="_blank" rel="noopener">Open GW2Skills ↗</a>`:"";
   document.querySelector("#build-view").innerHTML=`
-    <div class="build-kicker"><span class="tag">${p.name}</span><span class="tag">${b.specialization}</span><span class="tag">${b.slot}</span></div>
+    <div class="build-kicker"><span class="tag">${p.name}</span><span class="tag">${b.specialization}</span><span class="tag">${b.category}</span></div>
     <h1>${b.title}</h1><p class="build-summary">${b.summary}</p><p class="build-meta">Updated ${b.updated||"—"}</p>
     <div class="build-actions">${link}<a class="button ghost" href="./profession.html?p=${b.profession}">Profession matrix</a></div>
     <div class="detail-grid">
