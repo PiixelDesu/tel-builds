@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Sync GW2Skills quicklinks into TEL's native build + equipment data."""
 import base64, html, json, re, subprocess, time, urllib.parse, urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 BUILDS=ROOT/'data'/'builds.json'
 OUT=ROOT/'data'/'gw2-build-codes.json'
+ITEM_CACHE=ROOT/'data'/'gw2-item-cache.json'
+ITEM_ASSETS=ROOT/'assets'/'gw2'/'items'
 UA='TEL-Builds/3.0 (+https://github.com/PiixelDesu/tel-builds)'
 B64=re.compile(r'(?<![A-Za-z0-9+/_-])([A-Za-z0-9+/_-]{36,}={0,2})(?![A-Za-z0-9+/_-])')
 BRACKETED=re.compile(r'\[\s*&\s*([A-Za-z0-9+/_=-]{20,})\s*\]')
@@ -28,27 +31,84 @@ def fetch(url): return fetch_url(normalize_url(url))
 def gw2_api(path):
     return json.loads(fetch_url('https://api.guildwars2.com/v2/'+path,'application/json'))
 
+def load_item_cache():
+    try:
+        raw=json.loads(ITEM_CACHE.read_text(encoding='utf-8'))
+        return raw if isinstance(raw,dict) else {}
+    except Exception:
+        return {}
+
+def save_item_cache(cache):
+    ITEM_CACHE.parent.mkdir(parents=True,exist_ok=True)
+    ITEM_CACHE.write_text(json.dumps(cache,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+def api_json_url(url,timeout=30):
+    return json.loads(fetch_url(url,'application/json'))
+
+def download_icon(item_id,url):
+    if not item_id or not url:return ''
+    ITEM_ASSETS.mkdir(parents=True,exist_ok=True)
+    suffix=Path(urllib.parse.urlsplit(url).path).suffix.lower()
+    if suffix not in ('.png','.jpg','.jpeg','.webp'):suffix='.png'
+    target=ITEM_ASSETS/f'{item_id}{suffix}'
+    if not target.exists():
+        req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'image/*'})
+        with urllib.request.urlopen(req,timeout=30) as r: target.write_bytes(r.read())
+    return target.relative_to(ROOT).as_posix()
+
 def resolve_official_items(names):
-    """Resolve synced GW2Skills names to official GW2 item metadata/icons.
-    The API has no name-search endpoint, so scan the public item catalogue in 200-item pages
-    and stop once every requested name has been found. This runs only in the GitHub Action.
+    """Resolve item names once, persist metadata, and store icons locally.
+
+    GW2 has no public item-name search endpoint. Unknown names therefore require one
+    catalogue pass, but pages are fetched concurrently. Once a name is cached,
+    future syncs make no catalogue request for it. Existing local icons are never
+    downloaded again.
     """
     wanted={str(n).strip() for n in names if n and str(n).strip()}
-    if not wanted:return {}
-    found={}
-    try:
-        ids=gw2_api('items')
-        for off in range(0,len(ids),200):
-            batch=ids[off:off+200]
-            rows=gw2_api('items?ids='+','.join(map(str,batch)))
-            for item in rows:
-                name=item.get('name','')
-                if name in wanted and name not in found:
-                    found[name]={'id':item.get('id'),'name':name,'icon':item.get('icon',''),'type':item.get('type',''),'details':item.get('details') or {}}
-            if wanted.issubset(found):break
-        print(f'Official GW2 items: resolved {len(found)}/{len(wanted)} names')
-    except Exception as e:
-        print('WARN official item icon resolution failed:',e)
+    cache=load_item_cache()
+    found={name:cache[name] for name in wanted if name in cache}
+    missing=wanted-set(found)
+    print(f'GW2 item cache: {len(found)} hit(s), {len(missing)} new name(s)')
+
+    if missing:
+        try:
+            # Discover page count cheaply, then scan pages in parallel. page_size 200 is
+            # the API maximum. We stop scheduling no new work after all names are found.
+            ids=gw2_api('items')
+            pages=(len(ids)+199)//200
+            def fetch_page(page):
+                return gw2_api(f'items?page={page}&page_size=200')
+            with ThreadPoolExecutor(max_workers=10) as pool:
+                futures={pool.submit(fetch_page,p):p for p in range(pages)}
+                for fut in as_completed(futures):
+                    try: rows=fut.result()
+                    except Exception as e:
+                        print(f'WARN item page {futures[fut]} failed: {e}'); continue
+                    for item in rows:
+                        name=item.get('name','')
+                        if name in missing:
+                            meta={'id':item.get('id'),'name':name,'icon':item.get('icon',''),'type':item.get('type',''),'details':item.get('details') or {}}
+                            found[name]=meta; cache[name]=meta; missing.discard(name)
+                    if not missing:
+                        for f in futures:
+                            if not f.done(): f.cancel()
+                        break
+        except Exception as e:
+            print('WARN official item resolution failed:',e)
+
+    # Localize icons. Cached local files are reused and never downloaded again.
+    for name,meta in list(found.items()):
+        try:
+            local=meta.get('local_icon','')
+            if local and (ROOT/local).exists():
+                pass
+            elif meta.get('icon') and meta.get('id'):
+                meta['local_icon']=download_icon(meta['id'],meta['icon'])
+            cache[name]=meta
+        except Exception as e:
+            print(f'WARN icon download failed for {name}: {e}')
+    save_item_cache(cache)
+    print(f'Official GW2 items: resolved {len(found)}/{len(wanted)} names; local icons cached in assets/gw2/items')
     return found
 
 def variants(text):
@@ -170,7 +230,7 @@ def enrich_equipment(eq,items):
     def obj(v):
         if not v:return v
         m=items.get(v)
-        return {'name':v,'id':m.get('id'),'icon':m.get('icon',''),'type':m.get('type','')} if m else {'name':v}
+        return {'name':v,'id':m.get('id'),'icon':m.get('local_icon') or m.get('icon',''),'type':m.get('type','')} if m else {'name':v}
     out=json.loads(json.dumps(eq))
     for group in ('armor','weapons','trinkets'):
         for x in out.get(group,[]):
