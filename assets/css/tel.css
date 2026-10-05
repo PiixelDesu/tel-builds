@@ -399,3 +399,13 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 .skill-bar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}.skill-pick{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);grid-template-rows:auto auto;column-gap:8px;align-items:center;min-width:0;padding:7px;border:1px solid var(--border);border-radius:8px}.skill-pick img{grid-row:1/3;width:44px;height:44px;object-fit:cover;border-radius:5px}.skill-pick span{font-size:11px;line-height:1.1;overflow:hidden;text-overflow:ellipsis}.skill-pick small{font-size:8px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold)}.weapon-list{display:flex;gap:7px;flex-wrap:wrap}
 .overview-state{display:flex;flex-direction:column;gap:5px;padding:22px;color:var(--muted)}.overview-state strong{color:var(--text);font-family:Georgia,serif;font-size:17px}.overview-state span{font-size:12px;line-height:1.5;max-width:680px}
 @media(max-width:760px){.overview-head{align-items:flex-start;flex-direction:column}.trait-line{grid-template-columns:1fr}.trait-picks{grid-template-columns:repeat(3,1fr)}.trait-pick{grid-template-columns:30px minmax(0,1fr)}.trait-pick img{width:30px;height:30px}.trait-pick span{font-size:9px}.skill-bar{grid-template-columns:repeat(5,54px);overflow-x:auto;padding-bottom:4px}.skill-pick{display:flex;flex-direction:column;gap:4px;text-align:center;padding:5px}.skill-pick img{width:42px;height:42px}.skill-pick span{display:none}.skill-pick small{font-size:7px}.native-build-overview{margin-top:24px}.overview-block,.overview-head{padding:15px}}
+
+/* Build detail usability: source link above renderer + normal page scrolling */
+body[data-page="build"]{overflow-x:hidden!important;overflow-y:auto!important;height:auto!important;min-height:100vh}
+body[data-page="build"] .site-shell{height:auto!important;min-height:100vh;overflow:visible!important}
+body[data-page="build"] .page-main{overflow:visible!important}
+.build-source-actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 12px}
+.build-source-actions .button.primary{display:inline-flex;align-items:center;justify-content:center}
+body[data-page="build"] .native-build-overview{margin-top:12px}
+body[data-page="build"] .build-actions{margin:18px 0 36px}
+@media(max-width:560px){.build-source-actions .button{width:100%;text-align:center}}
