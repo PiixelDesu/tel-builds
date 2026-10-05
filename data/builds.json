@@ -108,16 +108,16 @@
     "notes": "Edit this entry in data/builds.json. Paste the GW2Skills QuickLink into the gw2skills field."
   },
   {
-    "id": "ranger-support",
+    "id": "heal-druid",
     "profession": "ranger",
     "category": "support",
-    "name": "Support Druid",
+    "name": "Heal Druid",
     "specialization": "Druid",
-    "description": "Starter entry \u2014 replace with TEL's approved build.",
-    "gw2skills": "",
-    "status": "Placeholder",
+    "description": "Heal Druid is a Guild Wars 2 WvW Heal build for Ranger, focused on healing, cleanse, and sustain.",
+    "gw2skills": "https://gw2skills.net/editor/?POwEYKNssCGCbhFyIxyVyrlWy9uC-DWJYjR9fhEUSkZIUdF471hQEg9wbp9NLA-w",
+    "status": "approved",
     "updated": "2026-10-05",
-    "notes": "Edit this entry in data/builds.json. Paste the GW2Skills QuickLink into the gw2skills field."
+    "notes": ""
   },
   {
     "id": "thief-damage",
