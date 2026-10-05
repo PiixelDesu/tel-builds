@@ -216,12 +216,12 @@
     "notes": ""
   },
   {
-    "id": "power-scrouge",
+    "id": "power-scourge",
     "profession": "necromancer",
     "category": "damage",
-    "name": "Power Scrouge",
-    "specialization": "Scrouge",
-    "description": "Power Scrouge is a Guild Wars 2 WvW Damage build for Necromancer, focused on dealing high damage with devastating attacks.",
+    "name": "Power Scourge",
+    "specialization": "Scourge",
+    "description": "Power Scourge is a Guild Wars 2 WvW Damage build for Necromancer, focused on dealing high damage with devastating attacks.",
     "gw2skills": "https://gw2skills.net/editor/?PSwAEd3lNwOYIsHmJO8XnvaA-DWRYiR9jO4CppIouUNziy23FBIg/W0/MCA-w",
     "status": "approved",
     "updated": "2026-10-05",
