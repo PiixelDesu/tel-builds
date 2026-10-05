@@ -1,0 +1,1081 @@
+{
+  "Superior Sharpening Stone": {
+    "id": 9443,
+    "name": "Superior Sharpening Stone",
+    "icon": "https://render.guildwars2.com/file/91AC9F70D30C5E3E22635DF4F30CAFA1F6F803A0/219361.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Power Equal to 3% of Your Precision\nGain Power Equal to 6% of Your Ferocity\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/9443.png"
+  },
+  "Superior Rune of the Scholar": {
+    "id": 24836,
+    "name": "Superior Rune of the Scholar",
+    "icon": "https://render.guildwars2.com/file/4378ABC0415950DAC6A05C76920392D72E242EC2/220736.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Power",
+        "+35 Ferocity",
+        "+50 Power",
+        "+65 Ferocity",
+        "+100 Power",
+        "+125 Ferocity"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Scholar"
+    },
+    "local_icon": "assets/gw2/items/24836.png"
+  },
+  "Superior Rune of the Water": {
+    "id": 24839,
+    "name": "Superior Rune of the Water",
+    "icon": "https://render.guildwars2.com/file/50C5E3125234FF4525162A052335354D47B50D0F/220737.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Healing",
+        "+5% Boon Duration",
+        "+50 Healing",
+        "+10% Boon Duration",
+        "+100 Healing",
+        "+10% Boon Duration"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Water"
+    },
+    "local_icon": "assets/gw2/items/24839.png"
+  },
+  "Superior Rune of the Monk": {
+    "id": 24842,
+    "name": "Superior Rune of the Monk",
+    "icon": "https://render.guildwars2.com/file/E028F4BC03E9EC36A368712463D824CEC30FCCDA/220738.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Healing",
+        "+5% Boon Duration",
+        "+50 Healing",
+        "+10% Boon Duration",
+        "+100 Healing",
+        "+125 Healing"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Monk"
+    },
+    "local_icon": "assets/gw2/items/24842.png"
+  },
+  "Superior Sigil of Fire": {
+    "id": 24548,
+    "name": "Superior Sigil of Fire",
+    "icon": "https://render.guildwars2.com/file/AFFE7977FCE450E8105EBADA7436050CB7011BDB/220678.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 189,
+        "buff": {
+          "skill_id": 9444,
+          "description": "Trigger a flame blast with a 240 radius upon critically hitting a foe. <br><c=@reminder>(Cooldown: 5 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Fire"
+    },
+    "local_icon": "assets/gw2/items/24548.png"
+  },
+  "Superior Sigil of Nullification": {
+    "id": 24572,
+    "name": "Superior Sigil of Nullification",
+    "icon": "https://render.guildwars2.com/file/B926E1026E6E271D3B9F9A177710E3A8C801FFF3/220744.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 215,
+        "buff": {
+          "skill_id": 9290,
+          "description": "Remove a boon from a foe after striking from its flank or when they are defiant. <br><c=@reminder>(Cooldown: 5 seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Nullification"
+    },
+    "local_icon": "assets/gw2/items/24572.png"
+  },
+  "Superior Sigil of Bloodlust": {
+    "id": 24575,
+    "name": "Superior Sigil of Bloodlust",
+    "icon": "https://render.guildwars2.com/file/77AAE10D3E03036D6E00642DEF01E5DF3468524F/220673.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 218,
+        "buff": {
+          "skill_id": 9297,
+          "description": "Gain a charge of +10 power each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c> <br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Bloodlust"
+    },
+    "local_icon": "assets/gw2/items/24575.png"
+  },
+  "Superior Sigil of Life": {
+    "id": 24582,
+    "name": "Superior Sigil of Life",
+    "icon": "https://render.guildwars2.com/file/A7AE0E9D0DF64B69EF309D93E44FFAA90859ABA0/220670.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 227,
+        "buff": {
+          "skill_id": 9389,
+          "description": "Gain a charge of +10 healing each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c> <br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Life"
+    },
+    "local_icon": "assets/gw2/items/24582.png"
+  },
+  "Superior Sigil of Benevolence": {
+    "id": 24584,
+    "name": "Superior Sigil of Benevolence",
+    "icon": "https://render.guildwars2.com/file/0147AE350DEB5561D427EC41F6F4B35523707320/220672.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 233,
+        "buff": {
+          "skill_id": 9401,
+          "description": "Gain a charge that grants a 0.5% increase in healing to other allies each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c><br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Benevolence"
+    },
+    "local_icon": "assets/gw2/items/24584.png"
+  },
+  "Superior Sigil of Hydromancy": {
+    "id": 24597,
+    "name": "Superior Sigil of Hydromancy",
+    "icon": "https://render.guildwars2.com/file/B5F3E2021863079919299707290698504B5C7E90/220689.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 248,
+        "buff": {
+          "skill_id": 9430,
+          "description": "Damage nearby foes and chill them for 2 seconds when you swap to this weapon while in combat.<br><c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of the Hydromancer"
+    },
+    "local_icon": "assets/gw2/items/24597.png"
+  },
+  "Superior Sigil of Energy": {
+    "id": 24607,
+    "name": "Superior Sigil of Energy",
+    "icon": "https://render.guildwars2.com/file/3A064B97AB7D0E1F1250EFB5F06798A8FE623708/220688.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 253,
+        "buff": {
+          "skill_id": 9438,
+          "description": "Gain 50% of your endurance when you swap to this weapon while in combat. <c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Energy"
+    },
+    "local_icon": "assets/gw2/items/24607.png"
+  },
+  "Superior Sigil of Force": {
+    "id": 24615,
+    "name": "Superior Sigil of Force",
+    "icon": "https://render.guildwars2.com/file/D7420E430D002E07382035EF0D0F77370C4EE6B8/220662.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 261,
+        "buff": {
+          "skill_id": 9322,
+          "description": "+5% Damage"
+        },
+        "attributes": []
+      },
+      "suffix": "of Force"
+    },
+    "local_icon": "assets/gw2/items/24615.png"
+  },
+  "Superior Rune of Infiltration": {
+    "id": 24703,
+    "name": "Superior Rune of Infiltration",
+    "icon": "https://render.guildwars2.com/file/F9C62BCFB70106EEBCA33C4AC35352CE2A082F10/220710.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Power",
+        "+35 Precision",
+        "+50 Power",
+        "+65 Precision",
+        "+100 Power",
+        "+125 Precision"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of Infiltration"
+    },
+    "local_icon": "assets/gw2/items/24703.png"
+  },
+  "Experienced Enrichment": {
+    "id": 39330,
+    "name": "Experienced Enrichment",
+    "icon": "https://render.guildwars2.com/file/CB540FC0D1A0F52B2B68370378A4137F66350222/534270.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "Trinket"
+      ],
+      "infusion_upgrade_flags": [
+        "Enrichment"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 642,
+        "buff": {
+          "skill_id": 16977,
+          "description": "+20% Experience from Kills"
+        },
+        "attributes": []
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/39330.png"
+  },
+  "Magical Enrichment": {
+    "id": 39333,
+    "name": "Magical Enrichment",
+    "icon": "https://render.guildwars2.com/file/5D073A680E66AE473CAC54D1B775AE0DE90E776E/534273.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "Trinket"
+      ],
+      "infusion_upgrade_flags": [
+        "Enrichment"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 645,
+        "buff": {
+          "skill_id": 16980,
+          "description": "+20% Magic Find"
+        },
+        "attributes": []
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/39333.png"
+  },
+  "Healing WvW Infusion": {
+    "id": 43250,
+    "name": "Healing WvW Infusion",
+    "icon": "https://render.guildwars2.com/file/7E12A199E052DB414D2AF309FAB03DAAA0148090/587071.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "ShortBow",
+        "HeavyArmor",
+        "LightArmor",
+        "Dagger",
+        "MediumArmor",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Trinket",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [
+        "Infusion"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 702,
+        "buff": {
+          "skill_id": 19062,
+          "description": "+5 Healing\n-1% Damage taken from Guards, Lords, and Supervisors"
+        },
+        "attributes": [
+          {
+            "attribute": "Healing",
+            "modifier": 5
+          }
+        ]
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/43250.png"
+  },
+  "Mighty WvW Infusion": {
+    "id": 43254,
+    "name": "Mighty WvW Infusion",
+    "icon": "https://render.guildwars2.com/file/F1B068BFD7E6AC11ED90FE09CAB916F6D4DC2C63/587075.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "ShortBow",
+        "HeavyArmor",
+        "LightArmor",
+        "Dagger",
+        "MediumArmor",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Trinket",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [
+        "Infusion"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 706,
+        "buff": {
+          "skill_id": 19063,
+          "description": "+5 Power\n+1% Damage to Guards, Lords, and Supervisors"
+        },
+        "attributes": [
+          {
+            "attribute": "Power",
+            "modifier": 5
+          }
+        ]
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/43254.png"
+  },
+  "Potent Superior Sharpening Stone": {
+    "id": 43451,
+    "name": "Potent Superior Sharpening Stone",
+    "icon": "https://render.guildwars2.com/file/91AC9F70D30C5E3E22635DF4F30CAFA1F6F803A0/219361.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 3600000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Power Equal to 3% of Your Precision\nGain Power Equal to 6% of Your Ferocity\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/43451.png"
+  },
+  "Superior Sigil of Renewal": {
+    "id": 44947,
+    "name": "Superior Sigil of Renewal",
+    "icon": "https://render.guildwars2.com/file/F3F0730D5FEE09A7340E2E24E35A7AF304EDAAB7/619706.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 749,
+        "buff": {
+          "skill_id": 20471,
+          "description": "Heal Nearby Allies on Weapon Swap (360 Radius) <br><c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Renewal"
+    },
+    "local_icon": "assets/gw2/items/44947.png"
+  },
+  "Superior Sigil of Cleansing": {
+    "id": 67340,
+    "name": "Superior Sigil of Cleansing",
+    "icon": "https://render.guildwars2.com/file/011CEE62DABFE502E839CA19ECEAA5C523089407/866845.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1055,
+        "buff": {
+          "skill_id": 25519,
+          "description": "Remove 3 conditions when swapping to this weapon in combat. <c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Cleansing"
+    },
+    "local_icon": "assets/gw2/items/67340.png"
+  },
+  "Superior Rune of Radiance": {
+    "id": 67342,
+    "name": "Superior Rune of Radiance",
+    "icon": "https://render.guildwars2.com/file/BAB7FAD330A0EC183426D646C2440BCB7F74324D/866847.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Vitality",
+        "+5% Boon Duration",
+        "+50 Vitality",
+        "+10% Boon Duration",
+        "+100 Vitality",
+        "+10% Boon Duration"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of Radiance"
+    },
+    "local_icon": "assets/gw2/items/67342.png"
+  },
+  "Bountiful Maintenance Oil": {
+    "id": 67528,
+    "name": "Bountiful Maintenance Oil",
+    "icon": "https://render.guildwars2.com/file/BA57FF7A052FFE37669F97A815BD28089FCFF0AD/219367.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain 0.6% Increased Healing to Other Allies for Every 100 Healing Power\nGain 0.8% Increased Healing to Other Allies for Every 100 Concentration\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/67528.png"
+  },
+  "Superior Rune of the Dragonhunter": {
+    "id": 74978,
+    "name": "Superior Rune of the Dragonhunter",
+    "icon": "https://render.guildwars2.com/file/E698E699D9A75AC90CA47A3FBA0259216C29041D/1201528.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Ferocity",
+        "+35 Power",
+        "+50 Ferocity",
+        "+65 Power",
+        "+100 Ferocity",
+        "+125 Ferocity"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Dragonhunter"
+    },
+    "local_icon": "assets/gw2/items/74978.png"
+  },
+  "Superior Sigil of Transference": {
+    "id": 74326,
+    "name": "Superior Sigil of Transference",
+    "icon": "https://render.guildwars2.com/file/7A2021FB079CE4FC3A469CAE2B6E6273000E7D45/1201535.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1120,
+        "buff": {
+          "skill_id": 32819,
+          "description": "Healing to other allies is increased by 10%."
+        },
+        "attributes": []
+      },
+      "suffix": "of Transference"
+    },
+    "local_icon": "assets/gw2/items/74326.png"
+  },
+  "Superior Sigil of Bounty": {
+    "id": 81045,
+    "name": "Superior Sigil of Bounty",
+    "icon": "https://render.guildwars2.com/file/9B5ADEE61292409C0102AEB9B255CEBD7B6E9EAA/1676537.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1223,
+        "buff": {
+          "skill_id": 38663,
+          "description": "Gain a charge of +9 concentration each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c> <br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Bounty"
+    },
+    "local_icon": "assets/gw2/items/81045.png"
+  },
+  "Magnanimous Maintenance Oil": {
+    "id": 81157,
+    "name": "Magnanimous Maintenance Oil",
+    "icon": "https://render.guildwars2.com/file/4FC6974ACF5D763A6D2A52C6F66725E8E0B0FB0A/1676607.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Concentration Equal to 3% of Your Vitality\nGain Concentration Equal to 3% of Your Toughness\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/81157.png"
+  },
+  "Superior Sigil of Frenzy": {
+    "id": 82876,
+    "name": "Superior Sigil of Frenzy",
+    "icon": "https://render.guildwars2.com/file/AE66AD152AAD72050F7E050AE2E3BBAFC6DF533F/1766395.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1347,
+        "buff": {
+          "skill_id": 41722,
+          "description": "Recharge all equipped skills by 2 seconds upon killing an enemy. <c=@reminder>Cooldown: 10 seconds</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Frenzy"
+    },
+    "local_icon": "assets/gw2/items/82876.png"
+  },
+  "Concentration WvW Infusion": {
+    "id": 86986,
+    "name": "Concentration WvW Infusion",
+    "icon": "https://render.guildwars2.com/file/BA9330384DE30525AB3CBE1BA1B7000B336C0FBB/1947210.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "ShortBow",
+        "HeavyArmor",
+        "LightArmor",
+        "Dagger",
+        "MediumArmor",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Trinket",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [
+        "Infusion"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1440,
+        "buff": {
+          "skill_id": 49710,
+          "description": "+5 Concentration\n-1% Damage Taken from Guards, Lords, and Supervisors"
+        },
+        "attributes": [
+          {
+            "attribute": "BoonDuration",
+            "modifier": 5
+          }
+        ]
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/86986.png"
+  },
+  "Bowl of Fruit Salad with Mint Garnish": {
+    "id": 91690,
+    "name": "Bowl of Fruit Salad with Mint Garnish",
+    "icon": "https://render.guildwars2.com/file/1D44545301F3BB1C046898EA08D5906EB369DD0A/2191059.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91690.png"
+  },
+  "Peppercorn-Crusted Sous-Vide Steak": {
+    "id": 91734,
+    "name": "Peppercorn-Crusted Sous-Vide Steak",
+    "icon": "https://render.guildwars2.com/file/EBFB0A55087C48E905D4ED9E6BE549DA6D9560F4/2191071.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91734.png"
+  },
+  "Bowl of Spiced Fruit Salad": {
+    "id": 91737,
+    "name": "Bowl of Spiced Fruit Salad",
+    "icon": "https://render.guildwars2.com/file/7CEC58DD0758464F3F66EFCF4C9E1152FE1D14E9/2191057.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91737.png"
+  },
+  "Plate of Peppercorn-Spiced Poultry Aspic": {
+    "id": 91794,
+    "name": "Plate of Peppercorn-Spiced Poultry Aspic",
+    "icon": "https://render.guildwars2.com/file/6C73AD27E2CBB23D39D2B0426DCF5168ECE90E3C/2191065.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91794.png"
+  },
+  "Relic of the Monk": {
+    "id": 100031,
+    "name": "Relic of the Monk",
+    "icon": "https://render.guildwars2.com/file/6C340014C525FEF8089AC6DAD03662637A5B07CA/3122361.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100031.png"
+  },
+  "Relic of Febe": {
+    "id": 101116,
+    "name": "Relic of Febe",
+    "icon": "https://render.guildwars2.com/file/3B063D0B0BA20A0530086595F367F0149D9679F2/3187628.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101116.png"
+  },
+  "Relic of Karakosa": {
+    "id": 101268,
+    "name": "Relic of Karakosa",
+    "icon": "https://render.guildwars2.com/file/DD034A0B53355503350F07CCFFE5CC06A90F41D9/3187629.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101268.png"
+  },
+  "Relic of the Thief": {
+    "id": 101580,
+    "name": "Relic of the Thief",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101580.png"
+  },
+  "Mists-Infused Peppercorn-Crusted Sous-Vide Steak": {
+    "id": 99785,
+    "name": "Mists-Infused Peppercorn-Crusted Sous-Vide Steak",
+    "icon": "https://render.guildwars2.com/file/EBFB0A55087C48E905D4ED9E6BE549DA6D9560F4/2191071.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/99785.png"
+  }
+}
