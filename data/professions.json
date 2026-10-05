@@ -1,0 +1,110 @@
+[
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "glyph": "G",
+    "color": "#72c1d9",
+    "focus": [
+      "Support",
+      "Power",
+      "Frontline"
+    ],
+    "blurb": "Guardian WvW loadouts for frontline pressure, stability and party support."
+  },
+  {
+    "id": "revenant",
+    "name": "Revenant",
+    "glyph": "R",
+    "color": "#d16a77",
+    "focus": [
+      "Power",
+      "Support",
+      "Utility"
+    ],
+    "blurb": "Revenant loadouts for pressure, boon support and coordinated spikes."
+  },
+  {
+    "id": "warrior",
+    "name": "Warrior",
+    "glyph": "W",
+    "color": "#e6b95d",
+    "focus": [
+      "Power",
+      "Control",
+      "Frontline"
+    ],
+    "blurb": "Warrior loadouts for frontline damage, control and group utility."
+  },
+  {
+    "id": "engineer",
+    "name": "Engineer",
+    "glyph": "E",
+    "color": "#c89b62",
+    "focus": [
+      "Utility",
+      "Power",
+      "Support"
+    ],
+    "blurb": "Engineer loadouts for utility, pressure and adaptable group roles."
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "glyph": "R",
+    "color": "#8fbd63",
+    "focus": [
+      "Power",
+      "Pick",
+      "Support"
+    ],
+    "blurb": "Ranger loadouts for picks, pressure and situational support."
+  },
+  {
+    "id": "thief",
+    "name": "Thief",
+    "glyph": "T",
+    "color": "#c98c8c",
+    "focus": [
+      "Pick",
+      "Roam",
+      "Burst"
+    ],
+    "blurb": "Thief loadouts for roaming, target isolation and burst."
+  },
+  {
+    "id": "elementalist",
+    "name": "Elementalist",
+    "glyph": "E",
+    "color": "#e36b5d",
+    "focus": [
+      "Damage",
+      "Support",
+      "Range"
+    ],
+    "blurb": "Elementalist loadouts for ranged pressure, healing and flexible damage."
+  },
+  {
+    "id": "mesmer",
+    "name": "Mesmer",
+    "glyph": "M",
+    "color": "#b37bd6",
+    "focus": [
+      "Utility",
+      "Control",
+      "Pick"
+    ],
+    "blurb": "Mesmer loadouts for control, utility, disruption and coordinated picks."
+  },
+  {
+    "id": "necromancer",
+    "name": "Necromancer",
+    "glyph": "N",
+    "color": "#65a873",
+    "focus": [
+      "Damage",
+      "Boon strip",
+      "Pressure"
+    ],
+    "blurb": "Necromancer loadouts for damage, boon removal and sustained group pressure."
+  }
+]
