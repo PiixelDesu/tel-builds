@@ -325,65 +325,86 @@ def enrich_equipment(eq,items):
 
 
 def specialization_mechanics_from(preload, db, specialization=""):
-    """Extract GW2Skills-only elite-spec selections (VoE quicklink metadata).
+    """Resolve GW2Skills-only Evoker/Amalgam quicklink selections.
 
-    Unlike Ranger pets/Revenant legends these are not part of the normal ANet
-    build-template payload. GW2Skills stores them in its own quicklink preload.
-    Keep the extraction deliberately table-scoped so numeric IDs can never be
-    confused across unrelated DB tables.
+    GW2Skills' quicklink decoder does not expose these selections under stable,
+    human-readable preload keys.  Resolve selected scalar IDs against DB rows
+    whose metadata identifies them as Familiar/Morph content instead of guessing
+    from the preload key name.
     """
     spec=str(specialization or '').strip().lower()
     if spec not in ('evoker','amalgam') or not isinstance(preload,dict): return None
-    wanted=('familiar',) if spec=='evoker' else ('morph','morphs')
+    needle='familiar' if spec=='evoker' else 'morph'
 
-    def find_values(obj):
-        hits=[]
-        if isinstance(obj,dict):
-            for k,v in obj.items():
-                kl=str(k).lower()
-                if any(w in kl for w in wanted): hits.append((kl,v))
-                if isinstance(v,(dict,list)): hits.extend(find_values(v))
-        elif isinstance(obj,list):
-            for v in obj:
-                if isinstance(v,(dict,list)): hits.extend(find_values(v))
-        return hits
-
-    def flatten(v):
-        if isinstance(v,(str,int,float)) and not isinstance(v,bool): return [v]
-        if isinstance(v,list):
-            out=[]
-            for x in v: out.extend(flatten(x))
-            return out
+    # All scalar values carried by the decoded quicklink, with their paths.
+    scalars=[]
+    def walk(v,path=''):
         if isinstance(v,dict):
+            for k,x in v.items(): walk(x, f'{path}.{k}' if path else str(k))
+        elif isinstance(v,list):
+            for i,x in enumerate(v): walk(x, f'{path}[{i}]')
+        elif isinstance(v,(str,int,float)) and not isinstance(v,bool):
+            if v not in ('',0,'0',-1,'-1',None): scalars.append((path,v))
+    walk(preload)
+
+    # Build an index of DB rows that are unmistakably mechanic-related.  This
+    # intentionally requires textual Familiar/Morph evidence in table/column/row
+    # metadata, preventing the overlapping-ID bug we previously hit with weapons.
+    candidates={}
+    for tn,table in (db or {}).items():
+        if not isinstance(table,dict): continue
+        desc=table.get('desc') or []
+        if 'id' not in desc: continue
+        ii=desc.index('id')
+        table_hint=needle in str(tn).lower() or any(needle in str(x).lower() for x in desc)
+        for row in table.get('rows') or []:
+            if not isinstance(row,list) or len(row)<=ii: continue
+            text=' '.join(str(x) for x in row if isinstance(x,str)).lower()
+            if not table_hint and needle not in text: continue
+            rid=row[ii]
+            # Prefer a readable name/key/title field; otherwise first useful text.
+            name=None
+            for field in ('name','title','key','skill_name','label'):
+                if field in desc:
+                    j=desc.index(field)
+                    if j<len(row) and row[j] not in (None,''): name=str(row[j]); break
+            if not name:
+                texts=[str(x) for x in row if isinstance(x,str) and x and needle not in x.lower()]
+                name=texts[0] if texts else str(rid)
+            candidates.setdefault(str(rid), {'id':rid,'name':name.replace('_',' ').strip(),'source_table':tn})
+
+    # Selected quicklink IDs are values present in preload and in the scoped DB
+    # candidate set. Preserve preload order and de-duplicate.
+    picked=[]; seen=set()
+    for path,v in scalars:
+        key=str(v)
+        if key in candidates and key not in seen:
+            item=dict(candidates[key]); item['source_path']=path
+            picked.append(item); seen.add(key)
+
+    # Some GW2Skills revisions use a mechanic-specific object whose values are
+    # already readable strings rather than DB IDs. Keep that explicit fallback.
+    if not picked:
+        def named(v,path=''):
             out=[]
-            for k in ('id','value','skill','morph','familiar','key'):
-                if k in v: out.extend(flatten(v[k]))
+            if isinstance(v,dict):
+                for k,x in v.items():
+                    p=f'{path}.{k}' if path else str(k)
+                    if needle in str(k).lower(): out.append((p,x))
+                    out.extend(named(x,p))
+            elif isinstance(v,list):
+                for i,x in enumerate(v): out.extend(named(x,f'{path}[{i}]'))
             return out
-        return []
+        for path,v in named(preload):
+            vals=v if isinstance(v,list) else [v]
+            for x in vals:
+                if isinstance(x,str) and x.strip() and not x.strip().isdigit():
+                    key=x.strip()
+                    if key not in seen: picked.append({'id':key,'name':key.replace('_',' ').title(),'source_path':path}); seen.add(key)
 
-    raw=[]
-    for _,v in find_values(preload): raw.extend(flatten(v))
-    # stable de-dupe, ignoring empty/sentinel selections
-    vals=[]
-    for v in raw:
-        if v in (None,'',0,'0',-1,'-1') or v in vals: continue
-        vals.append(v)
-
-    table_names=[k for k in db.keys() if any(w in str(k).lower() for w in wanted)]
-    def resolve(v):
-        for tn in table_names:
-            table=db.get(tn) or {}; desc=table.get('desc') or []
-            if 'id' not in desc: continue
-            ii=desc.index('id'); ni=desc.index('name') if 'name' in desc else -1
-            ki=desc.index('key') if 'key' in desc else -1
-            for row in table.get('rows') or []:
-                if not isinstance(row,list) or len(row)<=ii: continue
-                if str(row[ii])==str(v):
-                    name=(row[ni] if ni>=0 and len(row)>ni else None) or (row[ki] if ki>=0 and len(row)>ki else None)
-                    return {'id':v,'name':str(name).replace('_',' ').title() if name else str(v),'source_table':tn}
-        return {'id':v,'name':str(v)}
-    if not vals:return None
-    return {'type':'familiar' if spec=='evoker' else 'morphs','selections':[resolve(v) for v in vals[:4]]}
+    if not picked:return None
+    limit=1 if spec=='evoker' else 3
+    return {'type':'familiar' if spec=='evoker' else 'morphs','selections':picked[:limit]}
 
 def main():
     builds=json.loads(BUILDS.read_text(encoding='utf-8'))
