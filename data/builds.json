@@ -142,5 +142,89 @@
     "status": "approved",
     "updated": "2026-10-05",
     "notes": ""
+  },
+  {
+    "id": "heal-scrapper",
+    "profession": "engineer",
+    "category": "support",
+    "name": "Heal Scrapper",
+    "specialization": "Scrapper",
+    "description": "Heal Scrapper is a Guild Wars 2 WvW Support build for Engineer, focused on providing healing and support.",
+    "gw2skills": "https://gw2skills.net/editor/?PegAUVlNweYOMPWJe2SntUA-DWJYjRVfhkUgkZFUda471hQEg9zbp9NLA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "support-vindicator",
+    "profession": "revenant",
+    "category": "support",
+    "name": "Support Vindicator",
+    "specialization": "Vindicator",
+    "description": "Support Vindicator is a Guild Wars 2 WvW Support build for Revenant, focused on providing utility and control.",
+    "gw2skills": "",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "power-untamed",
+    "profession": "ranger",
+    "category": "damage",
+    "name": "Power Untamed",
+    "specialization": "Untamed",
+    "description": "Power Untamed is a Guild Wars 2 WvW Damage build for Ranger, focused on dealing high damage with nature-based abilities.",
+    "gw2skills": "https://gw2skills.net/editor/?POgEQTUWKTl1y0Yu4IroH/Kx2XB-DWZYBR1IG8cYlRdVVFpq+/BCQI/to/ZEA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "support-paragon",
+    "profession": "warrior",
+    "category": "support",
+    "name": "Support Paragon",
+    "specialization": "Paragon",
+    "description": "Support Paragon is a Guild Wars 2 WvW Support build for Warrior, focused on providing utility and control.",
+    "gw2skills": "https://gw2skills.net/editor/?PKwEYiNssXGMTm9xIx03yc6B-DWJYjRNfhEUIUXBkeGo7rhQEg9wr5BXaAA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "power-reaper",
+    "profession": "necromancer",
+    "category": "damage",
+    "name": "Power Reaper",
+    "specialization": "Reaper",
+    "description": "Power Reaper is a Guild Wars 2 WvW Damage build for Necromancer, focused on dealing high damage with devastating attacks.",
+    "gw2skills": "https://gw2skills.net/editor/?PSxAc2FlJwWYHMEWJOqXlNbA-DWZYBRXIG8cYFSTRRdJQFlgl3CCQA7h3i+LYAA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "support-chronomancer",
+    "profession": "mesmer",
+    "category": "support",
+    "name": "Support Chronomancer",
+    "specialization": "Chronomancer",
+    "description": "Support Chronomancer is a Guild Wars 2 WvW Support build for Mesmer, focused on providing utility and control.",
+    "gw2skills": "https://gw2skills.net/editor/?PiwAw6RlZwsYNsM2Je0TetWA-DWJYjRHfZkZKUdFo7rhTIg8sHmmHcpBA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "power-scrouge",
+    "profession": "necromancer",
+    "category": "damage",
+    "name": "Power Scrouge",
+    "specialization": "Scrouge",
+    "description": "Power Scrouge is a Guild Wars 2 WvW Damage build for Necromancer, focused on dealing high damage with devastating attacks.",
+    "gw2skills": "https://gw2skills.net/editor/?PSwAEd3lNwOYIsHmJO8XnvaA-DWRYiR9jO4CppIouUNziy23FBIg/W0/MCA-w",
+    "status": "approved",
+    "updated": "2026-10-05",
+    "notes": ""
   }
 ]
