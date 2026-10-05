@@ -9,6 +9,7 @@ BUILDS=ROOT/'data'/'builds.json'
 OUT=ROOT/'data'/'gw2-build-codes.json'
 ITEM_CACHE=ROOT/'data'/'gw2-item-cache.json'
 ITEM_ASSETS=ROOT/'assets'/'gw2'/'items'
+MECH_DEBUG=ROOT/'data'/'gw2-mechanics-debug.json'
 UA='TEL-Builds/3.0 (+https://github.com/PiixelDesu/tel-builds)'
 B64=re.compile(r'(?<![A-Za-z0-9+/_-])([A-Za-z0-9+/_-]{36,}={0,2})(?![A-Za-z0-9+/_-])')
 BRACKETED=re.compile(r'\[\s*&\s*([A-Za-z0-9+/_=-]{20,})\s*\]')
@@ -410,7 +411,7 @@ def main():
     builds=json.loads(BUILDS.read_text(encoding='utf-8'))
     try: old=json.loads(OUT.read_text(encoding='utf-8'))
     except Exception: old={}
-    result={}; failures=[]; dbcache={}
+    result={}; failures=[]; dbcache={}; mech_debug={}
     for b in builds:
         bid=b.get('id'); url=b.get('gw2skills','')
         if not bid or 'gw2skills.net' not in url.lower():continue
@@ -425,6 +426,27 @@ def main():
                 if eq: entry['equipment']=eq
                 mechanics=specialization_mechanics_from(preload,dbcache[dbid],b.get('specialization',''))
                 if mechanics: entry['mechanics']=mechanics
+                # Temporary, deliberately scoped diagnostic for GW2Skills v9 mechanics.
+                # Captures only decoded preload structure/scalars and relevant DB table
+                # schemas; no HTML, cookies, tokens, or unrelated build data.
+                spec=str(b.get('specialization','')).strip().lower()
+                if spec in ('evoker','amalgam'):
+                    def compact(v, depth=0):
+                        if depth > 5: return '<depth>'
+                        if isinstance(v,dict): return {str(k):compact(x,depth+1) for k,x in v.items()}
+                        if isinstance(v,list): return [compact(x,depth+1) for x in v[:40]]
+                        if isinstance(v,(str,int,float,bool)) or v is None: return v
+                        return str(v)
+                    db=dbcache[dbid]
+                    hints={}
+                    for tn,t in db.items():
+                        if not isinstance(t,dict): continue
+                        desc=t.get('desc') or []
+                        sample=t.get('rows') or []
+                        blob=(' '.join(map(str,desc))+' '+str(sample[:8])).lower()
+                        if any(q in blob for q in ('familiar','morph','evoker','amalgam','protocol')):
+                            hints[tn]={'desc':desc,'rows':sample[:20]}
+                    mech_debug[bid]={'specialization':spec,'quicklink':normalize_url(url).split('?',1)[-1], 'preload':compact(preload), 'db_tables':compact(hints)}
             result[bid]=entry
             print(f"OK {bid}: build + {'equipment' if entry.get('equipment') else 'no equipment'}")
         except Exception as e:
@@ -439,6 +461,8 @@ def main():
     for entry in result.values():
         if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    MECH_DEBUG.write_text(json.dumps(mech_debug,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    print(f'Mechanic debug snapshot: {MECH_DEBUG.relative_to(ROOT)} ({len(mech_debug)} build(s))')
     if failures:
         print('\nGW2Skills sync failed:'); [print(' -',x) for x in failures]; raise SystemExit(1)
     print(f'\nSynced {len(result)} GW2Skills builds.')
