@@ -418,13 +418,17 @@ def main():
             doc=fetch(url); preload,dbid=extract_preload(doc)
             code=as_build_code((preload or {}).get('chatlink','')) or extract_code(doc)
             if not code: raise RuntimeError(f'no valid build-template payload found in {len(doc)} bytes')
-            entry={'chat_code':code,'source':url}
+            entry={'chat_code':code,'source':url,'sync_schema':4}
             if preload and dbid:
                 if dbid not in dbcache: dbcache[dbid]=json.loads(fetch_url(f'https://en.gw2skills.net/ajax/db/en.{dbid}.json','application/json'))
                 eq=equipment_from(preload,dbcache[dbid],b.get('profession',''))
                 if eq: entry['equipment']=eq
                 mechanics=specialization_mechanics_from(preload,dbcache[dbid],b.get('specialization',''))
-                if mechanics: entry['mechanics']=mechanics
+                if mechanics:
+                    entry['mechanics']=mechanics
+                    print(f"MECHANIC {bid}: {mechanics.get('type')} -> {[x.get('name') for x in mechanics.get('selections',[])]}")
+                elif str(b.get('specialization','')).strip().lower() in ('evoker','amalgam'):
+                    print(f"WARN MECHANIC {bid}: no GW2Skills mechanic selection decoded")
             result[bid]=entry
             print(f"OK {bid}: build + {'equipment' if entry.get('equipment') else 'no equipment'}")
         except Exception as e:
