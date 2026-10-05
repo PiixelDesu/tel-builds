@@ -1077,5 +1077,199 @@
       "type": "Food"
     },
     "local_icon": "assets/gw2/items/99785.png"
+  },
+  "Superior Rune of the Golemancer": {
+    "id": 24785,
+    "name": "Superior Rune of the Golemancer",
+    "icon": "https://render.guildwars2.com/file/EB4F765E36EC9CF57526789A3EAB6702110D0949/220705.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Ferocity",
+        "+35 Precision",
+        "+50 Ferocity",
+        "+65 Precision",
+        "+100 Ferocity",
+        "+125 Ferocity"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Golemancer"
+    },
+    "local_icon": "assets/gw2/items/24785.png"
+  },
+  "Superior Rune of the Ranger": {
+    "id": 24815,
+    "name": "Superior Rune of the Ranger",
+    "icon": "https://render.guildwars2.com/file/74190770191950B5CD9439B93B487816959E9D3B/220729.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Precision",
+        "+35 Ferocity",
+        "+50 Precision",
+        "+65 Ferocity",
+        "+100 Precision",
+        "+125 Precision"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Ranger"
+    },
+    "local_icon": "assets/gw2/items/24815.png"
+  },
+  "Precise WvW Infusion": {
+    "id": 43255,
+    "name": "Precise WvW Infusion",
+    "icon": "https://render.guildwars2.com/file/A95E4CE2CF099967CA2CED9329C031D2709F62EB/587076.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "ShortBow",
+        "HeavyArmor",
+        "LightArmor",
+        "Dagger",
+        "MediumArmor",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Trinket",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [
+        "Infusion"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 707,
+        "buff": {
+          "skill_id": 19064,
+          "description": "+5 Precision\n+1% Damage to Guards, Lords, and Supervisors"
+        },
+        "attributes": [
+          {
+            "attribute": "Precision",
+            "modifier": 5
+          }
+        ]
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/43255.png"
+  },
+  "Superior Sigil of Concentration": {
+    "id": 72339,
+    "name": "Superior Sigil of Concentration",
+    "icon": "https://render.guildwars2.com/file/C501D2CCF95A7B59F15EEDEF9C7D42C2DECE48E7/1201533.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1146,
+        "buff": {
+          "skill_id": 33913,
+          "description": "+10% Boon Duration"
+        },
+        "attributes": []
+      },
+      "suffix": "of Concentration"
+    },
+    "local_icon": "assets/gw2/items/72339.png"
+  },
+  "Writ of Masterful Strength": {
+    "id": 73191,
+    "name": "Writ of Masterful Strength",
+    "icon": "https://render.guildwars2.com/file/01B49D4EFF3BB71D27A7B0649F0FF3E277E4D6C7/1201925.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain 200 Power When Health above 90%\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/73191.png"
+  },
+  "Relic of Fireworks": {
+    "id": 100262,
+    "name": "Relic of Fireworks",
+    "icon": "https://render.guildwars2.com/file/2999CCF7C94267B2EE3DDA7459050864622927C9/3122349.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100262.png"
+  },
+  "Relic of the Deadeye": {
+    "id": 100924,
+    "name": "Relic of the Deadeye",
+    "icon": "https://render.guildwars2.com/file/060151B961CE56CB9546E7B6AF33B0A318426372/3122342.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100924.png"
+  },
+  "Relic of Mistburn": {
+    "id": 104994,
+    "name": "Relic of Mistburn",
+    "icon": "https://render.guildwars2.com/file/FFCB62CF19806066D21C0EA1BA43986C0DA2B6F3/3629399.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104994.png"
   }
 }
