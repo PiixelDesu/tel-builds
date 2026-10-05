@@ -1271,5 +1271,55 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/104994.png"
+  },
+  "Superior Sigil of Stamina": {
+    "id": 24592,
+    "name": "Superior Sigil of Stamina",
+    "icon": "https://render.guildwars2.com/file/970DD319EC0E7455E941CD5DA840C10EA6EF160E/220669.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 240,
+        "buff": {
+          "skill_id": 9414,
+          "description": "Your endurance is refilled each time you kill a foe."
+        },
+        "attributes": []
+      },
+      "suffix": "of Stamina"
+    },
+    "local_icon": "assets/gw2/items/24592.png"
+  },
+  "Relic of Isgarren": {
+    "id": 99997,
+    "name": "Relic of Isgarren",
+    "icon": "https://render.guildwars2.com/file/5FB808F04E427650A84031E46B632DC292A3583F/3122354.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/99997.png"
   }
 }
