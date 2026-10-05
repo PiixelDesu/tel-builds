@@ -10,11 +10,15 @@
    const raw=code.replace(/^\[&|\]$/g,"");
    const bytes=Uint8Array.from(atob(raw.replace(/-/g,"+").replace(/_/g,"/")),c=>c.charCodeAt(0));
    if(bytes[0]!==13)throw new Error("Not a GW2 build-template code");
-   const out={profession:profByCode[bytes[1]]||"Unknown",specs:[],palettes:[],weapons:[]};
+   const out={profession:profByCode[bytes[1]]||"Unknown",specs:[],palettes:[],weapons:[],pets:[],legends:[]};
    let o=2;
    for(let i=0;i<3;i++){const id=bytes[o++],bits=bytes[o++];out.specs.push({id,choices:[bits&3,(bits>>2)&3,(bits>>4)&3]})}
    for(let i=0;i<10;i++){out.palettes.push(bytes[o]|(bytes[o+1]<<8));o+=2}
-   o+=16; // Ranger/Revenant profession-specific block; overview does not need it.
+   // The first four bytes of the 16-byte Ranger profession block are pet IDs:
+   // terrestrial 1/2, then aquatic 1/2. Other professions use this block differently.
+   if(out.profession==="Ranger") out.pets=[bytes[o],bytes[o+1],bytes[o+2],bytes[o+3]];
+   if(out.profession==="Revenant") out.legends=[bytes[o],bytes[o+1],bytes[o+2],bytes[o+3]];
+   o+=16;
    if(o<bytes.length){const n=Math.min(bytes[o++]||0,8);for(let i=0;i<n&&o+1<bytes.length;i++){out.weapons.push(bytes[o]|(bytes[o+1]<<8));o+=2}}
    return out;
  }
@@ -33,14 +37,26 @@
      const traitIds=[]; d.specs.forEach(s=>{const sp=specMap[s.id];if(sp)s.choices.forEach((c,t)=>{const id=traitId(sp,t,c);if(id)traitIds.push(id)})});
      const paletteMap=new Map((prof.skills_by_palette||[]).map(([p,id])=>[p,id]));
      const terrestrial=[d.palettes[0],d.palettes[2],d.palettes[4],d.palettes[6],d.palettes[8]].map(x=>paletteMap.get(x)).filter(Boolean);
-     const [traits,skills]=await Promise.all([
+     const petIds=d.profession==="Ranger"?[...new Set(d.pets.filter(Boolean))]:[];
+     const [traits,skills,pets]=await Promise.all([
        traitIds.length?api(`traits?ids=${traitIds.join(",")}`):[],
-       terrestrial.length?api(`skills?ids=${terrestrial.join(",")}`):[]
+       terrestrial.length?api(`skills?ids=${terrestrial.join(",")}`):[],
+       petIds.length?api(`pets?ids=${petIds.join(",")}`):[]
      ]);
-     const tm=Object.fromEntries(traits.map(x=>[x.id,x])), sm=Object.fromEntries(skills.map(x=>[x.id,x]));
+     const tm=Object.fromEntries(traits.map(x=>[x.id,x])), sm=Object.fromEntries(skills.map(x=>[x.id,x])), pm=Object.fromEntries(pets.map(x=>[x.id,x]));
      const rows=d.specs.map(s=>{const sp=specMap[s.id];if(!sp)return "";return `<div class="trait-line"><div class="trait-line-name"><img src="${esc(sp.icon)}" alt=""><span>${esc(sp.name)}</span></div><div class="trait-picks">${s.choices.map((c,t)=>{const tr=tm[traitId(sp,t,c)];return tr?`<div class="trait-pick" title="${esc(tr.name)}"><img src="${esc(tr.icon)}" alt=""><span>${esc(tr.name)}</span></div>`:`<div class="trait-pick empty">—</div>`}).join("")}</div></div>`}).join("");
      const skillSlots=[d.palettes[0],d.palettes[2],d.palettes[4],d.palettes[6],d.palettes[8]].map(p=>sm[paletteMap.get(p)]).filter(Boolean);
      const skillHtml=skillSlots.map((s,i)=>`<div class="skill-pick"><img src="${esc(s.icon)}" alt=""><span>${esc(s.name)}</span><small>${i===0?"Heal":i===4?"Elite":"Utility"}</small></div>`).join("");
+     const petCard=(id,label)=>{const pet=pm[id];if(!pet)return "";return `<article class="pet-card"><img src="${esc(pet.icon||"")}" alt=""><div><span>${esc(label)}</span><strong>${esc(pet.name)}</strong></div></article>`};
+     const petRows=d.profession==="Ranger"?[{title:"Terrestrial pets",ids:d.pets.slice(0,2)},{title:"Aquatic pets",ids:d.pets.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.map((id,i)=>petCard(id,`Pet ${i+1}`)).filter(Boolean)})).filter(row=>row.cards.length):[];
+     const petsHtml=petRows.length?`<section class="overview-block pet-overview"><h3>Pets</h3><div class="pet-rows">${petRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
+     const legendNames={1:"Legendary Dragon Stance",2:"Legendary Assassin Stance",3:"Legendary Dwarf Stance",4:"Legendary Demon Stance",5:"Legendary Renegade Stance",6:"Legendary Centaur Stance",7:"Legendary Alliance Stance",8:"Legendary Entity Stance"};
+     const legendRows=d.profession==="Revenant"?[{title:"Terrestrial legends",ids:d.legends.slice(0,2)},{title:"Aquatic legends",ids:d.legends.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.filter(Boolean).map((id,i)=>`<article class="pet-card mechanic-card"><div><span>Legend ${i+1}</span><strong>${esc(legendNames[id]||`Legend ${id}`)}</strong></div></article>`)})).filter(row=>row.cards.length):[];
+     const legendsHtml=legendRows.length?`<section class="overview-block pet-overview"><h3>Legends</h3><div class="pet-rows">${legendRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
+     const mech=entry.mechanics||null;
+     const mechTitle=mech?.type==="familiar"?"Familiar":mech?.type==="morphs"?"Morph skills":"";
+     const mechanicsHtml=mechTitle&&mech?.selections?.length?`<section class="overview-block pet-overview"><h3>${esc(mechTitle)}</h3><div class="pet-grid mechanic-grid">${mech.selections.map((x,i)=>`<article class="pet-card mechanic-card"><div><span>${mech.type==="morphs"?`Morph ${i+1}`:"Selected familiar"}</span><strong>${esc(x.name||x.id)}</strong></div></article>`).join("")}</div></section>`:"";
+
      const eq=entry.equipment||{};
      // Weapon identity comes from GW2Skills equipment data. Do not infer it from
      // the official build-template chat code: that code is not authoritative for gear.
@@ -54,7 +70,7 @@
      const piece=(x,kind="gear")=>{const type=x.weaponType||((kind==="weapon")?"Weapon type unavailable":"");return `<article class="gear-card ${kind==="weapon"?"weapon-card":""}"><div class="gear-card-main">${gearIcon(x.slot,type||x.stat,kind,x.item)}<div class="gear-copy"><span class="gear-slot">${esc(x.slot)}</span>${type?`<strong class="weapon-type">${esc(type)}</strong>`:""}<strong>${esc(x.stat||"No stat selected")}</strong></div></div>${x.rune?upgradeChip(x.rune,"Rune"):""}${(x.sigils||[]).map(v=>upgradeChip(v,"Sigil")).join("")}${(x.infusions||[]).length?`<div class="gear-infusions"><span>Infusions</span><div class="infusion-icons">${x.infusions.map(v=>upgradeChip(v,"Infusion")).join("")}</div></div>`:""}</article>`};
      const extra=(label,value,kind)=>{if(!value)return "";const name=typeof value==="string"?value:value.name;const meta=typeof value==="object"?value:null;return `<article class="gear-extra">${gearIcon(label,name,kind,meta)}<div><span>${esc(label)}</span><strong>${esc(name)}</strong></div></article>`};
      const equipmentHtml=(eq.armor?.length||eq.weapons?.length||eq.trinkets?.length||eq.relic||eq.food||eq.utility||eq.enrichment)?`<section class="overview-block equipment-overview"><div class="equipment-heading"><div><span class="eyebrow">Recommended setup</span><h3>Equipment</h3></div><span>Synced from GW2Skills</span></div>${eq.armor?.length?`<div class="gear-section"><h4>Armor</h4><div class="equipment-grid armor-grid">${eq.armor.map(x=>piece(x,"armor")).join("")}</div></div>`:""}${eq.trinkets?.length?`<div class="gear-section"><h4>Trinkets</h4><div class="equipment-grid trinket-grid">${eq.trinkets.map(x=>piece(x,"trinket")).join("")}</div></div>`:""}${eq.weapons?.length?(()=>{const groups=[{title:"Weapon set 1",items:eq.weapons.filter(x=>/^Weapon set 1\b/i.test(x.slot||""))},{title:"Weapon set 2",items:eq.weapons.filter(x=>/^Weapon set 2\b/i.test(x.slot||""))},{title:"Aquatic weapons",items:eq.weapons.filter(x=>/^Aquatic\b/i.test(x.slot||""))}].filter(g=>g.items.length);return `<div class="gear-section weapon-section"><h4>Weapon sets</h4><div class="weapon-rows">${groups.map(g=>`<div class="weapon-row"><div class="weapon-row-label">${esc(g.title)}</div><div class="equipment-grid weapon-grid">${g.items.map(x=>piece(x,"weapon")).join("")}</div></div>`).join("")}</div></div>`})():""}${(eq.relic||eq.enrichment||eq.food||eq.utility)?`<div class="gear-section"><h4>Relic & consumables</h4><div class="equipment-extras">${extra("Relic",eq.relic,"relic")}${extra("Enrichment",eq.enrichment,"enrichment")}${extra("Food",eq.food,"food")}${extra("Utility",eq.utility,"utility")}</div></div>`:""}</section>`:"";
-     target.innerHTML=`<div class="overview-head"><div><span class="eyebrow">Decoded from GW2Skills</span><h2>Build overview</h2></div><span class="overview-source">Official GW2 template data</span></div><section class="overview-block"><h3>Specializations & traits</h3><div class="trait-lines">${rows}</div></section><section class="overview-block"><h3>Skills</h3><div class="skill-bar">${skillHtml||'<span class="muted">No terrestrial skills resolved.</span>'}</div></section>${equipmentHtml}`;
+     target.innerHTML=`<div class="overview-head"><div><span class="eyebrow">Decoded from GW2Skills</span><h2>Build overview</h2></div><span class="overview-source">Official GW2 template data</span></div><section class="overview-block"><h3>Specializations & traits</h3><div class="trait-lines">${rows}</div></section><section class="overview-block"><h3>Skills</h3><div class="skill-bar">${skillHtml||'<span class="muted">No terrestrial skills resolved.</span>'}</div></section>${petsHtml}${legendsHtml}${mechanicsHtml}${equipmentHtml}`;
    }catch(e){console.warn(e);target.innerHTML=`<div class="overview-state"><strong>Build overview unavailable</strong><span>${esc(e.message)}. You can still open the authoritative build on GW2Skills.</span></div>`}
  }
  try{

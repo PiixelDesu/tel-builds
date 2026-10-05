@@ -323,6 +323,68 @@ def enrich_equipment(eq,items):
         if out.get(k):out[k]=obj(out[k])
     return out
 
+
+def specialization_mechanics_from(preload, db, specialization=""):
+    """Extract GW2Skills-only elite-spec selections (VoE quicklink metadata).
+
+    Unlike Ranger pets/Revenant legends these are not part of the normal ANet
+    build-template payload. GW2Skills stores them in its own quicklink preload.
+    Keep the extraction deliberately table-scoped so numeric IDs can never be
+    confused across unrelated DB tables.
+    """
+    spec=str(specialization or '').strip().lower()
+    if spec not in ('evoker','amalgam') or not isinstance(preload,dict): return None
+    wanted=('familiar',) if spec=='evoker' else ('morph','morphs')
+
+    def find_values(obj):
+        hits=[]
+        if isinstance(obj,dict):
+            for k,v in obj.items():
+                kl=str(k).lower()
+                if any(w in kl for w in wanted): hits.append((kl,v))
+                if isinstance(v,(dict,list)): hits.extend(find_values(v))
+        elif isinstance(obj,list):
+            for v in obj:
+                if isinstance(v,(dict,list)): hits.extend(find_values(v))
+        return hits
+
+    def flatten(v):
+        if isinstance(v,(str,int,float)) and not isinstance(v,bool): return [v]
+        if isinstance(v,list):
+            out=[]
+            for x in v: out.extend(flatten(x))
+            return out
+        if isinstance(v,dict):
+            out=[]
+            for k in ('id','value','skill','morph','familiar','key'):
+                if k in v: out.extend(flatten(v[k]))
+            return out
+        return []
+
+    raw=[]
+    for _,v in find_values(preload): raw.extend(flatten(v))
+    # stable de-dupe, ignoring empty/sentinel selections
+    vals=[]
+    for v in raw:
+        if v in (None,'',0,'0',-1,'-1') or v in vals: continue
+        vals.append(v)
+
+    table_names=[k for k in db.keys() if any(w in str(k).lower() for w in wanted)]
+    def resolve(v):
+        for tn in table_names:
+            table=db.get(tn) or {}; desc=table.get('desc') or []
+            if 'id' not in desc: continue
+            ii=desc.index('id'); ni=desc.index('name') if 'name' in desc else -1
+            ki=desc.index('key') if 'key' in desc else -1
+            for row in table.get('rows') or []:
+                if not isinstance(row,list) or len(row)<=ii: continue
+                if str(row[ii])==str(v):
+                    name=(row[ni] if ni>=0 and len(row)>ni else None) or (row[ki] if ki>=0 and len(row)>ki else None)
+                    return {'id':v,'name':str(name).replace('_',' ').title() if name else str(v),'source_table':tn}
+        return {'id':v,'name':str(v)}
+    if not vals:return None
+    return {'type':'familiar' if spec=='evoker' else 'morphs','selections':[resolve(v) for v in vals[:4]]}
+
 def main():
     builds=json.loads(BUILDS.read_text(encoding='utf-8'))
     try: old=json.loads(OUT.read_text(encoding='utf-8'))
@@ -340,6 +402,8 @@ def main():
                 if dbid not in dbcache: dbcache[dbid]=json.loads(fetch_url(f'https://en.gw2skills.net/ajax/db/en.{dbid}.json','application/json'))
                 eq=equipment_from(preload,dbcache[dbid],b.get('profession',''))
                 if eq: entry['equipment']=eq
+                mechanics=specialization_mechanics_from(preload,dbcache[dbid],b.get('specialization',''))
+                if mechanics: entry['mechanics']=mechanics
             result[bid]=entry
             print(f"OK {bid}: build + {'equipment' if entry.get('equipment') else 'no equipment'}")
         except Exception as e:

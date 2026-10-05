@@ -457,3 +457,17 @@ body[data-page="build"] .build-actions{margin:18px 0 36px}
 .weapon-row .weapon-grid{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
 @media(max-width:760px){.weapon-row{grid-template-columns:1fr;gap:6px}.weapon-row-label{padding-top:0}.weapon-row .weapon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:430px){.weapon-row .weapon-grid{grid-template-columns:1fr}}
+
+
+/* Ranger pet selections decoded from the official build template */
+.pet-rows{display:grid;gap:12px}
+.pet-row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:12px;align-items:start}
+.pet-row-label{padding-top:11px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;line-height:1.35}
+.pet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.pet-card{display:flex;align-items:center;gap:11px;min-width:0;padding:10px;border:1px solid rgba(216,189,120,.24);border-radius:9px;background:linear-gradient(135deg,rgba(216,189,120,.06),rgba(10,9,8,.30))}
+.pet-card img{width:54px;height:54px;flex:0 0 54px;object-fit:cover;border:1px solid rgba(234,211,145,.34);border-radius:7px;background:#111}
+.pet-card div{display:grid;gap:3px;min-width:0}.pet-card span{color:var(--gold);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.pet-card strong{font-family:Georgia,serif;color:var(--ivory);font-size:16px;line-height:1.1;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:760px){.pet-row{grid-template-columns:1fr;gap:6px}.pet-row-label{padding-top:0}}
+@media(max-width:430px){.pet-grid{grid-template-columns:1fr}.pet-card img{width:48px;height:48px;flex-basis:48px}}
+/* Profession mechanic selections: Revenant legends, Evoker familiar, Amalgam morphs */
+.mechanic-card{min-height:68px}.mechanic-card>div{padding:3px 2px}.mechanic-grid{max-width:760px}
