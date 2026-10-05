@@ -2,7 +2,6 @@
   "heal-druid": {
     "chat_code": "[&DQQeFxkeBSmhAAAAvAAAANUSAAC7AAAAlwEAAAVCAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?POwEYKNssCGCbhFyIxyVyrlWy9uC-DWJYjR9fhEUSkZIUdF471hQEg9wbp9NLA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -340,7 +339,6 @@
   "support-firebrand": {
     "chat_code": "[&DQENPS47PhpLFwAAehYAAEsBAAA2AQAAGBYAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PWwAYl7lRweYcMMmJe6X7PNA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -734,7 +732,6 @@
   "power-ritualist": {
     "chat_code": "[&DQg1PjInTD+HHQAAgQAAAHMBAABVHQAAfR0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://en.gw2skills.net/editor/?PSwAEd3l5yOYIsY2MO8XnzfA-DWRYiR9jO4CppIouUNziy2zCBIg/W0/MCA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -1120,7 +1117,6 @@
   "power-boonstrip-necro": {
     "chat_code": "[&DQg1Pic6MicoDwAAdgEAAIEAAABzAQAAkgAAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://en.gw2skills.net/editor/?PSABc2tzlRwwYHMEGJO8L6rTA-DSRYiRPjO4DpORQmShcWA26sQACo3i+nRAA-e",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -1417,7 +1413,6 @@
   "power-dragonhunter": {
     "chat_code": "[&DQEqOhA+GysDAQAAihIAAP4SAAA2AQAANwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PWlAMFlFwcYNMM2IO0L+tVA-DWJYzRFfhUXB0ZEURKY7ZhDEwe4to/MAA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -1724,7 +1719,6 @@
   "support-troubadour": {
     "chat_code": "[&DQctOhcaSTqJHQAAhQEAAIQBAACEHQAAbR0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PixAw6Rl9ysYZMYGNe0TaTdA-DWJYjR3fhEUIkZCUdVp7FhQEm/aewlGA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -2098,7 +2092,6 @@
   "support-specter": {
     "chat_code": "[&DQUUFiwXRz4VGwAAuwEAAAgbAAAHGwAAERsAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?Pa1AsqVlhyCZpsVWLesWXRfA-DWJYjRzfhkZG0bIUdR571hSEgN/bp9NLA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -2465,7 +2458,6 @@
   "power-amalgam": {
     "chat_code": "[&DQMGOyYfSx0qDwAAlQEAAJMBAABaHQAAex0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PegAIJlJw8YdMb2NO2LfzOFo90rHA-DWhYBRFCeLoBxQ5hMHyIiBpZRUPEqkJSPLEgA2DvmqMDAA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -2782,7 +2774,6 @@
   "support-luminary": {
     "chat_code": "[&DQENPi46URVhHQAAeB0AADYBAABXHQAANwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PWwAYl7l5yiZYMZ2Ie8X6zKA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -3176,7 +3167,6 @@
   "power-evoker": {
     "chat_code": "[&DQYfHSkbUBViHQAATQEAAHEdAAC+AQAAah0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -3480,7 +3470,6 @@
   "power-boonstrip-spellbreaker": {
     "chat_code": "[&DQIEHzM6PRUpDwAAsgAAACcWAACpAAAAnRYAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PKhEYiW2ATkJxmYn44bp/qA-DWRYBBLGVvDpJRQdKqcmqS5sQAC4vF9PjAA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
@@ -3845,7 +3834,6 @@
   "heal-evoker": {
     "chat_code": "[&DQYRGyUXUD5iHQAAHQEAAI8AAACLHQAAah0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://en.gw2skills.net/editor/?PGhAYZlBzsYYMZWNm2WXTfluBAA-DWJYjRFfhkURkaEUdK471hQEg9wbp%2FNLA-w",
-    "sync_schema": 4,
     "equipment": {
       "armor": [
         {
