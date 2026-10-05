@@ -1,35 +1,52 @@
 
 const TEL={
- async json(path){const r=await fetch(path);if(!r.ok)throw new Error(`Could not load ${path}`);return r.json();},
+ async json(path){
+   const r=await fetch(new URL(path, document.baseURI));
+   if(!r.ok) throw new Error(`${path} returned HTTP ${r.status}`);
+   return r.json();
+ },
  qs(name){return new URLSearchParams(location.search).get(name);},
  tags(items=[]){return items.map(x=>`<span class="tag">${x}</span>`).join("")},
- esc(s=""){const d=document.createElement("div");d.textContent=s;return d.innerHTML();}
+ esc(s=""){const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML;}
 };
 document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYear());
 
 (async function(){
  if(document.body.dataset.page!=="home")return;
- const [professions,builds]=await Promise.all([TEL.json("./data/professions.json"),TEL.json("./data/builds.json")]);
+ const matrix=document.querySelector("#build-matrix");
+ try{
+   const [professions,builds]=await Promise.all([
+     TEL.json("data/professions.json"),
+     TEL.json("data/builds.json")
+   ]);
 
- const cell=(p,cat)=>{
-   const list=builds.filter(x=>x.profession===p.id&&x.category===cat);
-   if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
-   return `<div class="matrix-cell matrix-list">${list.map(b=>`
-     <a class="matrix-build-item" href="./build.html?id=${encodeURIComponent(b.id)}">
-       <strong>${TEL.esc(b.name)}</strong>
-       <small>${TEL.esc(b.specialization||"")}</small>
-     </a>`).join("")}</div>`;
- };
+   const cell=(p,cat)=>{
+     const list=builds.filter(x=>x.profession===p.id&&x.category===cat);
+     if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
+     return `<div class="matrix-cell matrix-list">${list.map(b=>`
+       <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
+         <strong>${TEL.esc(b.name)}</strong>
+         <small>${TEL.esc(b.specialization||"")}</small>
+       </a>`).join("")}</div>`;
+   };
 
- document.querySelector("#build-matrix").innerHTML=`
-   <div class="matrix-head profession-col">Profession</div>
-   <div class="matrix-head">Damage</div>
-   <div class="matrix-head">Support</div>
-   <div class="matrix-head">Additional</div>
-   ${professions.map(p=>`
-     <div class="matrix-profession" style="--profession:${p.color}">
-       <div class="profession-glyph">${p.glyph}</div><strong>${p.name}</strong>
-     </div>
-     ${cell(p,"damage")}${cell(p,"support")}${cell(p,"additional")}
-   `).join("")}`;
-})().catch(console.error);
+   matrix.innerHTML=`
+     <div class="matrix-head profession-col">Profession</div>
+     <div class="matrix-head">Damage</div>
+     <div class="matrix-head">Support</div>
+     <div class="matrix-head">Additional</div>
+     ${professions.map(p=>`
+       <div class="matrix-profession" style="--profession:${p.color}">
+         <div class="profession-glyph">${TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
+       </div>
+       ${cell(p,"damage")}${cell(p,"support")}${cell(p,"additional")}
+     `).join("")}`;
+ }catch(err){
+   console.error(err);
+   matrix.innerHTML=`<div class="data-error">
+     <strong>Build data could not be loaded.</strong>
+     <span>${TEL.esc(err.message)}</span>
+     <small>Make sure the entire data folder was uploaded to GitHub Pages.</small>
+   </div>`;
+ }
+})();

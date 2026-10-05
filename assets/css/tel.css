@@ -71,3 +71,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 .matrix-build-item strong{font-family:Georgia,serif;font-size:16px;font-weight:500}
 .matrix-build-item small{color:var(--gold);text-transform:uppercase;letter-spacing:.09em;margin-top:2px}
 .button.disabled{opacity:.45;cursor:not-allowed;color:var(--muted)}
+
+.data-error{grid-column:1/-1;padding:28px;display:flex;flex-direction:column;gap:8px;color:var(--muted)}
+.data-error strong{color:var(--ivory);font-family:Georgia,serif;font-size:20px}
+.data-error .button{align-self:flex-start;margin-top:12px}
