@@ -131,7 +131,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -145,7 +144,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -183,7 +183,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -197,7 +196,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Mace"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -210,7 +210,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -218,7 +217,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Warhorn"
         },
         {
           "slot": "Aquatic 1",
@@ -230,13 +230,11 @@
               "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
-          ],
-          "weaponType": "Greatsword"
+          ]
         },
         {
           "slot": "Aquatic 2",
-          "stat": "Minstrel",
-          "weaponType": "Greatsword"
+          "stat": "Minstrel"
         }
       ],
       "trinkets": [
@@ -487,7 +485,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -501,7 +498,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -539,7 +537,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -553,7 +550,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Mace"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -566,7 +564,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -574,7 +571,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Shield"
         },
         {
           "slot": "Aquatic 1",
@@ -593,7 +591,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -626,7 +623,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -899,7 +895,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -913,7 +908,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Greatsword"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -951,7 +947,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -965,7 +960,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Axe"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -978,7 +974,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -986,7 +981,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Focus"
         },
         {
           "slot": "Aquatic 1",
@@ -1005,7 +1001,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -1038,7 +1033,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -1303,7 +1297,7 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword"
+          "weaponType": "Axe"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -1316,7 +1310,7 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword"
+          "weaponType": "Focus"
         },
         {
           "slot": "Weapon set 2 · Main hand",
@@ -1335,7 +1329,7 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword"
+          "weaponType": "Scepter"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -1348,7 +1342,7 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword"
+          "weaponType": "Sword"
         }
       ],
       "trinkets": [
@@ -1599,7 +1593,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -1613,7 +1606,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Longbow"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -1651,7 +1645,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -1665,7 +1658,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Greatsword"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -1943,7 +1937,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Concentration WvW Infusion",
@@ -1957,7 +1950,8 @@
               "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Sword"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -1970,7 +1964,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Concentration WvW Infusion",
@@ -1978,7 +1971,8 @@
               "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Shield"
         },
         {
           "slot": "Weapon set 2 · Main hand",
@@ -1997,7 +1991,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Concentration WvW Infusion",
@@ -2011,7 +2004,8 @@
               "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Rifle"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -2043,7 +2037,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Concentration WvW Infusion",
@@ -2070,7 +2063,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Concentration WvW Infusion",
@@ -2335,7 +2327,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -2349,7 +2340,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Scepter"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -2362,7 +2354,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -2370,7 +2361,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Pistol"
         },
         {
           "slot": "Weapon set 2 · Main hand",
@@ -2387,7 +2379,8 @@
               "icon": "assets/gw2/items/67340.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Shortbow"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -2411,7 +2404,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -2438,7 +2430,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -2711,7 +2702,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -2725,7 +2715,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Hammer"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -2763,7 +2754,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -2777,7 +2767,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Hammer"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -3064,7 +3055,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -3078,7 +3068,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -3116,7 +3107,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -3130,7 +3120,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Mace"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -3143,7 +3134,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -3151,7 +3141,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Shield"
         },
         {
           "slot": "Aquatic 1",
@@ -3170,7 +3161,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -3203,7 +3193,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -3476,7 +3465,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -3490,7 +3478,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -3528,7 +3517,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -3542,7 +3530,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -3565,8 +3554,7 @@
         },
         {
           "slot": "Aquatic 1",
-          "stat": "Marauder",
-          "weaponType": "Greatsword"
+          "stat": "Marauder"
         }
       ],
       "trinkets": [
@@ -3817,7 +3805,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -3831,7 +3818,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -3869,7 +3857,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -3883,7 +3870,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -3921,7 +3909,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -3954,7 +3941,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Mighty WvW Infusion",
@@ -4219,7 +4205,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -4233,7 +4218,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 1 · Off hand",
@@ -4271,7 +4257,6 @@
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Greatsword",
           "infusions": [
             {
               "name": "Healing WvW Infusion",
@@ -4285,7 +4270,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Staff"
         },
         {
           "slot": "Weapon set 2 · Off hand",
