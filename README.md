@@ -1,4 +1,5 @@
 # TEL Builds
 
-TEL's static GitHub Pages build site.
+Static GitHub Pages site for **The Emerging Light** WvW build matrix.
+
 
