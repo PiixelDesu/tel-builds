@@ -7,7 +7,34 @@ const TEL={
  },
  qs(name){return new URLSearchParams(location.search).get(name);},
  tags(items=[]){return items.map(x=>`<span class="tag">${x}</span>`).join("")},
- esc(s=""){const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML;}
+ esc(s=""){const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML;},
+ async gw2Icons(){
+   if(this._gw2Icons) return this._gw2Icons;
+   this._gw2Icons=(async()=>{
+     try{
+       const cached=JSON.parse(sessionStorage.getItem("tel-gw2-icons")||"null");
+       if(cached?.professions && cached?.specializations) return cached;
+     }catch(_){}
+     try{
+       const [pr,sr]=await Promise.all([
+         fetch("https://api.guildwars2.com/v2/professions?ids=all"),
+         fetch("https://api.guildwars2.com/v2/specializations?ids=all")
+       ]);
+       if(!pr.ok||!sr.ok) throw new Error("GW2 API unavailable");
+       const [professions,specializations]=await Promise.all([pr.json(),sr.json()]);
+       const icons={professions:{},specializations:{}};
+       professions.forEach(p=>icons.professions[p.name.toLowerCase()]=p.icon_big||p.icon);
+       specializations.forEach(x=>icons.specializations[x.name.toLowerCase()]=x.profession_icon_big||x.profession_icon||x.icon);
+       try{sessionStorage.setItem("tel-gw2-icons",JSON.stringify(icons));}catch(_){}
+       return icons;
+     }catch(e){console.warn("GW2 icons unavailable",e);return {professions:{},specializations:{}};}
+   })();
+   return this._gw2Icons;
+ },
+ iconForBuild(b,icons){
+   const spec=String(b.specialization||"").trim().toLowerCase();
+   return (spec && spec!=="core" ? icons.specializations[spec] : null) || icons.professions[String(b.profession||"").toLowerCase()] || "";
+ }
 };
 document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYear());
 
@@ -15,9 +42,10 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
  if(document.body.dataset.page!=="home")return;
  const matrix=document.querySelector("#build-matrix");
  try{
-   const [professions,builds]=await Promise.all([
+   const [professions,builds,icons]=await Promise.all([
      TEL.json("data/professions.json"),
-     TEL.json("data/builds.json")
+     TEL.json("data/builds.json"),
+     TEL.gw2Icons()
    ]);
 
    const cell=(p,cat)=>{
@@ -25,8 +53,8 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list build-count-${list.length}">${list.map(b=>`
        <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
-         <strong>${TEL.esc(b.name)}</strong>
-         <small>${TEL.esc(b.specialization||"")}</small>
+         ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:``}
+         <span class="build-label"><strong>${TEL.esc(b.name)}</strong><small>${TEL.esc(b.specialization||"")}</small></span>
        </a>`).join("")}</div>`;
    };
 
@@ -36,7 +64,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      <div class="matrix-head">Support</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
-         <div class="profession-glyph">${TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
+         <div class="profession-glyph">${icons.professions[p.id]?`<img src="${TEL.esc(icons.professions[p.id])}" alt="" loading="lazy">`:TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
        </div>
        ${cell(p,"damage")}${cell(p,"support")}
      `).join("")}`;

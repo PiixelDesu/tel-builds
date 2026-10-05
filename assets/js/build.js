@@ -3,9 +3,10 @@
  const view=document.querySelector("#build-view");
  try{
    const id=TEL.qs("id");
-   const [professions,builds]=await Promise.all([
+   const [professions,builds,icons]=await Promise.all([
      TEL.json("data/professions.json"),
-     TEL.json("data/builds.json")
+     TEL.json("data/builds.json"),
+     TEL.gw2Icons()
    ]);
    const b=builds.find(x=>x.id===id);
    if(!b) throw new Error(`Build "${id||""}" was not found in data/builds.json.`);
@@ -19,7 +20,7 @@
 
    view.innerHTML=`
     <div class="build-kicker"><span class="tag">${TEL.esc(p?.name||b.profession)}</span><span class="tag">${TEL.esc(b.specialization||"")}</span><span class="tag">${TEL.esc(b.category)}</span></div>
-    <h1>${TEL.esc(b.name)}</h1>
+    <div class="build-title-row">${TEL.iconForBuild(b,icons)?`<img class="build-title-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="">`:``}<h1>${TEL.esc(b.name)}</h1></div>
     <p class="build-summary">${TEL.esc(b.description||"")}</p>
     <p class="build-meta">${TEL.esc(b.status||"")} ${b.updated?`· Updated ${TEL.esc(b.updated)}`:""}</p>
     <div class="build-actions">${gw2}<a class="button ghost" href="./">Back to matrix</a></div>
