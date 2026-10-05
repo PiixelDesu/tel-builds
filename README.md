@@ -51,6 +51,3 @@ A placeholder looks like:
 
 Replace it with a full object modeled on `guardian-support`.
 
-## Important
-
-This project reproduces the *general information architecture* of a nine-slot WvW build matrix, but the branding, CSS, wording and sample TEL content are original. Do not copy another site's proprietary text or artwork into this repository.
