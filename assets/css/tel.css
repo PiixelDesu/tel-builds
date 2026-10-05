@@ -45,3 +45,22 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 
 /* TEL organized-WvW role layout */
 .slot-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.role-card{min-height:330px;}@media(max-width:680px){.slot-grid{grid-template-columns:1fr;}}
+
+/* v3: WvW-builds-style homepage matrix — rows are professions, columns are TEL roles */
+.matrix-hero{min-height:390px;padding-bottom:45px}
+.matrix-section{padding-top:52px}
+.matrix-wrap{overflow-x:auto;border:1px solid var(--border2);border-radius:14px;background:rgba(24,21,18,.7);box-shadow:var(--shadow)}
+.build-matrix{display:grid;grid-template-columns:190px repeat(3,minmax(235px,1fr));min-width:900px}
+.matrix-head{padding:15px 18px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--border);border-left:1px solid var(--border2);background:#1e1a17}
+.matrix-head.profession-col{border-left:0}
+.matrix-profession{min-height:112px;padding:18px;display:flex;align-items:center;gap:13px;border-bottom:1px solid var(--border2);position:relative}
+.matrix-profession:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--profession)}
+.matrix-profession .profession-glyph{flex:0 0 38px;width:38px;height:38px;font-size:17px;color:var(--profession)}
+.matrix-cell{min-height:112px;padding:16px 18px;border-left:1px solid var(--border2);border-bottom:1px solid var(--border2);display:flex;flex-direction:column;justify-content:center}
+.matrix-build{background:linear-gradient(145deg,rgba(43,37,32,.38),rgba(29,25,22,.15));transition:.16s ease}
+.matrix-build:hover{background:rgba(216,189,120,.065);box-shadow:inset 0 0 0 1px var(--border)}
+.matrix-build strong{font-family:Georgia,serif;font-size:17px;font-weight:500}
+.matrix-build small{color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+.matrix-build span{color:var(--muted);font-size:11px;margin-top:9px}
+.matrix-empty{align-items:center;color:#5f5953;font-family:Georgia,serif;font-size:22px}
+@media(max-width:700px){.matrix-hero{min-height:330px}.matrix-section{padding-top:40px}.build-matrix{grid-template-columns:145px repeat(3,220px);min-width:805px}.matrix-profession,.matrix-cell{min-height:100px}.matrix-profession{padding:12px}.matrix-profession .profession-glyph{display:none}}

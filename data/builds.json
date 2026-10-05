@@ -12,7 +12,7 @@
     "placeholder": false,
     "title": "Support Firebrand",
     "specialization": "Firebrand",
-    "summary": "TEL's organized WvW support slot for Guardian.",
+    "summary": "TEL organized squad support build.",
     "weapons": [
       "Mace / Shield",
       "Staff"
@@ -33,7 +33,13 @@
     "status": "TEL draft",
     "updated": "2026-10-05",
     "gw2skills": "",
-    "notes": "Replace this example with TEL's approved support build and guild-specific notes."
+    "notes": "Replace with TEL's approved build."
+  },
+  {
+    "id": "guardian-additional",
+    "profession": "guardian",
+    "category": "additional",
+    "placeholder": true
   },
   {
     "id": "revenant-damage",
@@ -45,6 +51,12 @@
     "id": "revenant-support",
     "profession": "revenant",
     "category": "support",
+    "placeholder": true
+  },
+  {
+    "id": "revenant-additional",
+    "profession": "revenant",
+    "category": "additional",
     "placeholder": true
   },
   {
@@ -60,6 +72,12 @@
     "placeholder": true
   },
   {
+    "id": "warrior-additional",
+    "profession": "warrior",
+    "category": "additional",
+    "placeholder": true
+  },
+  {
     "id": "engineer-damage",
     "profession": "engineer",
     "category": "damage",
@@ -69,6 +87,12 @@
     "id": "engineer-support",
     "profession": "engineer",
     "category": "support",
+    "placeholder": true
+  },
+  {
+    "id": "engineer-additional",
+    "profession": "engineer",
+    "category": "additional",
     "placeholder": true
   },
   {
@@ -84,6 +108,12 @@
     "placeholder": true
   },
   {
+    "id": "ranger-additional",
+    "profession": "ranger",
+    "category": "additional",
+    "placeholder": true
+  },
+  {
     "id": "thief-damage",
     "profession": "thief",
     "category": "damage",
@@ -93,6 +123,12 @@
     "id": "thief-support",
     "profession": "thief",
     "category": "support",
+    "placeholder": true
+  },
+  {
+    "id": "thief-additional",
+    "profession": "thief",
+    "category": "additional",
     "placeholder": true
   },
   {
@@ -108,6 +144,12 @@
     "placeholder": true
   },
   {
+    "id": "elementalist-additional",
+    "profession": "elementalist",
+    "category": "additional",
+    "placeholder": true
+  },
+  {
     "id": "mesmer-damage",
     "profession": "mesmer",
     "category": "damage",
@@ -120,13 +162,19 @@
     "placeholder": true
   },
   {
+    "id": "mesmer-additional",
+    "profession": "mesmer",
+    "category": "additional",
+    "placeholder": true
+  },
+  {
     "id": "necromancer-damage",
     "profession": "necromancer",
     "category": "damage",
     "placeholder": false,
     "title": "Damage Scourge",
     "specialization": "Scourge",
-    "summary": "TEL's organized WvW damage slot for Necromancer.",
+    "summary": "TEL organized squad damage build.",
     "weapons": [
       "TBD",
       "TBD"
@@ -146,12 +194,18 @@
     "status": "TEL draft",
     "updated": "2026-10-05",
     "gw2skills": "",
-    "notes": "Replace this example with TEL's approved damage build and guild-specific notes."
+    "notes": "Replace with TEL's approved build."
   },
   {
     "id": "necromancer-support",
     "profession": "necromancer",
     "category": "support",
+    "placeholder": true
+  },
+  {
+    "id": "necromancer-additional",
+    "profession": "necromancer",
+    "category": "additional",
     "placeholder": true
   }
 ]
