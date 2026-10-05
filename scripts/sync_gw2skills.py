@@ -439,14 +439,37 @@ def main():
                         return str(v)
                     db=dbcache[dbid]
                     hints={}
+                    # The v9 selections are already decoded into preload.extra. Capture
+                    # the DB rows that reference those exact non-zero IDs, plus schemas
+                    # for skill/mechanic-looking tables. This keeps the diagnostic small
+                    # while exposing the lookup chain needed for names/icons.
+                    extra_ids={x for x in ((preload or {}).get('extra') or []) if isinstance(x,int) and x>0}
                     for tn,t in db.items():
                         if not isinstance(t,dict): continue
                         desc=t.get('desc') or []
-                        sample=t.get('rows') or []
-                        blob=(' '.join(map(str,desc))+' '+str(sample[:8])).lower()
-                        if any(q in blob for q in ('familiar','morph','evoker','amalgam','protocol')):
-                            hints[tn]={'desc':desc,'rows':sample[:20]}
-                    mech_debug[bid]={'specialization':spec,'quicklink':normalize_url(url).split('?',1)[-1], 'preload':compact(preload), 'db_tables':compact(hints)}
+                        rows=t.get('rows') or []
+                        matched=[]
+                        for row in rows:
+                            if not isinstance(row,list): continue
+                            # Match the selected ID wherever GW2Skills references it;
+                            # table-local IDs and foreign-key columns are both useful.
+                            if any(isinstance(v,int) and v in extra_ids for v in row):
+                                matched.append(row)
+                        table_text=(str(tn)+' '+' '.join(map(str,desc))).lower()
+                        schema_relevant=any(q in table_text for q in ('skill','familiar','morph','special','profession','rule'))
+                        if matched or schema_relevant:
+                            hints[tn]={
+                                'desc':desc,
+                                'matched_rows':matched[:80],
+                                'sample_rows':rows[:12] if schema_relevant else []
+                            }
+                    mech_debug[bid]={
+                        'specialization':spec,
+                        'quicklink':normalize_url(url).split('?',1)[-1],
+                        'selected_extra_ids':sorted(extra_ids),
+                        'preload':compact(preload),
+                        'db_tables':compact(hints)
+                    }
             result[bid]=entry
             print(f"OK {bid}: build + {'equipment' if entry.get('equipment') else 'no equipment'}")
         except Exception as e:
