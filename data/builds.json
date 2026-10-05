@@ -1,211 +1,26 @@
 [
   {
-    "id": "guardian-damage",
-    "profession": "guardian",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "guardian-support",
+    "id": "guardian-support-firebrand",
     "profession": "guardian",
     "category": "support",
-    "placeholder": false,
-    "title": "Support Firebrand",
+    "name": "Support Firebrand",
     "specialization": "Firebrand",
-    "summary": "TEL organized squad support build.",
-    "weapons": [
-      "Mace / Shield",
-      "Staff"
-    ],
-    "damage": [
-      "Heal"
-    ],
-    "range": [
-      "Melee",
-      "Midrange"
-    ],
-    "scale": [
-      "Full Squad"
-    ],
-    "archetype": [
-      "Support"
-    ],
-    "status": "TEL draft",
-    "updated": "2026-10-05",
+    "description": "TEL organized squad support build.",
     "gw2skills": "",
-    "notes": "Replace with TEL's approved build."
+    "status": "Draft",
+    "updated": "2026-10-05",
+    "notes": "Paste the GW2Skills QuickLink into gw2skills. Add TEL-specific instructions here."
   },
   {
-    "id": "guardian-additional",
-    "profession": "guardian",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-damage",
-    "profession": "revenant",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-support",
-    "profession": "revenant",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "revenant-additional",
-    "profession": "revenant",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-damage",
-    "profession": "warrior",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-support",
-    "profession": "warrior",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "warrior-additional",
-    "profession": "warrior",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-damage",
-    "profession": "engineer",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-support",
-    "profession": "engineer",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "engineer-additional",
-    "profession": "engineer",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-damage",
-    "profession": "ranger",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-support",
-    "profession": "ranger",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "ranger-additional",
-    "profession": "ranger",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "thief-damage",
-    "profession": "thief",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "thief-support",
-    "profession": "thief",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "thief-additional",
-    "profession": "thief",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-damage",
-    "profession": "elementalist",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-support",
-    "profession": "elementalist",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "elementalist-additional",
-    "profession": "elementalist",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-damage",
-    "profession": "mesmer",
-    "category": "damage",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-support",
-    "profession": "mesmer",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "mesmer-additional",
-    "profession": "mesmer",
-    "category": "additional",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-damage",
+    "id": "necromancer-damage-scourge",
     "profession": "necromancer",
     "category": "damage",
-    "placeholder": false,
-    "title": "Damage Scourge",
+    "name": "Damage Scourge",
     "specialization": "Scourge",
-    "summary": "TEL organized squad damage build.",
-    "weapons": [
-      "TBD",
-      "TBD"
-    ],
-    "damage": [
-      "Power"
-    ],
-    "range": [
-      "Midrange"
-    ],
-    "scale": [
-      "Full Squad"
-    ],
-    "archetype": [
-      "Damage"
-    ],
-    "status": "TEL draft",
-    "updated": "2026-10-05",
+    "description": "TEL organized squad damage build.",
     "gw2skills": "",
-    "notes": "Replace with TEL's approved build."
-  },
-  {
-    "id": "necromancer-support",
-    "profession": "necromancer",
-    "category": "support",
-    "placeholder": true
-  },
-  {
-    "id": "necromancer-additional",
-    "profession": "necromancer",
-    "category": "additional",
-    "placeholder": true
+    "status": "Draft",
+    "updated": "2026-10-05",
+    "notes": "Replace this example with TEL's approved build."
   }
 ]

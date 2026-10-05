@@ -64,3 +64,10 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 .matrix-build span{color:var(--muted);font-size:11px;margin-top:9px}
 .matrix-empty{align-items:center;color:#5f5953;font-family:Georgia,serif;font-size:22px}
 @media(max-width:700px){.matrix-hero{min-height:330px}.matrix-section{padding-top:40px}.build-matrix{grid-template-columns:145px repeat(3,220px);min-width:805px}.matrix-profession,.matrix-cell{min-height:100px}.matrix-profession{padding:12px}.matrix-profession .profession-glyph{display:none}}
+
+.matrix-list{padding:8px;gap:6px}
+.matrix-build-item{display:flex;flex-direction:column;padding:12px 11px;border:1px solid transparent;border-radius:8px}
+.matrix-build-item:hover{background:rgba(216,189,120,.065);border-color:var(--border)}
+.matrix-build-item strong{font-family:Georgia,serif;font-size:16px;font-weight:500}
+.matrix-build-item small{color:var(--gold);text-transform:uppercase;letter-spacing:.09em;margin-top:2px}
+.button.disabled{opacity:.45;cursor:not-allowed;color:var(--muted)}
