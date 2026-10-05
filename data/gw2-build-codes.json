@@ -1,1 +1,4437 @@
-{}
+{
+  "heal-druid": {
+    "chat_code": "[&DQQeFxkeBSmhAAAAvAAAANUSAAC7AAAAlwEAAAVCAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?POwEYKNssCGCbhFyIxyVyrlWy9uC-DWJYjR9fhEUSkZIUdF471hQEg9wbp9NLA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Minstrel",
+          "weaponType": "Greatsword"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Bowl of Fruit Salad with Mint Garnish",
+        "id": 91690,
+        "icon": "assets/gw2/items/91690.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Bountiful Maintenance Oil",
+        "id": 67528,
+        "icon": "assets/gw2/items/67528.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Karakosa",
+        "id": 101268,
+        "icon": "assets/gw2/items/101268.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "support-firebrand": {
+    "chat_code": "[&DQENPS47PhpLFwAAehYAAEsBAAA2AQAAGBYAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PWwAYl7lRweYcMMmJe6X7PNA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Bounty",
+              "id": 81045,
+              "icon": "assets/gw2/items/81045.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bounty",
+              "id": 81045,
+              "icon": "assets/gw2/items/81045.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Experienced Enrichment",
+              "id": 39330,
+              "icon": "assets/gw2/items/39330.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Plate of Peppercorn-Spiced Poultry Aspic",
+        "id": 91794,
+        "icon": "assets/gw2/items/91794.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Magnanimous Maintenance Oil",
+        "id": 81157,
+        "icon": "assets/gw2/items/81157.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Febe",
+        "id": 101116,
+        "icon": "assets/gw2/items/101116.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-ritualist": {
+    "chat_code": "[&DQg1PjInTD+HHQAAgQAAAHMBAABVHQAAfR0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://en.gw2skills.net/editor/?PSwAEd3l5yOYIsY2MO8XnzfA-DWRYiR9jO4CppIouUNziy2zCBIg/W0/MCA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Demolisher"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-boonstrip-necro": {
+    "chat_code": "[&DQg1Pic6MicoDwAAdgEAAIEAAABzAQAAkgAAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://en.gw2skills.net/editor/?PSABc2tzlRwwYHMEGJO8L6rTA-DSRYiRPjO4DpORQmShcWA26sQACo3i+nRAA-e",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Demolisher"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-dragonhunter": {
+    "chat_code": "[&DQEqOhA+GysDAQAAihIAAP4SAAA2AQAANwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PWlAMFlFwcYNMM2IO0L+tVA-DWJYzRFfhUXB0ZEURKY7ZhDEwe4to/MAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Dragon",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Dragon",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Hydromancy",
+              "id": 24597,
+              "icon": "assets/gw2/items/24597.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Experienced Enrichment",
+              "id": 39330,
+              "icon": "assets/gw2/items/39330.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Superior Sharpening Stone",
+        "id": 9443,
+        "icon": "assets/gw2/items/9443.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "support-troubadour": {
+    "chat_code": "[&DQctOhcaSTqJHQAAhQEAAIQBAACEHQAAbR0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PixAw6Rl9ysYZMYGNe0TaTdA-DWJYjR3fhEUIkZCUdVp7FhQEm/aewlGA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Plate of Peppercorn-Spiced Poultry Aspic",
+        "id": 91794,
+        "icon": "assets/gw2/items/91794.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Magnanimous Maintenance Oil",
+        "id": 81157,
+        "icon": "assets/gw2/items/81157.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Monk",
+        "id": 100031,
+        "icon": "assets/gw2/items/100031.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "support-specter": {
+    "chat_code": "[&DQUUFiwXRz4VGwAAuwEAAAgbAAAHGwAAERsAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?Pa1AsqVlhyCZpsVWLesWXRfA-DWJYjRzfhkZG0bIUdR571hSEgN/bp9NLA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Magical Enrichment",
+              "id": 39333,
+              "icon": "assets/gw2/items/39333.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Bowl of Fruit Salad with Mint Garnish",
+        "id": 91690,
+        "icon": "assets/gw2/items/91690.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Bountiful Maintenance Oil",
+        "id": 67528,
+        "icon": "assets/gw2/items/67528.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Karakosa",
+        "id": 101268,
+        "icon": "assets/gw2/items/101268.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-amalgam": {
+    "chat_code": "[&DQMGOyYfSx0qDwAAlQEAAJMBAABaHQAAex0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PegAIJlJw8YdMb2NO2LfzOFo90rHA-DWhYBRFCeLoBxQ5hMHyIiBpZRUPEqkJSPLEgA2DvmqMDAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Assassin"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Assassin",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Mists-Infused Peppercorn-Crusted Sous-Vide Steak",
+        "id": 99785,
+        "icon": "assets/gw2/items/99785.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Superior Sharpening Stone",
+        "id": 9443,
+        "icon": "assets/gw2/items/9443.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "support-luminary": {
+    "chat_code": "[&DQENPi46URVhHQAAeB0AADYBAABXHQAANwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PWwAYl7l5yiZYMZ2Ie8X6zKA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of Radiance",
+            "id": 67342,
+            "icon": "assets/gw2/items/67342.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Bounty",
+              "id": 81045,
+              "icon": "assets/gw2/items/81045.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bounty",
+              "id": 81045,
+              "icon": "assets/gw2/items/81045.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Experienced Enrichment",
+              "id": 39330,
+              "icon": "assets/gw2/items/39330.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Plate of Peppercorn-Spiced Poultry Aspic",
+        "id": 91794,
+        "icon": "assets/gw2/items/91794.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Magnanimous Maintenance Oil",
+        "id": 81157,
+        "icon": "assets/gw2/items/81157.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Febe",
+        "id": 101116,
+        "icon": "assets/gw2/items/101116.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-evoker": {
+    "chat_code": "[&DQYfHSkbUBViHQAATQEAAHEdAAC+AQAAah0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Dragonhunter",
+            "id": 74978,
+            "icon": "assets/gw2/items/74978.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Frenzy",
+              "id": 82876,
+              "icon": "assets/gw2/items/82876.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Marauder",
+          "weaponType": "Greatsword"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Marauder"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-boonstrip-spellbreaker": {
+    "chat_code": "[&DQIEHzM6PRUpDwAAsgAAACcWAACpAAAAnRYAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PKhEYiW2ATkJxmYn44bp/qA-DWRYBBLGVvDpJRQdKqcmqS5sQAC4vF9PjAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Nullification",
+              "id": 24572,
+              "icon": "assets/gw2/items/24572.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Berserker"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Berserker",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Thief",
+        "id": 101580,
+        "icon": "assets/gw2/items/101580.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "heal-evoker": {
+    "chat_code": "[&DQYRGyUXUD5iHQAAHQEAAI8AAACLHQAAah0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://en.gw2skills.net/editor/?PGhAYZlBzsYYMZWNm2WXTfluBAA-DWJYjRFfhkURkaEUdK471hQEg9wbp%2FNLA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Minstrel",
+          "rune": {
+            "name": "Superior Rune of the Monk",
+            "id": 24842,
+            "icon": "assets/gw2/items/24842.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Benevolence",
+              "id": 24584,
+              "icon": "assets/gw2/items/24584.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Renewal",
+              "id": 44947,
+              "icon": "assets/gw2/items/44947.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Aquatic 1",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Benevolence",
+              "id": 24584,
+              "icon": "assets/gw2/items/24584.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Minstrel"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Minstrel",
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Bowl of Spiced Fruit Salad",
+        "id": 91737,
+        "icon": "assets/gw2/items/91737.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Bountiful Maintenance Oil",
+        "id": 67528,
+        "icon": "assets/gw2/items/67528.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Karakosa",
+        "id": 101268,
+        "icon": "assets/gw2/items/101268.png",
+        "type": "Relic"
+      }
+    }
+  }
+}
