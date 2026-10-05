@@ -9,7 +9,8 @@
     "gw2skills": "https://gw2skills.net/editor/?POwEYKNssCGCbhFyIxyVyrlWy9uC-DWJYjR9fhEUSkZIUdF471hQEg9wbp9NLA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "support-firebrand",
@@ -21,7 +22,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PWwAYl7lRweYcMMmJe6X7PNA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-ritualist",
@@ -33,7 +35,8 @@
     "gw2skills": "https://en.gw2skills.net/editor/?PSwAEd3l5yOYIsY2MO8XnzfA-DWRYiR9jO4CppIouUNziy2zCBIg/W0/MCA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-boonstrip-necro",
@@ -45,7 +48,8 @@
     "gw2skills": "https://en.gw2skills.net/editor/?PSABc2tzlRwwYHMEGJO8L6rTA-DSRYiRPjO4DpORQmShcWA26sQACo3i+nRAA-e",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-dragonhunter",
@@ -57,7 +61,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PWlAMFlFwcYNMM2IO0L+tVA-DWJYzRFfhUXB0ZEURKY7ZhDEwe4to/MAA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "support-troubadour",
@@ -69,7 +74,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PixAw6Rl9ysYZMYGNe0TaTdA-DWJYjR3fhEUIkZCUdVp7FhQEm/aewlGA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "support-specter",
@@ -81,7 +87,8 @@
     "gw2skills": "https://gw2skills.net/editor/?Pa1AsqVlhyCZpsVWLesWXRfA-DWJYjRzfhkZG0bIUdR571hSEgN/bp9NLA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-amalgam",
@@ -93,7 +100,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PegAIJlJw8YdMb2NO2LfzOFo90rHA-DWhYBRFCeLoBxQ5hMHyIiBpZRUPEqkJSPLEgA2DvmqMDAA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "support-luminary",
@@ -105,7 +113,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PWwAYl7l5yiZYMZ2Ie8X6zKA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-evoker",
@@ -117,7 +126,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "power-boonstrip-spellbreaker",
@@ -129,7 +139,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PKhEYiW2ATkJxmYn44bp/qA-DWRYBBLGVvDpJRQdKqcmqS5sQAC4vF9PjAA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   },
   {
     "id": "heal-evoker",
@@ -141,6 +152,7 @@
     "gw2skills": "https://en.gw2skills.net/editor/?PGhAYZlBzsYYMZWNm2WXTfluBAA-DWJYjRFfhkURkaEUdK471hQEg9wbp%2FNLA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "buildCode": ""
   }
 ]
