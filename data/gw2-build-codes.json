@@ -148,25 +148,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Minstrel",
           "sigils": [
@@ -230,11 +211,13 @@
               "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Harpoon Gun"
         },
         {
           "slot": "Aquatic 2",
-          "stat": "Minstrel"
+          "stat": "Minstrel",
+          "weaponType": "Spear"
         }
       ],
       "trinkets": [
@@ -502,25 +485,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Minstrel",
           "sigils": [
@@ -604,7 +568,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Aquatic 2",
@@ -636,7 +601,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [
@@ -912,25 +878,6 @@
           "weaponType": "Greatsword"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Marauder",
           "sigils": [
@@ -1014,7 +961,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Aquatic 2",
@@ -1046,7 +994,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [
@@ -1610,25 +1559,6 @@
           "weaponType": "Longbow"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Force",
-              "id": 24615,
-              "icon": "assets/gw2/items/24615.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Dragon",
           "sigils": [
@@ -1660,25 +1590,6 @@
             }
           ],
           "weaponType": "Greatsword"
-        },
-        {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Force",
-              "id": 24615,
-              "icon": "assets/gw2/items/24615.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
         }
       ],
       "trinkets": [
@@ -2008,25 +1919,6 @@
           "weaponType": "Rifle"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
           "stat": "Minstrel",
           "sigils": [
@@ -2050,7 +1942,8 @@
               "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Aquatic 2",
@@ -2076,7 +1969,8 @@
               "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [
@@ -2383,17 +2277,6 @@
           "weaponType": "Shortbow"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
           "stat": "Minstrel",
           "sigils": [
@@ -2417,7 +2300,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Harpoon Gun"
         },
         {
           "slot": "Aquatic 2",
@@ -2443,7 +2327,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         }
       ],
       "trinkets": [
@@ -2719,25 +2604,6 @@
           "weaponType": "Hammer"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Force",
-              "id": 24615,
-              "icon": "assets/gw2/items/24615.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Berserker",
           "sigils": [
@@ -2771,25 +2637,6 @@
           "weaponType": "Hammer"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
           "sigils": [
             {
@@ -2804,7 +2651,8 @@
               "icon": "assets/gw2/items/24615.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Harpoon Gun"
         }
       ],
       "trinkets": [
@@ -3072,25 +2920,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Minstrel",
           "sigils": [
@@ -3174,7 +3003,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         },
         {
           "slot": "Aquatic 2",
@@ -3206,7 +3036,8 @@
               "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [
@@ -3482,25 +3313,6 @@
           "weaponType": "Spear"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Marauder",
           "sigils": [
@@ -3534,27 +3346,9 @@
           "weaponType": "Spear"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Bloodlust",
-              "id": 24575,
-              "icon": "assets/gw2/items/24575.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
-          "stat": "Marauder"
+          "stat": "Marauder",
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [
@@ -3822,25 +3616,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Nullification",
-              "id": 24572,
-              "icon": "assets/gw2/items/24572.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Marauder",
           "sigils": [
@@ -3874,25 +3649,6 @@
           "weaponType": "Spear"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Nullification",
-              "id": 24572,
-              "icon": "assets/gw2/items/24572.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
           "stat": "Marauder",
           "sigils": [
@@ -3922,7 +3678,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Harpoon Gun"
         },
         {
           "slot": "Aquatic 2",
@@ -3954,7 +3711,8 @@
               "icon": "assets/gw2/items/43254.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Spear"
         }
       ],
       "trinkets": [
@@ -4222,25 +3980,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 1 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Transference",
-              "id": 74326,
-              "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Weapon set 2 · Main hand",
           "stat": "Minstrel",
           "sigils": [
@@ -4274,25 +4013,6 @@
           "weaponType": "Staff"
         },
         {
-          "slot": "Weapon set 2 · Off hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Transference",
-              "id": 74326,
-              "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
-        },
-        {
           "slot": "Aquatic 1",
           "sigils": [
             {
@@ -4301,7 +4021,8 @@
               "icon": "assets/gw2/items/24584.png",
               "type": "UpgradeComponent"
             }
-          ]
+          ],
+          "weaponType": "Trident"
         }
       ],
       "trinkets": [

@@ -172,7 +172,8 @@ def table_map(table):
     desc=table.get('desc',[]); ididx=desc.index('id') if 'id' in desc else 0
     return ({row[ididx]:row for row in table.get('rows',[])}, {x:i for i,x in enumerate(desc)})
 
-def equipment_from(preload,db):
+def equipment_from(preload,db,profession=""):
+    profession=str(profession or "").strip().lower()
     eq=(preload or {}).get('equipment') or {}
     profiles,pidx=table_map(db.get('profile')); ptypes,ptidx=table_map(db.get('prfltype'))
     upgrades,uidx=table_map(db.get('upgrade')); buffs,bidx=table_map(db.get('buff'))
@@ -222,6 +223,7 @@ def equipment_from(preload,db):
     preload_weapon_ids=(preload or {}).get('weapon') or []
     weapon_slot_keys=['w11','w12','w21','w22','w31','w32']
     weapon_types={}
+    weapon_kinds={}
     for i,weapon_id in enumerate(preload_weapon_ids):
         if i >= len(weapon_slot_keys) or not weapon_id: continue
         meta=weapon_db.get(weapon_id)
@@ -238,6 +240,7 @@ def equipment_from(preload,db):
         if is_offhand and typ == 2: continue
         if not is_offhand and not is_aquatic and typ == 0: continue
         weapon_types[slot]=meta['name']
+        weapon_kinds[slot]=typ
 
     def piece_data(piece,kind):
         if not piece:return None
@@ -249,11 +252,38 @@ def equipment_from(preload,db):
             # Filled by the slot-aware preload.weapon mapping below.
         out['infusions']=[upgrade(x) for x in inf if x]
         return {k:v for k,v in out.items() if v not in ('',[],None)}
+    # Aquatic weapon identity is not carried in preload.weapon. GW2Skills keeps
+    # separate underwater equipment slots (w31/w32), while the profession itself
+    # determines which aquatic weapon families can occupy them. Every profession
+    # currently has one or two aquatic families, so this mapping is unambiguous.
+    aquatic_by_profession={
+        'guardian':['Spear','Trident'],
+        'warrior':['Harpoon Gun','Spear'],
+        'revenant':['Spear','Trident'],
+        'engineer':['Harpoon Gun'],
+        'ranger':['Harpoon Gun','Spear'],
+        'thief':['Harpoon Gun','Spear'],
+        'elementalist':['Trident'],
+        'mesmer':['Spear','Trident'],
+        'necromancer':['Spear','Trident'],
+    }
+    aquatic=aquatic_by_profession.get(profession,[])
+    if aquatic:
+        weapon_types['w31']=aquatic[0]
+        if len(aquatic)>1: weapon_types['w32']=aquatic[1]
+
     result={'armor':[],'weapons':[],'trinkets':[]}
     for key,label in ARMOR.items():
         d=piece_data((eq.get('armor') or {}).get(key),'armor')
         if d: result['armor'].append({'slot':label,**d})
     for key,label in WEAPONS.items():
+        # GW2Skills mirrors a two-handed weapon's second sigil/infusion into the
+        # paired off-hand equipment object. That does NOT mean an off-hand weapon
+        # exists. Suppress the phantom card when the main-hand is type 2 (2H).
+        if key=='w12' and weapon_kinds.get('w11')==2: continue
+        if key=='w22' and weapon_kinds.get('w21')==2: continue
+        # Professions with only one aquatic family have no second aquatic weapon.
+        if key=='w32' and len(aquatic)<2: continue
         d=piece_data((eq.get('weapon') or {}).get(key),'weapon')
         if d:
             if weapon_types.get(key): d['weaponType']=weapon_types[key]
@@ -308,7 +338,7 @@ def main():
             entry={'chat_code':code,'source':url}
             if preload and dbid:
                 if dbid not in dbcache: dbcache[dbid]=json.loads(fetch_url(f'https://en.gw2skills.net/ajax/db/en.{dbid}.json','application/json'))
-                eq=equipment_from(preload,dbcache[dbid])
+                eq=equipment_from(preload,dbcache[dbid],b.get('profession',''))
                 if eq: entry['equipment']=eq
             result[bid]=entry
             print(f"OK {bid}: build + {'equipment' if entry.get('equipment') else 'no equipment'}")
