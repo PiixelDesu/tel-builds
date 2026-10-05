@@ -23,7 +23,7 @@
    const target=document.querySelector("#native-build-overview");
    const entry=sync[b.id];
    if(!entry?.chat_code){
-     target.innerHTML=`<div class="overview-state"><strong>Build overview awaiting sync</strong><span>The GW2Skills link is still available below. After this repository is uploaded, the “Sync GW2Skills build data” GitHub Action generates this overview automatically.</span></div>`;return;
+     target.innerHTML=`<div class="overview-state"><strong>Build overview not synced</strong><span>Run the “Sync GW2Skills build data” Action. The sync now fails visibly if GW2Skills cannot be decoded, instead of silently publishing an empty overview.</span></div>`;return;
    }
    try{
      const d=decodeChat(entry.chat_code);
