@@ -181,3 +181,92 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   .build-matrix{grid-template-columns:135px repeat(2,250px);min-width:635px}
   .matrix-list .matrix-build-item strong{font-size:12px}
 }
+
+/* =========================================================
+   MOBILE / TABLET MATRIX
+   Stack each profession as a card with Damage + Support below.
+   This avoids horizontal scrolling while preserving 1–4 builds/cell.
+   ========================================================= */
+@media (max-width: 760px){
+  body{overflow-x:hidden}
+  .site-shell{width:min(100% - 20px, 1440px)}
+  .topbar{padding:10px 0;min-height:56px}
+  .brand img{width:38px;height:38px}
+  .brand strong{font-size:13px}.brand small{font-size:8px}
+  .topbar nav{display:none}
+
+  .matrix-hero{min-height:0;padding:18px 0 14px;text-align:left;align-items:flex-start}
+  .matrix-hero .hero-mark,.matrix-hero .eyebrow{display:none}
+  .matrix-hero h1{font-size:30px;line-height:1}
+  .matrix-hero .lede{font-size:11px;margin:7px 0 0}
+  .matrix-section{padding:0 0 24px}
+  .section-heading{display:none}
+  .matrix-wrap{overflow:visible;border:0;background:transparent;box-shadow:none}
+
+  .build-matrix{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-width:0;
+    gap:0;
+    background:transparent;
+  }
+  .matrix-head{display:none}
+
+  .matrix-profession{
+    grid-column:1 / -1;
+    min-height:0;
+    padding:12px 12px 9px;
+    margin-top:10px;
+    gap:10px;
+    border:1px solid var(--border2);
+    border-bottom:0;
+    border-radius:10px 10px 0 0;
+    background:#1e1a17;
+  }
+  .matrix-profession:first-of-type{margin-top:0}
+  .matrix-profession .profession-glyph{width:30px;height:30px;flex-basis:30px;font-size:12px}
+  .matrix-profession strong{font-size:14px}
+
+  .matrix-cell{
+    min-height:108px;
+    border-bottom:1px solid var(--border2);
+    background:rgba(24,21,18,.72);
+  }
+  .matrix-profession + .matrix-cell{
+    border-left:1px solid var(--border2);
+    border-radius:0 0 0 10px;
+  }
+  .matrix-profession + .matrix-cell + .matrix-cell{
+    border-right:1px solid var(--border2);
+    border-radius:0 0 10px 0;
+  }
+
+  /* Put compact role labels inside the two cells. */
+  .matrix-cell{position:relative;padding-top:27px !important}
+  .matrix-profession + .matrix-cell::before,
+  .matrix-profession + .matrix-cell + .matrix-cell::before{
+    position:absolute;top:7px;left:10px;z-index:2;
+    font-size:8px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);
+  }
+  .matrix-profession + .matrix-cell::before{content:"Damage"}
+  .matrix-profession + .matrix-cell + .matrix-cell::before{content:"Support"}
+
+  .matrix-cell.matrix-list{padding:27px 5px 5px !important;gap:4px}
+  .matrix-list .matrix-build-item{padding:7px 6px;border-radius:6px;text-align:center;align-items:center}
+  .matrix-list .matrix-build-item strong{font-size:11px;line-height:1.05;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .matrix-list .matrix-build-item small{font-size:7px;margin-top:2px;max-width:100%}
+  .matrix-empty{padding-top:27px !important;font-size:12px}
+
+  footer{padding:18px 0;font-size:8px;gap:5px}
+}
+
+/* Very narrow phones: Damage and Support stack vertically for readable tap targets. */
+@media (max-width: 430px){
+  .site-shell{width:min(100% - 14px, 1440px)}
+  .build-matrix{grid-template-columns:1fr}
+  .matrix-profession{grid-column:1;margin-top:9px}
+  .matrix-cell{min-height:92px}
+  .matrix-profession + .matrix-cell{border-right:1px solid var(--border2);border-radius:0}
+  .matrix-profession + .matrix-cell + .matrix-cell{border-left:1px solid var(--border2);border-radius:0 0 10px 10px}
+  .matrix-list .matrix-build-item strong{font-size:12px}
+}
