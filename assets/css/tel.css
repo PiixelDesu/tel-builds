@@ -75,3 +75,61 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 .data-error{grid-column:1/-1;padding:28px;display:flex;flex-direction:column;gap:8px;color:var(--muted)}
 .data-error strong{color:var(--ivory);font-family:Georgia,serif;font-size:20px}
 .data-error .button{align-self:flex-start;margin-top:12px}
+
+/* =========================================================
+   TEL ONE-SCREEN BUILD DASHBOARD
+   Desktop: the complete 9-profession matrix fits in one view.
+   Mobile/tablet keeps the existing scrollable layout.
+   ========================================================= */
+@media (min-width:1000px) and (min-height:800px){
+  html,body{height:100%;overflow:hidden}
+  body{background:
+    radial-gradient(circle at 50% -25%,rgba(216,189,120,.10),transparent 38rem),
+    linear-gradient(180deg,#191613 0%,#141210 100%)}
+
+  .site-shell{width:min(1440px,calc(100% - 36px));height:100vh;display:flex;flex-direction:column}
+  .topbar{height:58px;min-height:58px;flex:0 0 58px}
+  .brand{gap:10px}.brand img{width:38px;height:38px}.brand strong{font-size:14px}.brand small{font-size:8px;margin-top:3px}
+  nav a{font-size:10px}
+
+  main{flex:1;min-height:0;display:flex;flex-direction:column}
+
+  /* Compact identity strip instead of a landing-page hero. */
+  .matrix-hero{min-height:0;height:72px;flex:0 0 72px;padding:13px 2px 11px;display:block;text-align:left;position:relative}
+  .matrix-hero .hero-mark,.matrix-hero .eyebrow{display:none}
+  .matrix-hero h1{font-size:31px;line-height:1;margin:0;letter-spacing:-.02em}
+  .matrix-hero .lede{max-width:none;margin:6px 0 0;font-size:11px;line-height:1.2;letter-spacing:.13em;text-transform:uppercase;color:var(--gold)}
+
+  .matrix-section{padding:0 0 14px;border-top:0;flex:1;min-height:0;display:flex;flex-direction:column}
+  .matrix-section .section-heading{display:none}
+  .matrix-wrap{flex:1;min-height:0;overflow:hidden;border-radius:10px;background:linear-gradient(145deg,rgba(39,34,30,.92),rgba(24,21,18,.97));border-color:rgba(216,189,120,.18);box-shadow:0 18px 55px rgba(0,0,0,.30)}
+
+  .build-matrix{height:100%;min-width:0;grid-template-columns:160px repeat(3,minmax(0,1fr));grid-template-rows:34px repeat(9,minmax(0,1fr))}
+  .matrix-head{padding:0 13px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:9px;letter-spacing:.18em;background:rgba(30,26,23,.98);border-bottom-color:rgba(216,189,120,.32)}
+  .matrix-head.profession-col{justify-content:flex-start;text-align:left}
+
+  .matrix-profession,.matrix-cell{min-height:0;height:auto}
+  .matrix-profession{padding:5px 12px;gap:9px;background:rgba(255,255,255,.008)}
+  .matrix-profession:before{width:2px;opacity:.85}
+  .matrix-profession strong{font-size:12px;letter-spacing:.015em}
+  .matrix-profession .profession-glyph{width:27px;height:27px;flex:0 0 27px;font-size:12px}
+
+  .matrix-cell{padding:3px 6px}
+  .matrix-list{padding:3px 6px;gap:2px;justify-content:center}
+  .matrix-build-item{padding:5px 9px;border-radius:5px;justify-content:center;transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+  .matrix-build-item strong{font-size:12px;line-height:1.12}
+  .matrix-build-item small{font-size:7px;line-height:1.1;margin-top:2px;letter-spacing:.09em}
+  .matrix-build-item:hover{background:rgba(216,189,120,.075);border-color:rgba(216,189,120,.30);box-shadow:inset 2px 0 0 rgba(216,189,120,.75)}
+  .matrix-empty{font-size:12px;color:rgba(238,234,224,.12)}
+
+  footer{display:none}
+}
+
+/* A little more breathing room on very tall displays without losing one-screen behavior. */
+@media (min-width:1000px) and (min-height:1000px){
+  .topbar{height:64px;min-height:64px;flex-basis:64px}
+  .matrix-hero{height:82px;flex-basis:82px;padding-top:17px}
+  .matrix-hero h1{font-size:34px}
+  .matrix-profession strong{font-size:13px}
+  .matrix-build-item strong{font-size:13px}
+}
