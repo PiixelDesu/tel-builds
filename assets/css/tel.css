@@ -1,9 +1,44 @@
 
-:root{
-  --bg:#171412;--bg2:#1d1916;--surface:#221e1a;--surface2:#2b2520;
-  --gold:#d8bd78;--gold2:#ead391;--ivory:#eeeae0;--muted:#aaa39a;
-  --border:rgba(216,189,120,.20);--border2:rgba(238,234,224,.09);
-  --shadow:0 18px 55px rgba(0,0,0,.28);--radius:14px;
+/* TEL design tokens */
+:root {
+  /* Color tokens */
+  --color-bg: #171412;
+  --color-bg-elevated: #1d1916;
+  --color-surface: #221e1a;
+  --color-surface-raised: #2b2520;
+  --color-gold: #d8bd78;
+  --color-gold-bright: #ead391;
+  --color-text: #eeeae0;
+  --color-text-muted: #aaa39a;
+  --color-border: rgba(216, 189, 120, 0.20);
+  --color-border-subtle: rgba(238, 234, 224, 0.09);
+
+  /* Spacing tokens */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Shape / elevation tokens */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --shadow-elevated: 0 18px 55px rgba(0, 0, 0, 0.28);
+
+  /* Backwards-compatible aliases used by the existing TEL styles */
+  --bg: var(--color-bg);
+  --bg2: var(--color-bg-elevated);
+  --surface: var(--color-surface);
+  --surface2: var(--color-surface-raised);
+  --gold: var(--color-gold);
+  --gold2: var(--color-gold-bright);
+  --ivory: var(--color-text);
+  --muted: var(--color-text-muted);
+  --border: var(--color-border);
+  --border2: var(--color-border-subtle);
+  --shadow: var(--shadow-elevated);
+  --radius: var(--radius-md);
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:
 radial-gradient(circle at 50% -20%,rgba(216,189,120,.09),transparent 34rem),
@@ -43,10 +78,10 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 @media(max-width:820px){.profession-grid,.slot-grid{grid-template-columns:repeat(2,1fr)}.section-heading{align-items:start;flex-direction:column}.section-heading .muted{text-align:left}.stats-panels,.detail-grid{grid-template-columns:1fr}.detail-card.wide{grid-column:auto}}
 @media(max-width:560px){.site-shell{width:min(100% - 22px,1180px)}.topbar{height:70px}.brand img{width:40px;height:40px}.brand strong{font-size:13px}nav{gap:14px}.hero{min-height:500px;padding:55px 5px}.hero-mark{width:126px;height:126px}.profession-grid,.slot-grid{grid-template-columns:1fr}.section{padding:58px 0}.slot-card{min-height:260px}footer{align-items:flex-start;flex-direction:column;justify-content:center}.detail-row{grid-template-columns:1fr;gap:3px}}
 
-
+/* TEL organized-WvW role layout */
 .slot-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.role-card{min-height:330px;}@media(max-width:680px){.slot-grid{grid-template-columns:1fr;}}
 
-
+/* v3: WvW-builds-style homepage matrix — rows are professions, columns are TEL roles */
 .matrix-hero{min-height:390px;padding-bottom:45px}
 .matrix-section{padding-top:52px}
 .matrix-wrap{overflow-x:auto;border:1px solid var(--border2);border-radius:14px;background:rgba(24,21,18,.7);box-shadow:var(--shadow)}
@@ -77,13 +112,15 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 .data-error .button{align-self:flex-start;margin-top:12px}
 
 
-
+/* =========================================================
+   TEL v4 — two-column build matrix + adaptive 1–4 build cells
+   ========================================================= */
 .build-matrix{
   grid-template-columns:190px repeat(2,minmax(280px,1fr));
   min-width:760px;
 }
 
-
+/* A role cell is its own mini-grid. The count class is added by site.js. */
 .matrix-cell.matrix-list{
   padding:6px;
   gap:6px;
@@ -122,19 +159,19 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   text-overflow:ellipsis;
 }
 
-
+/* 1 build: fills the whole Damage/Support square */
 .matrix-list.build-count-1{
   grid-template-columns:1fr;
   grid-template-rows:1fr;
 }
 
-
+/* 2 builds: equal left/right split */
 .matrix-list.build-count-2{
   grid-template-columns:repeat(2,minmax(0,1fr));
   grid-template-rows:1fr;
 }
 
-
+/* 3 builds: first build full-width on top, two equal builds below */
 .matrix-list.build-count-3{
   grid-template-columns:repeat(2,minmax(0,1fr));
   grid-template-rows:repeat(2,minmax(0,1fr));
@@ -143,13 +180,13 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   grid-column:1 / -1;
 }
 
-
+/* 4 builds: 2 × 2, one build in each corner */
 .matrix-list.build-count-4{
   grid-template-columns:repeat(2,minmax(0,1fr));
   grid-template-rows:repeat(2,minmax(0,1fr));
 }
 
-
+/* Compact one-screen desktop layout. */
 @media (min-width:1000px) and (min-height:800px){
   html,body{height:100%}
   body{overflow:hidden}
@@ -180,7 +217,11 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   .matrix-list .matrix-build-item strong{font-size:12px}
 }
 
-
+/* =========================================================
+   MOBILE / TABLET MATRIX
+   Stack each profession as a card with Damage + Support below.
+   This avoids horizontal scrolling while preserving 1–4 builds/cell.
+   ========================================================= */
 @media (max-width: 760px){
   body{overflow-x:hidden}
   .site-shell{width:min(100% - 20px, 1440px)}
@@ -235,7 +276,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
     border-radius:0 0 10px 0;
   }
 
-  
+  /* Put compact role labels inside the two cells. */
   .matrix-cell{position:relative;padding-top:27px !important}
   .matrix-profession + .matrix-cell::before,
   .matrix-profession + .matrix-cell + .matrix-cell::before{
@@ -254,7 +295,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   footer{padding:18px 0;font-size:8px;gap:5px}
 }
 
-
+/* Very narrow phones: Damage and Support stack vertically for readable tap targets. */
 @media (max-width: 430px){
   .site-shell{width:min(100% - 14px, 1440px)}
   .build-matrix{grid-template-columns:1fr}
@@ -266,7 +307,9 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 }
 
 
-
+/* =========================================================
+   GW2 ICONS — fixed sizing; icons never drive tile/row size
+   ========================================================= */
 .profession-glyph{
   width:28px!important;height:28px!important;flex:0 0 28px!important;
   display:grid!important;place-items:center;overflow:hidden;
@@ -307,7 +350,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 
-
+/* Detail page icon: noticeable, but not oversized. */
 .build-title-row{display:flex;align-items:center;gap:12px;margin:0 0 4px;min-width:0}
 .build-title-row h1{margin:0;min-width:0}
 .build-title-icon{
@@ -316,7 +359,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   filter:drop-shadow(0 2px 7px rgba(0,0,0,.45));
 }
 
-
+/* Dense desktop matrix: slightly smaller icons when 3–4 builds share a cell. */
 @media (min-width:1000px) and (min-height:800px){
   .profession-glyph{width:26px!important;height:26px!important;flex-basis:26px!important}
   .profession-glyph img{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important}
