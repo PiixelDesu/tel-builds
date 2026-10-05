@@ -17,6 +17,17 @@
    const gw2=safeGw
     ? `<a class="button primary" href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open full build on GW2Skills ↗</a>`
     : `<span class="button disabled" title="Add a GW2Skills QuickLink in data/builds.json">GW2Skills link not added</span>`;
+   const gw2Embed=safeGw ? `
+    <section class="gw2skills-panel">
+      <div class="gw2skills-panel-head">
+        <div><p class="eyebrow">INTERACTIVE BUILD</p><h2>GW2Skills build</h2></div>
+        <a class="gw2skills-external" href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open separately ↗</a>
+      </div>
+      <div class="gw2skills-frame-wrap">
+        <iframe class="gw2skills-frame" src="${TEL.esc(b.gw2skills)}" title="${TEL.esc(b.name)} on GW2Skills" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <p class="gw2skills-fallback">If the editor does not appear, GW2Skills may be blocking embedded pages in your browser. Use <a href="${TEL.esc(b.gw2skills)}" target="_blank" rel="noopener noreferrer">Open separately</a>.</p>
+    </section>` : ``;
 
    view.innerHTML=`
     <div class="build-kicker"><span class="tag">${TEL.esc(p?.name||b.profession)}</span><span class="tag">${TEL.esc(b.specialization||"")}</span><span class="tag">${TEL.esc(b.category)}</span></div>
@@ -24,6 +35,7 @@
     <p class="build-summary">${TEL.esc(b.description||"")}</p>
     <p class="build-meta">${TEL.esc(b.status||"")} ${b.updated?`· Updated ${TEL.esc(b.updated)}`:""}</p>
     <div class="build-actions">${gw2}<a class="button ghost" href="./">Back to matrix</a></div>
+    ${gw2Embed}
     <div class="detail-grid">
       <section class="detail-card"><h3>Build information</h3><div class="detail-list">
        <div class="detail-row"><span>Profession</span><strong>${TEL.esc(p?.name||b.profession)}</strong></div>
