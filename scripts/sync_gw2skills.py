@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 BUILDS=ROOT/'data'/'builds.json'
+ROAMING=ROOT/'data'/'roaming.json'
 OUT=ROOT/'data'/'gw2-build-codes.json'
 ITEM_CACHE=ROOT/'data'/'gw2-item-cache.json'
 ITEM_ASSETS=ROOT/'assets'/'gw2'/'items'
@@ -433,6 +434,8 @@ def specialization_mechanics_from(preload, db, specialization=""):
 
 def main():
     builds=json.loads(BUILDS.read_text(encoding='utf-8'))
+    if ROAMING.exists():
+        builds += json.loads(ROAMING.read_text(encoding='utf-8'))
     try: old=json.loads(OUT.read_text(encoding='utf-8'))
     except Exception: old={}
     result={}; failures=[]; dbcache={}; mech_debug={}
@@ -507,10 +510,8 @@ def main():
     item_meta=resolve_official_items(names)
     for entry in result.values():
         if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
-    try:
-        sync_class_icons()
-    except Exception as e:
-        print('WARN class icon sync failed:',e)
+    # Class icons are required homepage assets. Fail the sync if they cannot be generated.
+    sync_class_icons()
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     MECH_DEBUG.write_text(json.dumps(mech_debug,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Mechanic debug snapshot: {MECH_DEBUG.relative_to(ROOT)} ({len(mech_debug)} build(s))')

@@ -24,12 +24,15 @@ const TEL={
 document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYear());
 
 (async function(){
- if(document.body.dataset.page!=="home")return;
+ if(!["home","roaming"].includes(document.body.dataset.page))return;
+ const isRoaming=document.body.dataset.page==="roaming";
+ const buildData=isRoaming?"data/roaming.json":"data/builds.json";
+ const buildSource=isRoaming?"roaming":"zerg";
  const matrix=document.querySelector("#build-matrix");
  try{
    const [professions,builds,icons]=await Promise.all([
      TEL.json("data/professions.json"),
-     TEL.json("data/builds.json"),
+     TEL.json(buildData),
      TEL.gw2Icons()
    ]);
 
@@ -37,7 +40,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      const list=builds.filter(x=>x.profession===p.id&&x.category===cat).slice(0,4);
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list build-count-${list.length}">${list.map(b=>`
-       <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
+       <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}&source=${buildSource}">
          ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:`<span class="spec-icon spec-icon-placeholder" aria-hidden="true"></span>`}
          <span class="build-label"><strong>${TEL.esc(b.name)}</strong><small>${TEL.esc(b.specialization||"")}</small></span>
        </a>`).join("")}</div>`;
