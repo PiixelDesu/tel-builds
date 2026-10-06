@@ -12,8 +12,8 @@ const TEL={
    if(this._gw2Icons) return this._gw2Icons;
    this._gw2Icons=(async()=>{
      try{
-       const cached=JSON.parse(sessionStorage.getItem("tel-gw2-icons")||"null");
-       if(cached?.professions && cached?.specializations) return cached;
+       const cached=JSON.parse(sessionStorage.getItem("tel-gw2-icons-v2")||"null");
+       if(cached?.professions && cached?.specializations && cached.specializations.dragonhunter && cached.specializations.druid && cached.specializations.vindicator) return cached;
      }catch(_){}
      try{
        const [pr,sr]=await Promise.all([
@@ -25,7 +25,7 @@ const TEL={
        const icons={professions:{},specializations:{}};
        professions.forEach(p=>icons.professions[p.name.toLowerCase()]=p.icon_big||p.icon);
        specializations.forEach(x=>icons.specializations[x.name.toLowerCase()]=x.profession_icon_big||x.profession_icon||x.icon);
-       try{sessionStorage.setItem("tel-gw2-icons",JSON.stringify(icons));}catch(_){}
+       try{sessionStorage.setItem("tel-gw2-icons-v2",JSON.stringify(icons));}catch(_){}
        return icons;
      }catch(e){console.warn("GW2 icons unavailable",e);return {professions:{},specializations:{}};}
    })();
@@ -53,7 +53,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list build-count-${list.length}">${list.map(b=>`
        <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
-         ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:``}
+         ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:`<span class="spec-icon spec-icon-placeholder" aria-hidden="true"></span>`}
          <span class="build-label"><strong>${TEL.esc(b.name)}</strong><small>${TEL.esc(b.specialization||"")}</small></span>
        </a>`).join("")}</div>`;
    };
