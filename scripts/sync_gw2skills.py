@@ -507,10 +507,8 @@ def main():
     item_meta=resolve_official_items(names)
     for entry in result.values():
         if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
-    try:
-        sync_class_icons()
-    except Exception as e:
-        print('WARN class icon sync failed:',e)
+    # Class icons are required homepage assets. Fail the sync if they cannot be generated.
+    sync_class_icons()
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     MECH_DEBUG.write_text(json.dumps(mech_debug,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Mechanic debug snapshot: {MECH_DEBUG.relative_to(ROOT)} ({len(mech_debug)} build(s))')
