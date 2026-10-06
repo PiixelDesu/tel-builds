@@ -10,25 +10,10 @@ const TEL={
  esc(s=""){const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML;},
  async gw2Icons(){
    if(this._gw2Icons) return this._gw2Icons;
-   this._gw2Icons=(async()=>{
-     try{
-       const cached=JSON.parse(sessionStorage.getItem("tel-gw2-icons")||"null");
-       if(cached?.professions && cached?.specializations) return cached;
-     }catch(_){}
-     try{
-       const [pr,sr]=await Promise.all([
-         fetch("https://api.guildwars2.com/v2/professions?ids=all"),
-         fetch("https://api.guildwars2.com/v2/specializations?ids=all")
-       ]);
-       if(!pr.ok||!sr.ok) throw new Error("GW2 API unavailable");
-       const [professions,specializations]=await Promise.all([pr.json(),sr.json()]);
-       const icons={professions:{},specializations:{}};
-       professions.forEach(p=>icons.professions[p.name.toLowerCase()]=p.icon_big||p.icon);
-       specializations.forEach(x=>icons.specializations[x.name.toLowerCase()]=x.profession_icon_big||x.profession_icon||x.icon);
-       try{sessionStorage.setItem("tel-gw2-icons",JSON.stringify(icons));}catch(_){}
-       return icons;
-     }catch(e){console.warn("GW2 icons unavailable",e);return {professions:{},specializations:{}};}
-   })();
+   this._gw2Icons=this.json("data/gw2-class-icons.json").catch(e=>{
+     console.warn("Local GW2 class icons unavailable",e);
+     return {professions:{},specializations:{}};
+   });
    return this._gw2Icons;
  },
  iconForBuild(b,icons){
@@ -53,7 +38,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list build-count-${list.length}">${list.map(b=>`
        <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}">
-         ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:``}
+         ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:`<span class="spec-icon spec-icon-placeholder" aria-hidden="true"></span>`}
          <span class="build-label"><strong>${TEL.esc(b.name)}</strong><small>${TEL.esc(b.specialization||"")}</small></span>
        </a>`).join("")}</div>`;
    };

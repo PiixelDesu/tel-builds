@@ -20,9 +20,9 @@ jobs:
         run: python scripts/sync_gw2skills.py
       - name: Commit generated build data
         run: |
-          if git diff --quiet -- data/gw2-build-codes.json data/gw2-item-cache.json assets/gw2/items; then exit 0; fi
+          if git diff --quiet -- data/gw2-build-codes.json data/gw2-item-cache.json data/gw2-class-icons.json assets/gw2/items assets/gw2/classes; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/gw2-build-codes.json data/gw2-item-cache.json data/gw2-mechanics-debug.json assets/gw2/items
+          git add data/gw2-build-codes.json data/gw2-item-cache.json data/gw2-mechanics-debug.json data/gw2-class-icons.json assets/gw2/items assets/gw2/classes
           git commit -m "Sync GW2Skills build data [skip ci]"
           git push

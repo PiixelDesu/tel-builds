@@ -9,6 +9,8 @@ BUILDS=ROOT/'data'/'builds.json'
 OUT=ROOT/'data'/'gw2-build-codes.json'
 ITEM_CACHE=ROOT/'data'/'gw2-item-cache.json'
 ITEM_ASSETS=ROOT/'assets'/'gw2'/'items'
+CLASS_ASSETS=ROOT/'assets'/'gw2'/'classes'
+CLASS_ICONS=ROOT/'data'/'gw2-class-icons.json'
 MECH_DEBUG=ROOT/'data'/'gw2-mechanics-debug.json'
 UA='TEL-Builds/3.0 (+https://github.com/PiixelDesu/tel-builds)'
 B64=re.compile(r'(?<![A-Za-z0-9+/_-])([A-Za-z0-9+/_-]{36,}={0,2})(?![A-Za-z0-9+/_-])')
@@ -31,6 +33,28 @@ def fetch(url): return fetch_url(normalize_url(url))
 
 def gw2_api(path):
     return json.loads(fetch_url('https://api.guildwars2.com/v2/'+path,'application/json'))
+
+def sync_class_icons():
+    """Cache profession/specialization icons locally so homepage rendering has no external dependency."""
+    CLASS_ASSETS.mkdir(parents=True,exist_ok=True)
+    icons={'professions':{},'specializations':{}}
+    rows=[('professions',gw2_api('professions?ids=all')),('specializations',gw2_api('specializations?ids=all'))]
+    for kind,items in rows:
+        for item in items:
+            name=str(item.get('name') or item.get('id') or '').strip().lower()
+            if not name: continue
+            url=(item.get('icon_big') or item.get('profession_icon_big') or item.get('profession_icon') or item.get('icon') or '')
+            if not url: continue
+            slug=re.sub(r'[^a-z0-9]+','-',name).strip('-')
+            suffix=Path(urllib.parse.urlsplit(url).path).suffix.lower()
+            if suffix not in ('.png','.jpg','.jpeg','.webp'): suffix='.png'
+            target=CLASS_ASSETS/f'{kind[:-1]}-{slug}{suffix}'
+            if not target.exists():
+                req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'image/*'})
+                with urllib.request.urlopen(req,timeout=30) as r: target.write_bytes(r.read())
+            icons[kind][name]=target.relative_to(ROOT).as_posix()
+    CLASS_ICONS.write_text(json.dumps(icons,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    print(f'GW2 class icons: {len(icons["professions"])} professions, {len(icons["specializations"])} specializations cached locally')
 
 def load_item_cache():
     try:
@@ -483,6 +507,10 @@ def main():
     item_meta=resolve_official_items(names)
     for entry in result.values():
         if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
+    try:
+        sync_class_icons()
+    except Exception as e:
+        print('WARN class icon sync failed:',e)
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     MECH_DEBUG.write_text(json.dumps(mech_debug,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Mechanic debug snapshot: {MECH_DEBUG.relative_to(ROOT)} ({len(mech_debug)} build(s))')
