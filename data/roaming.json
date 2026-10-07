@@ -10,5 +10,17 @@
     "status": "approved",
     "updated": "2026-10-07",
     "notes": ""
+  },
+  {
+    "id": "condition-mallyx-roamer",
+    "profession": "revenant",
+    "category": "roaming",
+    "name": "Condition Mallyx Roamer",
+    "specialization": "Conduit",
+    "description": "Condition Mallyx Roamer is a Guild Wars 2 WvW build for Revenant.",
+    "gw2skills": "https://gw2skills.net/editor/?PmwEQLtrsjOCJk1UTQBNncKqo90TSJtv+CMwFUQCJcYX2mZA-DWJYkRNfpEZCUZBkZI0bEI/ziAEue41AiPNAA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
   }
 ]
