@@ -113,7 +113,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 
 
 /* =========================================================
-   TEL v4 — two-column build matrix + adaptive 1–4 build cells
+   TEL v5 — two-column build matrix + adaptive 1–6 build cells
    ========================================================= */
 .build-matrix{
   grid-template-columns:190px repeat(2,minmax(280px,1fr));
@@ -186,6 +186,20 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   grid-template-rows:repeat(2,minmax(0,1fr));
 }
 
+/* 5 builds: two on top, three below. */
+.matrix-list.build-count-5{
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
+}
+.matrix-list.build-count-5 .matrix-build-item{grid-column:span 3}
+.matrix-list.build-count-5 .matrix-build-item:nth-child(n+3){grid-column:span 2}
+
+/* 6 builds: balanced 3 × 2 grid. */
+.matrix-list.build-count-6{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
+}
+
 /* Compact one-screen desktop layout. */
 @media (min-width:1000px) and (min-height:800px){
   html,body{height:100%}
@@ -220,7 +234,7 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
 /* =========================================================
    MOBILE / TABLET MATRIX
    Stack each profession as a card with Damage + Support below.
-   This avoids horizontal scrolling while preserving 1–4 builds/cell.
+   This avoids horizontal scrolling while preserving 1–6 builds/cell.
    ========================================================= */
 @media (max-width: 760px){
   body{overflow-x:hidden}
@@ -364,11 +378,17 @@ footer{border-top:1px solid var(--border2);min-height:110px;display:flex;align-i
   .profession-glyph{width:26px!important;height:26px!important;flex-basis:26px!important}
   .profession-glyph img{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important}
   .matrix-list.build-count-3 .spec-icon,
-  .matrix-list.build-count-4 .spec-icon{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;min-width:22px;min-height:22px}
+  .matrix-list.build-count-4 .spec-icon,
+  .matrix-list.build-count-5 .spec-icon,
+  .matrix-list.build-count-6 .spec-icon{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;min-width:22px;min-height:22px}
   .matrix-list.build-count-3 .matrix-build-item,
-  .matrix-list.build-count-4 .matrix-build-item{grid-template-columns:22px minmax(0,1fr);column-gap:6px;padding:5px 7px}
+  .matrix-list.build-count-4 .matrix-build-item,
+  .matrix-list.build-count-5 .matrix-build-item,
+  .matrix-list.build-count-6 .matrix-build-item{grid-template-columns:22px minmax(0,1fr);column-gap:6px;padding:5px 7px}
   .matrix-list.build-count-3 .build-label strong,
-  .matrix-list.build-count-4 .build-label strong{font-size:11px}
+  .matrix-list.build-count-4 .build-label strong,
+  .matrix-list.build-count-5 .build-label strong,
+  .matrix-list.build-count-6 .build-label strong{font-size:11px}
 }
 
 @media (max-width:760px){
@@ -529,4 +549,79 @@ body[data-page="build"] .build-actions{margin:18px 0 36px}
 }
 @media (max-width:430px){
   .matrix-build-item .spec-icon-placeholder{width:26px!important;height:26px!important;min-width:26px;min-height:26px;max-width:26px!important;max-height:26px!important}
+}
+
+@media (max-width:760px){
+  .matrix-list.build-count-5,
+  .matrix-list.build-count-6{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
+  .matrix-list.build-count-5 .matrix-build-item{grid-column:auto}
+}
+
+/* =========================================================
+   TEL ROAMING — one profession slot, adaptive 1–12 build grid
+   ========================================================= */
+body[data-page="roaming"] .build-matrix{
+  grid-template-columns:190px minmax(560px,1fr);
+  min-width:760px;
+}
+body[data-page="roaming"] .roaming-cell{
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  grid-auto-flow:row;
+  grid-auto-rows:minmax(0,1fr);
+}
+/* Keep small roaming sets generous; denser sets scale naturally to 12. */
+body[data-page="roaming"] .roaming-count-1{grid-template-columns:1fr}
+body[data-page="roaming"] .roaming-count-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-5,
+body[data-page="roaming"] .roaming-count-6{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-7,
+body[data-page="roaming"] .roaming-count-8{grid-template-columns:repeat(4,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-9{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-page="roaming"] .roaming-count-10,
+body[data-page="roaming"] .roaming-count-11,
+body[data-page="roaming"] .roaming-count-12{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+@media (min-width:1000px) and (min-height:800px){
+  body[data-page="roaming"] .build-matrix{
+    grid-template-columns:170px minmax(0,1fr);
+    grid-template-rows:34px repeat(9,minmax(0,1fr));
+    min-width:0;
+  }
+  body[data-page="roaming"] .roaming-cell .matrix-build-item{
+    grid-template-columns:22px minmax(0,1fr);
+    column-gap:6px;
+    padding:4px 6px;
+  }
+  body[data-page="roaming"] .roaming-cell .spec-icon{
+    width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;min-width:22px;min-height:22px;
+  }
+  body[data-page="roaming"] .roaming-cell .build-label strong{font-size:10px}
+  body[data-page="roaming"] .roaming-cell .build-label small{font-size:6px}
+}
+
+@media (max-width:760px){
+  body[data-page="roaming"] .build-matrix{grid-template-columns:1fr;min-width:0}
+  body[data-page="roaming"] .matrix-profession{grid-column:1}
+  body[data-page="roaming"] .matrix-profession + .roaming-cell{
+    border-left:1px solid var(--border2);
+    border-right:1px solid var(--border2);
+    border-radius:0 0 10px 10px;
+  }
+  body[data-page="roaming"] .matrix-profession + .roaming-cell::before{content:none}
+  body[data-page="roaming"] .roaming-cell.matrix-list{padding:5px!important;min-height:92px}
+  body[data-page="roaming"] .roaming-cell.matrix-empty{padding:5px!important;min-height:70px}
+  body[data-page="roaming"] .roaming-count-1{grid-template-columns:1fr}
+  body[data-page="roaming"] .roaming-count-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body[data-page="roaming"] .roaming-count-3,
+  body[data-page="roaming"] .roaming-count-4,
+  body[data-page="roaming"] .roaming-count-5,
+  body[data-page="roaming"] .roaming-count-6,
+  body[data-page="roaming"] .roaming-count-7,
+  body[data-page="roaming"] .roaming-count-8,
+  body[data-page="roaming"] .roaming-count-9,
+  body[data-page="roaming"] .roaming-count-10,
+  body[data-page="roaming"] .roaming-count-11,
+  body[data-page="roaming"] .roaming-count-12{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
