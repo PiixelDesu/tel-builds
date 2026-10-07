@@ -1397,5 +1397,205 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/104848.png"
+  },
+  "Superior Sigil of Geomancy": {
+    "id": 24605,
+    "name": "Superior Sigil of Geomancy",
+    "icon": "https://render.guildwars2.com/file/B79B430645DDF54E6792909A52F5CA40A4911407/220687.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 251,
+        "buff": {
+          "skill_id": 9436,
+          "description": "Inflict nearby foes with bleeding for 8 seconds after swapping to this weapon in combat. <br><c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of the Geomancer"
+    },
+    "local_icon": "assets/gw2/items/24605.png"
+  },
+  "Superior Sigil of Doom": {
+    "id": 24609,
+    "name": "Superior Sigil of Doom",
+    "icon": "https://render.guildwars2.com/file/6CE4D1D6E5392C4CC8BACA595E3393EBF208BEED/220686.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 255,
+        "buff": {
+          "skill_id": 9442,
+          "description": "Your next attack will inflict 3 stacks of poison for 8 seconds after swapping to this weapon in combat. <br><c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Doom"
+    },
+    "local_icon": "assets/gw2/items/24609.png"
+  },
+  "Superior Rune of the Traveler": {
+    "id": 24691,
+    "name": "Superior Rune of the Traveler",
+    "icon": "https://render.guildwars2.com/file/3CCCAB48D5D5FAEA14912BC6D3DB1A79DFC4C846/221050.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+8 to All Stats",
+        "+5% Boon Duration",
+        "+12 to All Stats",
+        "+10% Boon Duration",
+        "+16 to All Stats",
+        "+25% Movement Speed"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Traveler"
+    },
+    "local_icon": "assets/gw2/items/24691.png"
+  },
+  "Malign WvW Infusion": {
+    "id": 43253,
+    "name": "Malign WvW Infusion",
+    "icon": "https://render.guildwars2.com/file/CB3B7590105E3EDC390C626735035361990CB1C0/587074.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Default",
+      "flags": [
+        "ShortBow",
+        "HeavyArmor",
+        "LightArmor",
+        "Dagger",
+        "MediumArmor",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Trinket",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [
+        "Infusion"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 705,
+        "buff": {
+          "skill_id": 19061,
+          "description": "+5 Condition Damage\n+1% Damage to Guards, Lords, and Supervisors"
+        },
+        "attributes": [
+          {
+            "attribute": "ConditionDamage",
+            "modifier": 5
+          }
+        ]
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/43253.png"
+  },
+  "Magnanimous Tuning Crystal": {
+    "id": 81079,
+    "name": "Magnanimous Tuning Crystal",
+    "icon": "https://render.guildwars2.com/file/69DDBB1A79A104656C631204D4FC65C941D24319/1676541.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Condition Damage Equal to 3% of Your Vitality\nGain Condition Damage Equal to 3% of Your Toughness\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/81079.png"
+  },
+  "Peppered Cured Meat Flatbread": {
+    "id": 91848,
+    "name": "Peppered Cured Meat Flatbread",
+    "icon": "https://render.guildwars2.com/file/4E3BD999CA176E1AE6DD04CC17FB0A732A0E6A52/2191049.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91848.png"
+  },
+  "Relic of Agony": {
+    "id": 104849,
+    "name": "Relic of Agony",
+    "icon": "https://render.guildwars2.com/file/7060CF69EFEB7A99150F2F1A7E0E1F1D2D9ED0D2/3629395.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104849.png"
   }
 }

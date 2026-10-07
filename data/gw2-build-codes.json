@@ -7439,5 +7439,324 @@
         "type": "Relic"
       }
     }
+  },
+  "condition-mallyx-roamer": {
+    "chat_code": "[&DQkONgkbTxncEdwRBhIGEisSKxLUEdQRyhHKEQMEAwQGEisS1BEGEisS1BE=]",
+    "source": "https://gw2skills.net/editor/?PmwEQLtrsjOCJk1UTQBNncKqo90TSJtv+CMwFUQCJcYX2mZA-DWJYkRNfpEZCUZBkZI0bEI/ziAEue41AiPNAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Trailblazer",
+          "rune": {
+            "name": "Superior Rune of the Traveler",
+            "id": 24691,
+            "icon": "assets/gw2/items/24691.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Trailblazer",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Geomancy",
+              "id": 24605,
+              "icon": "assets/gw2/items/24605.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Doom",
+              "id": 24609,
+              "icon": "assets/gw2/items/24609.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Trailblazer",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Mace"
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Trailblazer",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Shield"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Trailblazer"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Trailblazer",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Trailblazer",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Trailblazer",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Trailblazer",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Trailblazer",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppered Cured Meat Flatbread",
+        "id": 91848,
+        "icon": "assets/gw2/items/91848.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Magnanimous Tuning Crystal",
+        "id": 81079,
+        "icon": "assets/gw2/items/81079.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Agony",
+        "id": 104849,
+        "icon": "assets/gw2/items/104849.png",
+        "type": "Relic"
+      }
+    }
   }
 }
