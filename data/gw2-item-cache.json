@@ -1597,5 +1597,325 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/104849.png"
+  },
+  "Superior Sigil of Air": {
+    "id": 24554,
+    "name": "Superior Sigil of Air",
+    "icon": "https://render.guildwars2.com/file/C337CC61DF2F5EE44B7D053EFF33059111024444/220676.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 197,
+        "buff": {
+          "skill_id": 9448,
+          "description": "Unleash a lightning strike upon critically hitting a foe. <br><c=@reminder>(Cooldown: 3 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Air"
+    },
+    "local_icon": "assets/gw2/items/24554.png"
+  },
+  "Superior Sigil of Rage": {
+    "id": 24561,
+    "name": "Superior Sigil of Rage",
+    "icon": "https://render.guildwars2.com/file/15310B48271FC15332C65C5E02FEC4FFF298B652/220679.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 204,
+        "buff": {
+          "skill_id": 9295,
+          "description": "Gain quickness for 3 seconds upon critically hitting a foe. <br><c=@reminder>(Cooldown: 20 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Rage"
+    },
+    "local_icon": "assets/gw2/items/24561.png"
+  },
+  "Superior Sigil of Blood": {
+    "id": 24570,
+    "name": "Superior Sigil of Blood",
+    "icon": "https://render.guildwars2.com/file/BFD4F5E6A8B95866BBA7CDC0E8920D0346337934/220681.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 213,
+        "buff": {
+          "skill_id": 9458,
+          "description": "Steal a foe's health upon landing a critical hit. <br><c=@reminder>(Cooldown: 5 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Blood"
+    },
+    "local_icon": "assets/gw2/items/24570.png"
+  },
+  "Superior Rune of Balthazar": {
+    "id": 24765,
+    "name": "Superior Rune of Balthazar",
+    "icon": "https://render.guildwars2.com/file/7CEF770BE7E6A5E507B6D98018155CD2395FAD18/220694.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Condition Damage",
+        "+10% Burning Duration",
+        "+50 Condition Damage",
+        "+20% Burning Duration",
+        "+100 Condition Damage",
+        "+20% Burning Duration"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of Balthazar"
+    },
+    "local_icon": "assets/gw2/items/24765.png"
+  },
+  "Superior Rune of the Trapper": {
+    "id": 67339,
+    "name": "Superior Rune of the Trapper",
+    "icon": "https://render.guildwars2.com/file/4A322301EDD61898193B9B94A0A6A1F1DC06BF24/866844.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Condition Damage",
+        "+5% Condition Duration",
+        "+50 Condition Damage",
+        "+10% Condition Duration",
+        "+100 Condition Damage",
+        "+125 Condition Damage"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Trapper"
+    },
+    "local_icon": "assets/gw2/items/67339.png"
+  },
+  "Superior Sigil of Draining": {
+    "id": 70825,
+    "name": "Superior Sigil of Draining",
+    "icon": "https://render.guildwars2.com/file/C501D2CCF95A7B59F15EEDEF9C7D42C2DECE48E7/1201533.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1103,
+        "buff": {
+          "skill_id": 33022,
+          "description": "Steal life when interrupting an enemy. <c=@reminder>(Cooldown against defiant foes: 3 seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Draining"
+    },
+    "local_icon": "assets/gw2/items/70825.png"
+  },
+  "Superior Sigil of the Stars": {
+    "id": 86170,
+    "name": "Superior Sigil of the Stars",
+    "icon": "https://render.guildwars2.com/file/B9B778FD561C019DC5A3A01D55C234D1E31251CE/1894696.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1416,
+        "buff": {
+          "skill_id": 47393,
+          "description": "Gain a charge of +2 to all stats each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c> <br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Bounty"
+    },
+    "local_icon": "assets/gw2/items/86170.png"
+  },
+  "Spherified Peppercorn-Spiced Oyster Soup": {
+    "id": 91713,
+    "name": "Spherified Peppercorn-Spiced Oyster Soup",
+    "icon": "https://render.guildwars2.com/file/683451055925A4C9503B0D52C608086A54D13750/2191077.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91713.png"
+  },
+  "Relic of the Daredevil": {
+    "id": 100345,
+    "name": "Relic of the Daredevil",
+    "icon": "https://render.guildwars2.com/file/29FE690460A037C7FAC3C71903BA1EBECB204012/3122341.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100345.png"
+  },
+  "Relic of Speed": {
+    "id": 100148,
+    "name": "Relic of Speed",
+    "icon": "https://render.guildwars2.com/file/15B07C1813B63DFD27A6A8A5E36CF1BC50DB0562/3122369.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100148.png"
+  },
+  "Relic of the Demon Queen": {
+    "id": 101467,
+    "name": "Relic of the Demon Queen",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101467.png"
+  },
+  "Relic of the Wayfinder": {
+    "id": 101917,
+    "name": "Relic of the Wayfinder",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101917.png"
+  },
+  "Relic of the Phenom": {
+    "id": 104733,
+    "name": "Relic of the Phenom",
+    "icon": "https://render.guildwars2.com/file/AD0AE5035A197220507642E1169ED55E0C58A29D/3629400.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104733.png"
   }
 }

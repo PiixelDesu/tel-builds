@@ -7758,5 +7758,1799 @@
         "type": "Relic"
       }
     }
+  },
+  "power-shiro-conduit-roamer": {
+    "chat_code": "[&DQkJGQM5TyncEdwR1BHUESsSKxIGEgYSyhHKEQgCCALUESsSBhLUESsSBhI=]",
+    "source": "https://gw2skills.net/editor/?PmwAw6JlxGbMxs2azLv5mbd1t3ejLuBHckRu1WjIilsU+MFA-DWZYBR3TMIe6gGKkOjgWDhebKbvKEAxR2I+lcW0/MCA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Sword"
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Shield"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Hydromancy",
+              "id": 24597,
+              "icon": "assets/gw2/items/24597.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Rage",
+              "id": 24561,
+              "icon": "assets/gw2/items/24561.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Hammer"
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Berserker",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Trident"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Demolisher"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Demolisher",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Speed",
+        "id": 100148,
+        "icon": "assets/gw2/items/100148.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "power-s/d-roamer": {
+    "chat_code": "[&DQU2KywnBzkKAQAAGQEAAFgAAABXAQAAnwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PawAwiVlNw6YbsLGJmWXntcA-DWRYBhJGd4SppIotCovEIzQw27ABQckNi9wlcW0/MCA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Berserker",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Air",
+              "id": 24554,
+              "icon": "assets/gw2/items/24554.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Blood",
+              "id": 24570,
+              "icon": "assets/gw2/items/24570.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Sword"
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Blood",
+              "id": 24570,
+              "icon": "assets/gw2/items/24570.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Dagger"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Shortbow"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Marauder"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Daredevil",
+        "id": 100345,
+        "icon": "assets/gw2/items/100345.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "celestial-d/d-toad-roamer": {
+    "chat_code": "[&DQYaOiU7UB51AGIdTwFPAZAA9gByHXIdah2WAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PGwAgijlFE82abepM6oXdoe0X7TPlyBAA-DWRYVRb2MsDpXJQ4KgaGGO43QACX78Wo/MCA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Viper",
+          "rune": {
+            "name": "Superior Rune of Balthazar",
+            "id": 24765,
+            "icon": "assets/gw2/items/24765.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Draining",
+              "id": 70825,
+              "icon": "assets/gw2/items/70825.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Dagger"
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Dagger"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of the Stars",
+              "id": 86170,
+              "icon": "assets/gw2/items/86170.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of the Stars",
+              "id": 86170,
+              "icon": "assets/gw2/items/86170.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Dagger"
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of the Stars",
+              "id": 86170,
+              "icon": "assets/gw2/items/86170.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Trident"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Celestial"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Spherified Peppercorn-Spiced Oyster Soup",
+        "id": 91713,
+        "icon": "assets/gw2/items/91713.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Demon Queen",
+        "id": 101467,
+        "icon": "assets/gw2/items/101467.png",
+        "type": "Relic"
+      }
+    },
+    "mechanics": {
+      "type": "familiar",
+      "selections": [
+        {
+          "id": 83,
+          "name": "Familiar's Prowess",
+          "source_table": "effect",
+          "source_path": "trait[1][2]"
+        }
+      ]
+    }
+  },
+  "scepter-harevoker-roamer": {
+    "chat_code": "[&DQYpKiU+UBZiHXUATwFPAZAAkABxHesAah0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PGwAs23lBXw2abe5t56WNWUX+TLlwBAA-DWJYiRbfh0UYkZB0bCY79iAIOyGx25SOL6fGBA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of the Scholar",
+            "id": 24836,
+            "icon": "assets/gw2/items/24836.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Scepter"
+        },
+        {
+          "slot": "Weapon set 1 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Focus"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Focus"
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Trident"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Marauder"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Peppercorn-Crusted Sous-Vide Steak",
+        "id": 91734,
+        "icon": "assets/gw2/items/91734.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Phenom",
+        "id": 104733,
+        "icon": "assets/gw2/items/104733.png",
+        "type": "Relic"
+      }
+    }
+  },
+  "celestial-elixir-roamer": {
+    "chat_code": "[&DQgnGgIvQDfnGqIAvQH6ANcaMAGLAL0B6BqSAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PSwAYp/lhWx8ibrJuv8WbkW0OvxbA-D2IY1o+/UiURVpENThQviAF+fIAh73C9faAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Trapper",
+            "id": 67339,
+            "icon": "assets/gw2/items/67339.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Doom",
+              "id": 24609,
+              "icon": "assets/gw2/items/24609.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Geomancy",
+              "id": 24605,
+              "icon": "assets/gw2/items/24605.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Staff"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Pistol"
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Torch"
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Doom",
+              "id": 24609,
+              "icon": "assets/gw2/items/24609.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Geomancy",
+              "id": 24605,
+              "icon": "assets/gw2/items/24605.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Doom",
+              "id": 24609,
+              "icon": "assets/gw2/items/24609.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Geomancy",
+              "id": 24605,
+              "icon": "assets/gw2/items/24605.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Trident"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Celestial"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Spherified Peppercorn-Spiced Oyster Soup",
+        "id": 91713,
+        "icon": "assets/gw2/items/91713.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Magnanimous Tuning Crystal",
+        "id": 81079,
+        "icon": "assets/gw2/items/81079.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of the Wayfinder",
+        "id": 101917,
+        "icon": "assets/gw2/items/101917.png",
+        "type": "Relic"
+      }
+    }
   }
 }
