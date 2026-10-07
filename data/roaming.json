@@ -1,1 +1,14 @@
-[]
+[
+    {
+    "id": "celestial-amalgam-roamer",
+    "profession": "engineer",
+    "category": "roaming",
+    "name": "Celestial Amalgam Roamer",
+    "specialization": "Amalgam",
+    "description": "Celestial Amalgam Roamer is a Guild Wars 2 WvW build for Engineer.",
+    "gw2skills": "https://gw2skills.net/editor/?PeQEQLTmVz0Yzsbc0tOnnKQ4pnPA-DWRYVRBHvZQDlRmJSvFhaXLCQAbg3SVeVAA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
+  }
+]
