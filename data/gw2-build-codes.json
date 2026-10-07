@@ -7156,5 +7156,288 @@
         "type": "Relic"
       }
     }
+  },
+  "celestial-amalgam-roamer": {
+    "chat_code": "[&DQMGHRUnSyeAHQAAhR0AAIYAAACCHQAAex0AAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PeQEQLTmVz0Yzsbc0tOnnKQ4pnPA-DWRYVRBHvZQDlRmJSvFhaXLCQAbg3SVeVAA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Celestial",
+          "rune": {
+            "name": "Superior Rune of the Pack",
+            "id": 24702,
+            "icon": "assets/gw2/items/24702.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Celestial",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Aquatic 1",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Cleansing",
+              "id": 67340,
+              "icon": "assets/gw2/items/67340.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Energy",
+              "id": 24607,
+              "icon": "assets/gw2/items/24607.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Harpoon Gun"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Viper"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Viper",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Celestial",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Bowl of Orrian Truffle and Meat Stew",
+        "id": 12488,
+        "icon": "assets/gw2/items/12488.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Toxic Maintenance Oil",
+        "id": 48916,
+        "icon": "assets/gw2/items/48916.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Bava Nisos",
+        "id": 104848,
+        "icon": "assets/gw2/items/104848.png",
+        "type": "Relic"
+      }
+    }
   }
 }

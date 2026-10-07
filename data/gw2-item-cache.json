@@ -1329,5 +1329,73 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/104491.png"
+  },
+  "Bowl of Orrian Truffle and Meat Stew": {
+    "id": 12488,
+    "name": "Bowl of Orrian Truffle and Meat Stew",
+    "icon": "https://render.guildwars2.com/file/29E202A51C1E9D05BF003F4F96C898B77FC62C57/433675.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Nourishment",
+      "icon": "https://render.guildwars2.com/file/779D3F0ABE5B46C09CFC57374DA8CC3A495F291C/436367.png",
+      "description": "100% Chance to Gain Might on Dodge\n+40% to Endurance Regeneration\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/12488.png"
+  },
+  "Superior Rune of the Pack": {
+    "id": 24702,
+    "name": "Superior Rune of the Pack",
+    "icon": "https://render.guildwars2.com/file/FEF77764F24C0548271F29337268970C092DA5D3/220717.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Power",
+        "+5% Boon Duration",
+        "+50 Power",
+        "+10% Boon Duration",
+        "+100 Power",
+        "+125 Precision"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of the Pack"
+    },
+    "local_icon": "assets/gw2/items/24702.png"
+  },
+  "Toxic Maintenance Oil": {
+    "id": 48916,
+    "name": "Toxic Maintenance Oil",
+    "icon": "https://render.guildwars2.com/file/7AB4D4BBBF563E0B5796C7CD645BDAB7BF9753B4/665780.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Concentration Equal to 3% of Your Power\nGain Concentration Equal to 6% of Your Condition Damage\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/48916.png"
+  },
+  "Relic of Bava Nisos": {
+    "id": 104848,
+    "name": "Relic of Bava Nisos",
+    "icon": "https://render.guildwars2.com/file/213C437140552326BD633D1AFF150B48DF2EB544/3629396.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104848.png"
   }
 }
