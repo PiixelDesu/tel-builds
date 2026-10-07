@@ -22,5 +22,65 @@
     "status": "approved",
     "updated": "2026-10-07",
     "notes": ""
+  },
+  {
+    "id": "power-shiro-conduit-roamer",
+    "profession": "revenant",
+    "category": "roaming",
+    "name": "Power Shiro Conduit Roamer",
+    "specialization": "Conduit",
+    "description": "Power Shiro Conduit Roamer is a Guild Wars 2 WvW build for Revenant.",
+    "gw2skills": "https://gw2skills.net/editor/?PmwAw6JlxGbMxs2azLv5mbd1t3ejLuBHckRu1WjIilsU+MFA-DWZYBR3TMIe6gGKkOjgWDhebKbvKEAxR2I+lcW0/MCA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
+  },
+  {
+    "id": "power-s/d-roamer",
+    "profession": "thief",
+    "category": "roaming",
+    "name": "Power S/D Roamer",
+    "specialization": "Daredevil",
+    "description": "Power S/D Roamer is a Guild Wars 2 WvW build for Thief.",
+    "gw2skills": "https://gw2skills.net/editor/?PawAwiVlNw6YbsLGJmWXntcA-DWRYBhJGd4SppIotCovEIzQw27ABQckNi9wlcW0/MCA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
+  },
+  {
+    "id": "celestial-d/d-toad-roamer",
+    "profession": "elementalist",
+    "category": "roaming",
+    "name": "Celestial D/D Toad Roamer",
+    "specialization": "Evoker",
+    "description": "Celestial D/D Toad Roamer is a Guild Wars 2 WvW build for Elementalist.",
+    "gw2skills": "https://gw2skills.net/editor/?PGwAgijlFE82abepM6oXdoe0X7TPlyBAA-DWRYVRb2MsDpXJQ4KgaGGO43QACX78Wo/MCA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
+  },
+  {
+    "id": "scepter-harevoker-roamer",
+    "profession": "elementalist",
+    "category": "roaming",
+    "name": "Scepter Harevoker Roamer",
+    "specialization": "Evoker",
+    "description": "Scepter Harevoker Roamer is a Guild Wars 2 WvW build for Elementalist.",
+    "gw2skills": "https://gw2skills.net/editor/?PGwAs23lBXw2abe5t56WNWUX+TLlwBAA-DWJYiRbfh0UYkZB0bCY79iAIOyGx25SOL6fGBA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
+  },
+  {
+    "id": "celestial-elixir-roamer",
+    "profession": "necromancer",
+    "category": "roaming",
+    "name": "Celestial Elixir Roamer",
+    "specialization": "Harbinger",
+    "description": "Celestial Elixir Roamer is a Guild Wars 2 WvW build for Necromancer.",
+    "gw2skills": "https://gw2skills.net/editor/?PSwAYp/lhWx8ibrJuv8WbkW0OvxbA-D2IY1o+/UiURVpENThQviAF+fIAh73C9faAA-w",
+    "status": "approved",
+    "updated": "2026-10-07",
+    "notes": ""
   }
 ]
