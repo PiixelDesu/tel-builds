@@ -51,7 +51,22 @@
      const petRows=d.profession==="Ranger"?[{title:"Terrestrial pets",ids:d.pets.slice(0,2)},{title:"Aquatic pets",ids:d.pets.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.map((id,i)=>petCard(id,`Pet ${i+1}`)).filter(Boolean)})).filter(row=>row.cards.length):[];
      const petsHtml=petRows.length?`<section class="overview-block pet-overview"><h3>Pets</h3><div class="pet-rows">${petRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
      const legendNames={1:"Legendary Dragon Stance",2:"Legendary Assassin Stance",3:"Legendary Dwarf Stance",4:"Legendary Demon Stance",5:"Legendary Renegade Stance",6:"Legendary Centaur Stance",7:"Legendary Alliance Stance",8:"Legendary Entity Stance"};
-     const legendRows=d.profession==="Revenant"?[{title:"Terrestrial legends",ids:d.legends.slice(0,2)},{title:"Aquatic legends",ids:d.legends.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.filter(Boolean).map((id,i)=>`<article class="pet-card mechanic-card"><div><span>Legend ${i+1}</span><strong>${esc(legendNames[id]||`Legend ${id}`)}</strong></div></article>`)})).filter(row=>row.cards.length):[];
+     const legendKeys={1:"Glint",2:"Shiro",3:"Jalis",4:"Mallyx",5:"Kalla",6:"Ventari",7:"Alliance",8:"Razah"};
+     let legendIcons={};
+     if(d.profession==="Revenant"&&d.legends.some(Boolean)){
+       try{
+         const availableLegends=await api("legends?ids=all");
+         const legendRecords=Object.fromEntries(availableLegends.map(legend=>[String(legend.id).toLowerCase(),legend]));
+         const selectedLegends=[...new Set(d.legends.filter(Boolean))];
+         const swapSkills=selectedLegends.map(id=>({id,skill:legendRecords[legendKeys[id]?.toLowerCase()]?.swap})).filter(x=>x.skill);
+         if(swapSkills.length){
+           const skillDetails=await api(`skills?ids=${[...new Set(swapSkills.map(x=>x.skill))].join(",")}`);
+           const skillIcons=Object.fromEntries(skillDetails.map(skill=>[skill.id,skill.icon]));
+           legendIcons=Object.fromEntries(swapSkills.map(x=>[x.id,skillIcons[x.skill]]));
+         }
+       }catch(error){console.warn("Revenant legend icons unavailable",error)}
+     }
+     const legendRows=d.profession==="Revenant"?[{title:"Terrestrial legends",ids:d.legends.slice(0,2)},{title:"Aquatic legends",ids:d.legends.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.map((id,i)=>id?`<article class="pet-card mechanic-card">${legendIcons[id]?`<img src="${esc(legendIcons[id])}" alt="" loading="lazy">`:""}<div><span>Legend ${i+1}</span><strong>${esc(legendNames[id]||`Legend ${id}`)}</strong></div></article>`:"").filter(Boolean)})).filter(row=>row.cards.length):[];
      const legendsHtml=legendRows.length?`<section class="overview-block pet-overview"><h3>Legends</h3><div class="pet-rows">${legendRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
      const mech=entry.mechanics||null;
      const mechTitle=mech?.type==="familiar"?"Familiar":mech?.type==="morphs"?"Morph skills":"";
