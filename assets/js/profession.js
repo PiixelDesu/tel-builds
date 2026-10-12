@@ -1,7 +1,8 @@
+
 (async function(){
   const id=TEL.qs("p")||"guardian";
   const [professions,builds]=await Promise.all([TEL.json("./data/professions.json"),TEL.json("./data/builds.json")]);
-  const p=professions.find(item=>item.id===id);
+  const p=professions.find(x=>x.id===id);
   if(!p){ location.href="./404.html"; return; }
   document.title=`${p.name} · TEL Builds`;
   const mine=builds.filter(b=>b.profession===id);
@@ -19,7 +20,7 @@
   ];
 
   document.querySelector("#slot-grid").innerHTML=roles.map(([role,label,desc])=>{
-    const b=mine.find(item=>item.category===role);
+    const b=mine.find(x=>x.category===role);
     if(!b||b.placeholder) return `
       <div class="slot-card empty role-card" style="--profession:${p.color}">
         <span class="slot-name">${label}</span>
