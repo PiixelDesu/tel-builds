@@ -311,6 +311,12 @@ def equipment_from(preload,db,profession=""):
         
         if key=='w32' and len(aquatic)<2: continue
         d=piece_data((eq.get('weapon') or {}).get(key),'weapon')
+        # An empty main hand can retain stale sigils/infusions in GW2Skills.
+        # Do not interpret those upgrades as an equipped weapon.
+        if key in ('w11', 'w21') and not weapon_types.get(key):
+            offhand_key = 'w12' if key == 'w11' else 'w22'
+            if weapon_types.get(offhand_key):
+                d = {'weaponType': 'Keep Empty', 'empty': True}
         if d:
             if weapon_types.get(key): d['weaponType']=weapon_types[key]
             else: print(f'WARN weapon type unresolved for {key}; slot data kept without guessing')
