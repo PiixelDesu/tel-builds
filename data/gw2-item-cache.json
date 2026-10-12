@@ -1917,5 +1917,78 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/104733.png"
+  },
+  "Superior Sigil of Impact": {
+    "id": 24868,
+    "name": "Superior Sigil of Impact",
+    "icon": "https://render.guildwars2.com/file/D9ACA0C94D90A76B1C500D5DE6D62B6820FEDAE2/221170.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 558,
+        "buff": {
+          "skill_id": 9718,
+          "description": "+7% Strike Damage vs. Stunned or Knocked-Down Foes\n+3% Strike Damage"
+        },
+        "attributes": []
+      },
+      "suffix": "of Impact"
+    },
+    "local_icon": "assets/gw2/items/24868.png"
+  },
+  "Peppermint Oil": {
+    "id": 77632,
+    "name": "Peppermint Oil",
+    "icon": "https://render.guildwars2.com/file/C9BD6C007004E3542F74C7623E92EAAF0D7C4135/1322538.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Concentration Equal to 3% of Your Precision\nGain Concentration Equal to 6% of Your Healing Power\n+10% Experience from Kills\n+10% Karma Bonus"
+    },
+    "local_icon": "assets/gw2/items/77632.png"
+  },
+  "Relic of the Flock": {
+    "id": 100633,
+    "name": "Relic of the Flock",
+    "icon": "https://render.guildwars2.com/file/2F7AE267BA29B35DEC7F2C0FCE5C30D806E31E0D/3122350.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100633.png"
+  },
+  "Relic of the Last Tyrant": {
+    "id": 109942,
+    "name": "Relic of the Last Tyrant",
+    "icon": "https://render.guildwars2.com/file/DC0E5B235AA36102E0A9A9D32AAB24169B2CAE59/3806032.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/109942.png"
   }
 }

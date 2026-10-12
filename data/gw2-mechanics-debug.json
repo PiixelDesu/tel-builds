@@ -190,7 +190,7 @@
           }
         },
         "armor": {
-          "helm": {
+          "leggings": {
             "item": [
               273,
               1
@@ -220,9 +220,9 @@
               356
             ]
           },
-          "leggings": {
+          "coat": {
             "item": [
-              273,
+              288,
               1
             ],
             "up": [
@@ -250,9 +250,9 @@
               356
             ]
           },
-          "coat": {
+          "helm": {
             "item": [
-              288,
+              273,
               1
             ],
             "up": [
@@ -282,26 +282,9 @@
           }
         },
         "trinket": {
-          "amulet": {
+          "earring1": {
             "item": [
-              350,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              0,
-              0,
-              0
-            ]
-          },
-          "back": {
-            "item": [
-              382,
+              356,
               1
             ],
             "up": [
@@ -312,7 +295,7 @@
             ],
             "inf": [
               356,
-              356,
+              0,
               0
             ]
           },
@@ -350,9 +333,26 @@
               0
             ]
           },
-          "earring1": {
+          "amulet": {
             "item": [
-              356,
+              350,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              0,
+              0,
+              0
+            ]
+          },
+          "back": {
+            "item": [
+              382,
               1
             ],
             "up": [
@@ -363,7 +363,7 @@
             ],
             "inf": [
               356,
-              0,
+              356,
               0
             ]
           },
@@ -5655,13 +5655,13 @@
   },
   "power-evoker": {
     "specialization": "evoker",
-    "quicklink": "PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
+    "quicklink": "PGhEQjWGMLhNzoYn4orsNrUCHAA-DWRYBRFIGB9FSThRtJQFVgtnOCQA7h3C9nRAA-w",
     "selected_extra_ids": [
       29
     ],
     "preload": {
-      "qlink": "PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
-      "chatlink": "DQYfHSkbUBViHQAATQEAAHEdAAC+AQAAah0AAAAAAAAAAAAAAAAAAAAAAAA=",
+      "qlink": "PGhEQjWGMLhNzoYn4orsNrUCHAA-DWRYBRFIGB9FSThRtJQFVgtnOCQA7h3C9nRAA-w",
+      "chatlink": "DQYfHSkbUBViHQAATQEAAHEdAAC+AQAAlwAAAAAAAAAAAAAAAAAAAAAAAAA=",
       "mode": "wvw",
       "eqtab": false,
       "profession": 1,
@@ -5679,7 +5679,7 @@
             "7": 300,
             "8": 318,
             "9": 327,
-            "10": 397
+            "10": 398
           },
           {}
         ],
@@ -5730,7 +5730,7 @@
         "weapon": {
           "w11": {
             "item": [
-              191,
+              169,
               1
             ],
             "up": [
@@ -5766,7 +5766,7 @@
           },
           "w21": {
             "item": [
-              191,
+              169,
               1
             ],
             "up": [
@@ -5842,6 +5842,21 @@
           }
         },
         "armor": {
+          "coat": {
+            "item": [
+              273,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
+          },
           "shoulders": {
             "item": [
               273,
@@ -5857,7 +5872,22 @@
               356
             ]
           },
-          "coat": {
+          "boots": {
+            "item": [
+              273,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
+          },
+          "leggings": {
             "item": [
               273,
               1
@@ -5901,36 +5931,6 @@
             "inf": [
               356
             ]
-          },
-          "leggings": {
-            "item": [
-              273,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
-          },
-          "boots": {
-            "item": [
-              273,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
           }
         },
         "trinket": {
@@ -5951,7 +5951,7 @@
               356
             ]
           },
-          "amulet": {
+          "earring2": {
             "item": [
               356,
               1
@@ -5963,7 +5963,7 @@
               ]
             ],
             "inf": [
-              0,
+              356,
               0,
               0
             ]
@@ -5985,40 +5985,6 @@
               356
             ]
           },
-          "back": {
-            "item": [
-              399,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              356,
-              0
-            ]
-          },
-          "earring2": {
-            "item": [
-              356,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              0,
-              0
-            ]
-          },
           "earring1": {
             "item": [
               356,
@@ -6035,13 +6001,47 @@
               0,
               0
             ]
+          },
+          "amulet": {
+            "item": [
+              356,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              0,
+              0,
+              0
+            ]
+          },
+          "back": {
+            "item": [
+              399,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
+              356,
+              0
+            ]
           }
         },
         "buff": {
-          "food": 535,
+          "food": 529,
           "utility": 40
         },
-        "relic": 332,
+        "relic": 291,
         "fractal": {
           "mastery": 0,
           "potion": 0
@@ -13191,6 +13191,36 @@
           }
         },
         "armor": {
+          "leggings": {
+            "item": [
+              274,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              364
+            ]
+          },
+          "boots": {
+            "item": [
+              274,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              364
+            ]
+          },
           "shoulders": {
             "item": [
               274,
@@ -13236,36 +13266,6 @@
               364
             ]
           },
-          "boots": {
-            "item": [
-              274,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              364
-            ]
-          },
-          "leggings": {
-            "item": [
-              274,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              364
-            ]
-          },
           "coat": {
             "item": [
               274,
@@ -13283,7 +13283,7 @@
           }
         },
         "trinket": {
-          "amulet": {
+          "earring2": {
             "item": [
               357,
               1
@@ -13295,7 +13295,7 @@
               ]
             ],
             "inf": [
-              0,
+              364,
               0,
               0
             ]
@@ -13317,7 +13317,7 @@
               0
             ]
           },
-          "earring1": {
+          "ring1": {
             "item": [
               357,
               1
@@ -13330,6 +13330,23 @@
             ],
             "inf": [
               364,
+              364,
+              364
+            ]
+          },
+          "amulet": {
+            "item": [
+              357,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              0,
               0,
               0
             ]
@@ -13351,24 +13368,7 @@
               364
             ]
           },
-          "ring1": {
-            "item": [
-              357,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              364,
-              364,
-              364
-            ]
-          },
-          "earring2": {
+          "earring1": {
             "item": [
               357,
               1
@@ -19957,7 +19957,7 @@
           }
         },
         "armor": {
-          "gloves": {
+          "coat": {
             "item": [
               290,
               1
@@ -19973,36 +19973,6 @@
             ]
           },
           "helm": {
-            "item": [
-              290,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
-          },
-          "leggings": {
-            "item": [
-              290,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
-          },
-          "coat": {
             "item": [
               290,
               1
@@ -20046,9 +20016,73 @@
             "inf": [
               356
             ]
+          },
+          "leggings": {
+            "item": [
+              290,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
+          },
+          "gloves": {
+            "item": [
+              290,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
           }
         },
         "trinket": {
+          "back": {
+            "item": [
+              389,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
+              356,
+              0
+            ]
+          },
+          "earring1": {
+            "item": [
+              351,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
+              0,
+              0
+            ]
+          },
           "amulet": {
             "item": [
               360,
@@ -20062,6 +20096,23 @@
             ],
             "inf": [
               0,
+              0,
+              0
+            ]
+          },
+          "earring2": {
+            "item": [
+              351,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
               0,
               0
             ]
@@ -20083,23 +20134,6 @@
               356
             ]
           },
-          "back": {
-            "item": [
-              389,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              356,
-              0
-            ]
-          },
           "ring2": {
             "item": [
               351,
@@ -20115,40 +20149,6 @@
               356,
               356,
               356
-            ]
-          },
-          "earring1": {
-            "item": [
-              351,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              0,
-              0
-            ]
-          },
-          "earring2": {
-            "item": [
-              351,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              0,
-              0
             ]
           }
         },
@@ -25398,6 +25398,21 @@
           }
         },
         "armor": {
+          "boots": {
+            "item": [
+              277,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              355
+            ]
+          },
           "coat": {
             "item": [
               277,
@@ -25413,7 +25428,7 @@
               355
             ]
           },
-          "boots": {
+          "shoulders": {
             "item": [
               277,
               1
@@ -25472,42 +25487,10 @@
             "inf": [
               355
             ]
-          },
-          "shoulders": {
-            "item": [
-              277,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              355
-            ]
           }
         },
         "trinket": {
-          "back": {
-            "item": [
-              389,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              355,
-              355,
-              0
-            ]
-          },
-          "earring1": {
+          "earring2": {
             "item": [
               351,
               1
@@ -25522,6 +25505,23 @@
               355,
               0,
               0
+            ]
+          },
+          "ring1": {
+            "item": [
+              351,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              355,
+              355,
+              355
             ]
           },
           "amulet": {
@@ -25558,7 +25558,7 @@
               355
             ]
           },
-          "earring2": {
+          "earring1": {
             "item": [
               351,
               1
@@ -25575,9 +25575,9 @@
               0
             ]
           },
-          "ring1": {
+          "back": {
             "item": [
-              351,
+              389,
               1
             ],
             "up": [
@@ -25589,7 +25589,7 @@
             "inf": [
               355,
               355,
-              355
+              0
             ]
           }
         },
@@ -32384,7 +32384,22 @@
           }
         },
         "armor": {
-          "helm": {
+          "shoulders": {
+            "item": [
+              273,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
+          },
+          "boots": {
             "item": [
               273,
               1
@@ -32400,6 +32415,21 @@
             ]
           },
           "leggings": {
+            "item": [
+              273,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356
+            ]
+          },
+          "helm": {
             "item": [
               273,
               1
@@ -32443,40 +32473,10 @@
             "inf": [
               356
             ]
-          },
-          "shoulders": {
-            "item": [
-              273,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
-          },
-          "boots": {
-            "item": [
-              273,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356
-            ]
           }
         },
         "trinket": {
-          "ring2": {
+          "earring2": {
             "item": [
               356,
               1
@@ -32489,8 +32489,8 @@
             ],
             "inf": [
               356,
-              355,
-              355
+              0,
+              0
             ]
           },
           "ring1": {
@@ -32527,40 +32527,6 @@
               0
             ]
           },
-          "earring1": {
-            "item": [
-              356,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              0,
-              0
-            ]
-          },
-          "earring2": {
-            "item": [
-              356,
-              1
-            ],
-            "up": [
-              [
-                "<depth>",
-                "<depth>"
-              ]
-            ],
-            "inf": [
-              356,
-              0,
-              0
-            ]
-          },
           "amulet": {
             "item": [
               356,
@@ -32574,6 +32540,40 @@
             ],
             "inf": [
               0,
+              0,
+              0
+            ]
+          },
+          "ring2": {
+            "item": [
+              356,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
+              355,
+              355
+            ]
+          },
+          "earring1": {
+            "item": [
+              356,
+              1
+            ],
+            "up": [
+              [
+                "<depth>",
+                "<depth>"
+              ]
+            ],
+            "inf": [
+              356,
               0,
               0
             ]
