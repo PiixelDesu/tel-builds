@@ -54,9 +54,9 @@
     "name": "Power Dragonhunter ",
     "specialization": "Dragonhunter",
     "description": "Power Dragonhunter.",
-    "gw2skills": "https://gw2skills.net/editor/?PWlAMFlFwcYNMM2IO0L+tVA-DWJYzRFfhUXB0ZEURKY7ZhDEwe4to/MAA-w",
+    "gw2skills": "https://gw2skills.net/editor/?PWlAMFlFwcYNsJ2IO0L+tVA-DWRYBhNHV4CppoouCoiUw2THHIg9wbR/zIA-w",
     "status": "approved",
-    "updated": "2026-10-05",
+    "updated": "2026-10-12",
     "notes": ""
   },
   {
@@ -66,9 +66,9 @@
     "name": "Support Troubadour",
     "specialization": "Troubadour",
     "description": "Support Troubadour is a Guild Wars 2 WvW Support build for Mesmer, focused on providing utility and control.",
-    "gw2skills": "https://gw2skills.net/editor/?PixAw6Rl9ysYZMYGNe0TaTdA-DWJYjR3fhEUIkZCUdVp7FhQEm/aewlGA-w",
+    "gw2skills": "https://gw2skills.net/editor/?PixAw6Rl9ysYZsYGNe0TaTdA-DWJYjR3fhEUYkZCUdFp7vgQIg0/M/AYLtPsBA-w",
     "status": "approved",
-    "updated": "2026-10-05",
+    "updated": "2026-10-12",
     "notes": ""
   },
   {
@@ -114,9 +114,9 @@
     "name": "Power Evoker",
     "specialization": "Evoker",
     "description": "Power Evoker is a Guild Wars 2 WvW Damage build for Elementalist, focused on dealing high damage with elemental spells.",
-    "gw2skills": "https://gw2skills.net/editor/?PGhEQjWGMLhNzoY14orsNrUCHAA-DWJYiRV/h0kQoOZQMLAZeWIABsHeL6fGBA-w",
+    "gw2skills": "https://gw2skills.net/editor/?PGhEQjWGMLhNzoYn4orsNrUCHAA-DWRYBRFIGB9FSThRtJQFVgtnOCQA7h3C9nRAA-w",
     "status": "approved",
-    "updated": "2026-10-05",
+    "updated": "2026-10-12",
     "notes": ""
   },
   {
@@ -186,9 +186,9 @@
     "name": "Support Paragon",
     "specialization": "Paragon",
     "description": "Support Paragon is a Guild Wars 2 WvW Support build for Warrior, focused on providing utility and control.",
-    "gw2skills": "https://gw2skills.net/editor/?PKwEYiNssXGMTm9xIx03yc6B-DWJYjRNfhEUIUXBkeGo7rhQEg9wr5BXaAA-w",
+    "gw2skills": "https://gw2skills.net/editor/?PKwEYiNssX2HDmJzIx0/6c6B-DWJYjRNfhEUYUdBkeGo7vgQEg9wbp9LNA-w",
     "status": "approved",
-    "updated": "2026-10-05",
+    "updated": "2026-10-12",
     "notes": ""
   },
   {
@@ -261,6 +261,30 @@
     "gw2skills": "https://gw2skills.net/editor/?PigEEiWWBTlxysYn4ocVGNB-DWRYzRFmOsCppIIzUoiCw2zCBQg9wNAJx/W0/MCA-w",
     "status": "approved",
     "updated": "2026-10-05",
+    "notes": ""
+  },
+  {
+    "id": "power-guardian",
+    "profession": "guardian",
+    "category": "damage",
+    "name": "Power Guardian",
+    "specialization": "Guardian",
+    "description": "Power Guardian is a Guild Wars 2 WvW Damage build for Guardian, focused on dealing high damage with devastating attacks  .",
+    "gw2skills": "https://gw2skills.net/editor/?PWgEQbUWADjhwmYj4Qv4vqA-DWZYBRFIGKMw5Qe9VINFF1lAVUC2e6IABsHeNV5MCA-w",
+    "status": "approved",
+    "updated": "2026-10-12",
+    "notes": ""
+  },
+  {
+    "id": "power-renegade",
+    "profession": "revenant",
+    "category": "damage",
+    "name": "Power Renegade",
+    "specialization": "Renegade",
+    "description": "Power Renegade is a Guild Wars 2 WvW Damage build for Revenant, focused on dealing high damage with devastating attacks  .",
+    "gw2skills": "https://gw2skills.net/editor/?PmgEQrU2Cxw2IOmG5xyoO2IRyMICmcXavWA-DWZYBhJGVxcwFSTJRdhQFVgtnOCQA7n3C9nRAA-w",
+    "status": "approved",
+    "updated": "2026-10-12",
     "notes": ""
   }
 ]
