@@ -608,3 +608,5 @@ body[data-page="roaming"] .roaming-count-12{grid-template-columns:repeat(4,minma
   body[data-page="roaming"] .roaming-count-11,
   body[data-page="roaming"] .roaming-count-12{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+.trait-pick:has(.trait-choice){grid-template-columns:18px 34px minmax(0,1fr)}.trait-choice{font-size:12px;color:var(--gold,#d8bd78);text-align:center;font-weight:700}.trait-pick:has(.trait-choice) span{min-width:0}@media(max-width:760px){.trait-pick:has(.trait-choice){grid-template-columns:14px 30px minmax(0,1fr);gap:4px}.trait-choice{font-size:11px}}
