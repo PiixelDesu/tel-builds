@@ -51,18 +51,17 @@
      const petRows=d.profession==="Ranger"?[{title:"Terrestrial pets",ids:d.pets.slice(0,2)},{title:"Aquatic pets",ids:d.pets.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.map((id,i)=>petCard(id,`Pet ${i+1}`)).filter(Boolean)})).filter(row=>row.cards.length):[];
      const petsHtml=petRows.length?`<section class="overview-block pet-overview"><h3>Pets</h3><div class="pet-rows">${petRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
      const legendNames={1:"Legendary Dragon Stance",2:"Legendary Assassin Stance",3:"Legendary Dwarf Stance",4:"Legendary Demon Stance",5:"Legendary Renegade Stance",6:"Legendary Centaur Stance",7:"Legendary Alliance Stance",8:"Legendary Entity Stance"};
-     const legendKeys={1:"Glint",2:"Shiro",3:"Jalis",4:"Mallyx",5:"Kalla",6:"Ventari",7:"Alliance",8:"Razah"};
      let legendIcons={};
      if(d.profession==="Revenant"&&d.legends.some(Boolean)){
        try{
-         const availableLegends=await api("legends?ids=all");
-         const legendRecords=Object.fromEntries(availableLegends.map(legend=>[String(legend.id).toLowerCase(),legend]));
-         const selectedLegends=[...new Set(d.legends.filter(Boolean))];
-         const swapSkills=selectedLegends.map(id=>({id,skill:legendRecords[legendKeys[id]?.toLowerCase()]?.swap})).filter(x=>x.skill);
-         if(swapSkills.length){
-           const skillDetails=await api(`skills?ids=${[...new Set(swapSkills.map(x=>x.skill))].join(",")}`);
-           const skillIcons=Object.fromEntries(skillDetails.map(skill=>[skill.id,skill.icon]));
-           legendIcons=Object.fromEntries(swapSkills.map(x=>[x.id,skillIcons[x.skill]]));
+         const availableLegends=await api("legends?ids=all&v=latest");
+         const selectedCodes=new Set(d.legends.filter(Boolean).map(Number));
+         const matchingLegends=availableLegends.filter(legend=>selectedCodes.has(Number(legend.code)));
+         const skillIds=[...new Set(matchingLegends.map(legend=>legend.swap||legend.heal).filter(Boolean))];
+         if(skillIds.length){
+           const skillDetails=await api(`skills?ids=${skillIds.join(",")}`);
+           const skillIcons=new Map(skillDetails.map(skill=>[Number(skill.id),skill.icon]));
+           legendIcons=Object.fromEntries(matchingLegends.map(legend=>[Number(legend.code),skillIcons.get(Number(legend.swap||legend.heal))||""]));
          }
        }catch(error){console.warn("Revenant legend icons unavailable",error)}
      }
