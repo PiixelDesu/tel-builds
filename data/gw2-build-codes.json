@@ -2090,8 +2090,8 @@
     }
   },
   "support-specter": {
-    "chat_code": "[&DQUUFiwXRz4VGwAAuwEAAAgbAAAHGwAAERsAAAAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?Pa1AsqVlhyCZpsVWLesWXRfA-DWJYjRzfhkZG0bIUdR571hSEgN/bp9NLA-w",
+    "chat_code": "[&DQUUFSwXRz4VGwAACBsAAAcbAAC7AQAAERsAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?Pa1AsqrlhySZrsQWLeqWXRfA-DWJYjR7fhEUCUdBkeY571hSEgt/bp9NLA-w",
     "equipment": {
       "armor": [
         {
@@ -2215,9 +2215,9 @@
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2242,9 +2242,9 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2262,28 +2262,50 @@
           "slot": "Weapon set 2 · Main hand",
           "sigils": [
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             }
           ],
-          "weaponType": "Shortbow"
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Weapon set 2 · Off hand",
+          "stat": "Minstrel",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Pistol"
         },
         {
           "slot": "Aquatic 1",
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Transference",
-              "id": 74326,
-              "icon": "assets/gw2/items/74326.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2308,9 +2330,9 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Transference",
-              "id": 74326,
-              "icon": "assets/gw2/items/74326.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             }
           ],
