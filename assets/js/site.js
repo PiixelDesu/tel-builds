@@ -1,4 +1,3 @@
-
 const TEL={
  async json(path){
    const r=await fetch(new URL(path, document.baseURI));
@@ -6,7 +5,7 @@ const TEL={
    return r.json();
  },
  qs(name){return new URLSearchParams(location.search).get(name);},
- tags(items=[]){return items.map(x=>`<span class="tag">${x}</span>`).join("")},
+ tags(items=[]){return items.map(element=>`<span class="tag">${element}</span>`).join("")},
  esc(s=""){const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML;},
  async gw2Icons(){
    if(this._gw2Icons) return this._gw2Icons;
@@ -21,7 +20,7 @@ const TEL={
    return (spec && spec!=="core" ? icons.specializations[spec] : null) || icons.professions[String(b.profession||"").toLowerCase()] || "";
  }
 };
-document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYear());
+document.querySelectorAll("#year").forEach(element=>element.textContent=new Date().getFullYear());
 
 (async function(){
  if(!["home","roaming"].includes(document.body.dataset.page))return;
@@ -43,13 +42,13 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      </a>`).join("");
 
    const cell=(p,cat)=>{
-     const list=builds.filter(x=>x.profession===p.id&&x.category===cat).slice(0,6);
+     const list=builds.filter(element=>element.profession===p.id&&element.category===cat).slice(0,6);
      if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list build-count-${list.length}">${cards(list)}</div>`;
    };
 
    const roamingCell=(p)=>{
-     const list=builds.filter(x=>x.profession===p.id).slice(0,12);
+     const list=builds.filter(element=>element.profession===p.id).slice(0,12);
      if(!list.length)return `<div class="matrix-cell matrix-empty roaming-cell"><span>—</span></div>`;
      return `<div class="matrix-cell matrix-list roaming-cell roaming-count-${list.length}">${cards(list)}</div>`;
    };
