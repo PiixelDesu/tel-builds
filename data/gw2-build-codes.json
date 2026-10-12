@@ -2260,22 +2260,8 @@
         },
         {
           "slot": "Weapon set 2 · Main hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Concentration",
-              "id": 72339,
-              "icon": "assets/gw2/items/72339.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ]
+          "weaponType": "Keep Empty",
+          "empty": true
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -8644,22 +8630,8 @@
         },
         {
           "slot": "Weapon set 2 · Main hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of the Stars",
-              "id": 86170,
-              "icon": "assets/gw2/items/86170.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Malign WvW Infusion",
-              "id": 43253,
-              "icon": "assets/gw2/items/43253.png",
-              "type": "UpgradeComponent"
-            }
-          ]
+          "weaponType": "Keep Empty",
+          "empty": true
         },
         {
           "slot": "Weapon set 2 · Off hand",
@@ -9008,22 +8980,8 @@
         },
         {
           "slot": "Weapon set 2 · Main hand",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Bloodlust",
-              "id": 24575,
-              "icon": "assets/gw2/items/24575.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Mighty WvW Infusion",
-              "id": 43254,
-              "icon": "assets/gw2/items/43254.png",
-              "type": "UpgradeComponent"
-            }
-          ]
+          "weaponType": "Keep Empty",
+          "empty": true
         },
         {
           "slot": "Weapon set 2 · Off hand",
