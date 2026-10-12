@@ -1,5 +1,5 @@
 
-const TEL={
+const GuildBuildPortal={
  async json(path){
    const r=await fetch(new URL(path, document.baseURI));
    if(!r.ok) throw new Error(`${path} returned HTTP ${r.status}`);
@@ -31,15 +31,15 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
  const matrix=document.querySelector("#build-matrix");
  try{
    const [professions,builds,icons]=await Promise.all([
-     TEL.json("data/professions.json"),
-     TEL.json(buildData),
-     TEL.gw2Icons()
+     GuildBuildPortal.json("data/professions.json"),
+     GuildBuildPortal.json(buildData),
+     GuildBuildPortal.gw2Icons()
    ]);
 
    const cards=(list)=>list.map(b=>`
      <a class="matrix-build-item" href="build.html?id=${encodeURIComponent(b.id)}&source=${buildSource}">
-       ${TEL.iconForBuild(b,icons)?`<img class="spec-icon" src="${TEL.esc(TEL.iconForBuild(b,icons))}" alt="" loading="lazy">`:`<span class="spec-icon spec-icon-placeholder" aria-hidden="true"></span>`}
-       <span class="build-label"><strong>${TEL.esc(b.name)}</strong><small>${TEL.esc(b.specialization||"")}</small></span>
+       ${GuildBuildPortal.iconForBuild(b,icons)?`<img class="spec-icon" src="${GuildBuildPortal.esc(GuildBuildPortal.iconForBuild(b,icons))}" alt="" loading="lazy">`:`<span class="spec-icon spec-icon-placeholder" aria-hidden="true"></span>`}
+       <span class="build-label"><strong>${GuildBuildPortal.esc(b.name)}</strong><small>${GuildBuildPortal.esc(b.specialization||"")}</small></span>
      </a>`).join("");
 
    const cell=(p,cat)=>{
@@ -59,7 +59,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      <div class="matrix-head">Roaming Builds</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
-         <div class="profession-glyph">${icons.professions[p.id]?`<img src="${TEL.esc(icons.professions[p.id])}" alt="" loading="lazy">`:TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
+         <div class="profession-glyph">${icons.professions[p.id]?`<img src="${GuildBuildPortal.esc(icons.professions[p.id])}" alt="" loading="lazy">`:GuildBuildPortal.esc(p.glyph)}</div><strong>${GuildBuildPortal.esc(p.name)}</strong>
        </div>
        ${roamingCell(p)}
      `).join("")}`:`
@@ -68,7 +68,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      <div class="matrix-head">Support</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
-         <div class="profession-glyph">${icons.professions[p.id]?`<img src="${TEL.esc(icons.professions[p.id])}" alt="" loading="lazy">`:TEL.esc(p.glyph)}</div><strong>${TEL.esc(p.name)}</strong>
+         <div class="profession-glyph">${icons.professions[p.id]?`<img src="${GuildBuildPortal.esc(icons.professions[p.id])}" alt="" loading="lazy">`:GuildBuildPortal.esc(p.glyph)}</div><strong>${GuildBuildPortal.esc(p.name)}</strong>
        </div>
        ${cell(p,"damage")}${cell(p,"support")}
      `).join("")}`;
@@ -76,7 +76,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
    console.error(err);
    matrix.innerHTML=`<div class="data-error">
      <strong>Build data could not be loaded.</strong>
-     <span>${TEL.esc(err.message)}</span>
+     <span>${GuildBuildPortal.esc(err.message)}</span>
      <small>Make sure the entire data folder was uploaded to GitHub Pages.</small>
    </div>`;
  }

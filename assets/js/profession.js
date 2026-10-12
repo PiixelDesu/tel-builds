@@ -1,10 +1,10 @@
 
 (async function(){
-  const id=TEL.qs("p")||"guardian";
-  const [professions,builds]=await Promise.all([TEL.json("./data/professions.json"),TEL.json("./data/builds.json")]);
+  const id=GuildBuildPortal.qs("p")||"guardian";
+  const [professions,builds]=await Promise.all([GuildBuildPortal.json("./data/professions.json"),GuildBuildPortal.json("./data/builds.json")]);
   const p=professions.find(x=>x.id===id);
   if(!p){ location.href="./404.html"; return; }
-  document.title=`${p.name} · TEL Builds`;
+  document.title=`${p.name} · GuildBuildPortal Builds`;
   const mine=builds.filter(b=>b.profession===id);
 
   document.querySelector("#profession-head").innerHTML=`
@@ -26,7 +26,7 @@
         <span class="slot-name">${label}</span>
         <h3>${label}</h3>
         <p class="spec">${desc}</p>
-        <p class="empty-note">TEL build not assigned yet.</p>
+        <p class="empty-note">GuildBuildPortal build not assigned yet.</p>
       </div>`;
     return `
       <a class="slot-card role-card" style="--profession:${p.color}" href="./build.html?id=${b.id}">
@@ -34,7 +34,7 @@
         <h3>${b.title}</h3>
         <div class="spec">${p.name} · ${b.specialization}</div>
         <div class="weapons">${b.weapons.join(" · ")}</div>
-        <div class="mini-stats">${TEL.tags([...(b.damage||[]),...(b.range||[])])}</div>
+        <div class="mini-stats">${GuildBuildPortal.tags([...(b.damage||[]),...(b.range||[])])}</div>
         <span class="card-link">Open ${label} build →</span>
       </a>`;
   }).join("");

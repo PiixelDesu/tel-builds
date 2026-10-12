@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """Sync GW2Skills quicklinks into TEL's native build + equipment data."""
 import base64, html, json, re, subprocess, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -13,7 +13,7 @@ ITEM_ASSETS=ROOT/'assets'/'gw2'/'items'
 CLASS_ASSETS=ROOT/'assets'/'gw2'/'classes'
 CLASS_ICONS=ROOT/'data'/'gw2-class-icons.json'
 MECH_DEBUG=ROOT/'data'/'gw2-mechanics-debug.json'
-UA='TEL-Builds/3.0 (+https://github.com/PiixelDesu/tel-builds)'
+GW2SYNC_AGENT='TEL-Builds/3.0 (+https://github.com/PiixelDesu/tel-builds)'
 B64=re.compile(r'(?<![A-Za-z0-9+/_-])([A-Za-z0-9+/_-]{36,}={0,2})(?![A-Za-z0-9+/_-])')
 BRACKETED=re.compile(r'\[\s*&\s*([A-Za-z0-9+/_=-]{20,})\s*\]')
 
@@ -27,7 +27,7 @@ def normalize_url(url):
     return urllib.parse.urlunsplit(('https','en.gw2skills.net','/editor/',p.query,''))
 
 def fetch_url(url, accept='text/html,application/xhtml+xml'):
-    req=urllib.request.Request(url,headers={'User-Agent':UA,'Referer':'https://en.gw2skills.net/','Accept':accept,'Accept-Language':'en-US,en;q=0.9','Cache-Control':'no-cache'})
+    req=urllib.request.Request(url,headers={'User-Agent':GW2SYNC_AGENT,'Referer':'https://en.gw2skills.net/','Accept':accept,'Accept-Language':'en-US,en;q=0.9','Cache-Control':'no-cache'})
     with urllib.request.urlopen(req,timeout=30) as r: return r.read().decode('utf-8','replace')
 
 def fetch(url): return fetch_url(normalize_url(url))
@@ -51,7 +51,7 @@ def sync_class_icons():
             if suffix not in ('.png','.jpg','.jpeg','.webp'): suffix='.png'
             target=CLASS_ASSETS/f'{kind[:-1]}-{slug}{suffix}'
             if not target.exists():
-                req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'image/*'})
+                req=urllib.request.Request(url,headers={'User-Agent':GW2SYNC_AGENT,'Accept':'image/*'})
                 with urllib.request.urlopen(req,timeout=30) as r: target.write_bytes(r.read())
             icons[kind][name]=target.relative_to(ROOT).as_posix()
     CLASS_ICONS.write_text(json.dumps(icons,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
@@ -78,7 +78,7 @@ def download_icon(item_id,url):
     if suffix not in ('.png','.jpg','.jpeg','.webp'):suffix='.png'
     target=ITEM_ASSETS/f'{item_id}{suffix}'
     if not target.exists():
-        req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'image/*'})
+        req=urllib.request.Request(url,headers={'User-Agent':GW2SYNC_AGENT,'Accept':'image/*'})
         with urllib.request.urlopen(req,timeout=30) as r: target.write_bytes(r.read())
     return target.relative_to(ROOT).as_posix()
 
@@ -98,8 +98,8 @@ def resolve_official_items(names):
 
     if missing:
         try:
-            # Discover page count cheaply, then scan pages in parallel. page_size 200 is
-            # the API maximum. We stop scheduling no new work after all names are found.
+            
+            
             ids=gw2_api('items')
             pages=(len(ids)+199)//200
             def fetch_page(page):
@@ -122,7 +122,7 @@ def resolve_official_items(names):
         except Exception as e:
             print('WARN official item resolution failed:',e)
 
-    # Localize icons. Cached local files are reused and never downloaded again.
+    
     for name,meta in list(found.items()):
         try:
             local=meta.get('local_icon','')
@@ -220,10 +220,10 @@ def equipment_from(preload,db,profession=""):
         row=buffs.get(bid); return str(row[bidx['name']] or '') if row and 'name' in bidx else ''
     def first(x,default=None): return x[0] if isinstance(x,list) and x else default
 
-    # Weapon identity is NOT stored in eq.weapon.w11/w12/... . GW2Skills keeps
-    # it in preload.weapon, ordered as w11,w12,w21,w22,w31,w32. Resolve those
-    # IDs only against db.weapon; IDs in other DB tables are unrelated and can
-    # overlap (the old cross-table heuristic caused every slot to become GS).
+    
+    
+    
+    
     weapon_labels={
         'axe':'Axe','dagger':'Dagger','focus':'Focus','greatsword':'Greatsword',
         'hammer':'Hammer','longbow':'Longbow','mace':'Mace','pistol':'Pistol',
@@ -258,9 +258,9 @@ def equipment_from(preload,db,profession=""):
         is_offhand=slot in ('w12','w22')
         is_aquatic=slot in ('w31','w32')
         typ=meta.get('type')
-        # GW2Skills weapon table: 0=offhand, 1=1H, 2=2H, 3=underwater.
-        # Validate slot compatibility so malformed/stale quicklinks cannot label
-        # a terrestrial slot with an aquatic weapon (or vice versa).
+        
+        
+        
         if is_aquatic and typ != 3: continue
         if not is_aquatic and typ == 3: continue
         if is_offhand and typ == 2: continue
@@ -275,13 +275,13 @@ def equipment_from(preload,db,profession=""):
         if kind=='armor': out['rune']=upgrade(first(first(ups,[])))
         if kind=='weapon':
             out['sigils']=[upgrade(first(x)) for x in ups if first(x)]
-            # Filled by the slot-aware preload.weapon mapping below.
+            
         out['infusions']=[upgrade(x) for x in inf if x]
         return {k:v for k,v in out.items() if v not in ('',[],None)}
-    # Aquatic weapon identity is not carried in preload.weapon. GW2Skills keeps
-    # separate underwater equipment slots (w31/w32), while the profession itself
-    # determines which aquatic weapon families can occupy them. Every profession
-    # currently has one or two aquatic families, so this mapping is unambiguous.
+    
+    
+    
+    
     aquatic_by_profession={
         'guardian':['Spear','Trident'],
         'warrior':['Harpoon Gun','Spear'],
@@ -303,12 +303,12 @@ def equipment_from(preload,db,profession=""):
         d=piece_data((eq.get('armor') or {}).get(key),'armor')
         if d: result['armor'].append({'slot':label,**d})
     for key,label in WEAPONS.items():
-        # GW2Skills mirrors a two-handed weapon's second sigil/infusion into the
-        # paired off-hand equipment object. That does NOT mean an off-hand weapon
-        # exists. Suppress the phantom card when the main-hand is type 2 (2H).
+        
+        
+        
         if key=='w12' and weapon_kinds.get('w11')==2: continue
         if key=='w22' and weapon_kinds.get('w21')==2: continue
-        # Professions with only one aquatic family have no second aquatic weapon.
+        
         if key=='w32' and len(aquatic)<2: continue
         d=piece_data((eq.get('weapon') or {}).get(key),'weapon')
         if d:
@@ -362,7 +362,7 @@ def specialization_mechanics_from(preload, db, specialization=""):
     if spec not in ('evoker','amalgam') or not isinstance(preload,dict): return None
     needle='familiar' if spec=='evoker' else 'morph'
 
-    # All scalar values carried by the decoded quicklink, with their paths.
+    
     scalars=[]
     def walk(v,path=''):
         if isinstance(v,dict):
@@ -373,9 +373,9 @@ def specialization_mechanics_from(preload, db, specialization=""):
             if v not in ('',0,'0',-1,'-1',None): scalars.append((path,v))
     walk(preload)
 
-    # Build an index of DB rows that are unmistakably mechanic-related.  This
-    # intentionally requires textual Familiar/Morph evidence in table/column/row
-    # metadata, preventing the overlapping-ID bug we previously hit with weapons.
+    
+    
+    
     candidates={}
     for tn,table in (db or {}).items():
         if not isinstance(table,dict): continue
@@ -388,7 +388,7 @@ def specialization_mechanics_from(preload, db, specialization=""):
             text=' '.join(str(x) for x in row if isinstance(x,str)).lower()
             if not table_hint and needle not in text: continue
             rid=row[ii]
-            # Prefer a readable name/key/title field; otherwise first useful text.
+            
             name=None
             for field in ('name','title','key','skill_name','label'):
                 if field in desc:
@@ -399,8 +399,8 @@ def specialization_mechanics_from(preload, db, specialization=""):
                 name=texts[0] if texts else str(rid)
             candidates.setdefault(str(rid), {'id':rid,'name':name.replace('_',' ').strip(),'source_table':tn})
 
-    # Selected quicklink IDs are values present in preload and in the scoped DB
-    # candidate set. Preserve preload order and de-duplicate.
+    
+    
     picked=[]; seen=set()
     for path,v in scalars:
         key=str(v)
@@ -408,8 +408,8 @@ def specialization_mechanics_from(preload, db, specialization=""):
             item=dict(candidates[key]); item['source_path']=path
             picked.append(item); seen.add(key)
 
-    # Some GW2Skills revisions use a mechanic-specific object whose values are
-    # already readable strings rather than DB IDs. Keep that explicit fallback.
+    
+    
     if not picked:
         def named(v,path=''):
             out=[]
@@ -453,9 +453,9 @@ def main():
                 if eq: entry['equipment']=eq
                 mechanics=specialization_mechanics_from(preload,dbcache[dbid],b.get('specialization',''))
                 if mechanics: entry['mechanics']=mechanics
-                # Temporary, deliberately scoped diagnostic for GW2Skills v9 mechanics.
-                # Captures only decoded preload structure/scalars and relevant DB table
-                # schemas; no HTML, cookies, tokens, or unrelated build data.
+                
+                
+                
                 spec=str(b.get('specialization','')).strip().lower()
                 if spec in ('evoker','amalgam'):
                     def compact(v, depth=0):
@@ -466,10 +466,10 @@ def main():
                         return str(v)
                     db=dbcache[dbid]
                     hints={}
-                    # The v9 selections are already decoded into preload.extra. Capture
-                    # the DB rows that reference those exact non-zero IDs, plus schemas
-                    # for skill/mechanic-looking tables. This keeps the diagnostic small
-                    # while exposing the lookup chain needed for names/icons.
+                    
+                    
+                    
+                    
                     extra_ids={x for x in ((preload or {}).get('extra') or []) if isinstance(x,int) and x>0}
                     for tn,t in db.items():
                         if not isinstance(t,dict): continue
@@ -478,8 +478,8 @@ def main():
                         matched=[]
                         for row in rows:
                             if not isinstance(row,list): continue
-                            # Match the selected ID wherever GW2Skills references it;
-                            # table-local IDs and foreign-key columns are both useful.
+                            
+                            
                             if any(isinstance(v,int) and v in extra_ids for v in row):
                                 matched.append(row)
                         table_text=(str(tn)+' '+' '.join(map(str,desc))).lower()
@@ -504,13 +504,13 @@ def main():
                 result[bid]=old[bid]; print(f'KEEP {bid}: {e}')
             else: failures.append(f'{bid}: {e}'); print(f'ERROR {bid}: {e}')
         time.sleep(.15)
-    # Resolve real ArenaNet item icons once all builds have been parsed.
+    
     names=[]
     for entry in result.values(): names += collect_item_names(entry.get('equipment') or {})
     item_meta=resolve_official_items(names)
     for entry in result.values():
         if entry.get('equipment'): entry['equipment']=enrich_equipment(entry['equipment'],item_meta)
-    # Class icons are required homepage assets. Fail the sync if they cannot be generated.
+    
     sync_class_icons()
     OUT.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     MECH_DEBUG.write_text(json.dumps(mech_debug,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
