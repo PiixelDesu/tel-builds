@@ -610,3 +610,25 @@ body[data-page="roaming"] .roaming-count-12{grid-template-columns:repeat(4,minma
 }
 
 .trait-pick:has(.trait-choice){grid-template-columns:18px 34px minmax(0,1fr)}.trait-choice{font-size:12px;color:var(--gold,#d8bd78);text-align:center;font-weight:700}.trait-pick:has(.trait-choice) span{min-width:0}@media(max-width:760px){.trait-pick:has(.trait-choice){grid-template-columns:14px 30px minmax(0,1fr);gap:4px}.trait-choice{font-size:11px}}
+
+body[data-page="squad"] .squad-section{margin-bottom:35px}
+.squad-five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.squad-position{display:flex;flex-direction:column;gap:9px;min-width:0;padding:19px 14px;background:#27221e;border:1px solid rgba(216,189,120,.2);border-radius:10px}
+.squad-position.primary{border-color:#d8bd78;background:#30291e}
+.squad-index{color:#a9915f;font-size:12px;font-weight:800;letter-spacing:.1em}
+.squad-role{color:#ead391;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.squad-position strong{font-size:17px;line-height:1.35;color:#eeeae0}
+.squad-position small{color:#aaa39a;line-height:1.5}
+.squad-explain{color:#aaa39a;line-height:1.65;margin:16px 0 0}
+.squad-role-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.squad-role-panel{background:#27221e;border:1px solid rgba(216,189,120,.2);border-radius:12px;padding:22px}
+.squad-role-panel h3{font-size:23px;color:#ead391;margin:0 0 8px}
+.squad-role-panel>p{color:#aaa39a;margin:0 0 19px}
+.squad-spec-list{display:grid;gap:16px}
+.squad-profession{border-top:1px solid rgba(216,189,120,.16);padding-top:12px}
+.squad-profession h4{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#aaa39a;margin:0 0 10px}
+.squad-chips{display:flex;flex-wrap:wrap;gap:8px}
+.squad-chips a{display:inline-flex;padding:9px 12px;border:1px solid rgba(216,189,120,.28);border-radius:7px;color:#eeeae0;text-decoration:none;background:#211d1a;font-size:13px}
+.squad-chips a:hover{border-color:#ead391;color:#ead391}
+@media(max-width:1100px){.squad-five{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.squad-five{grid-template-columns:1fr}.squad-role-grid{grid-template-columns:1fr}.squad-position{padding:15px}.squad-role-panel{padding:16px}}
