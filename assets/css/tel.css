@@ -672,3 +672,8 @@ body[data-page="squad"] .squad-unassigned>strong{font-size:13px;color:#ead391}
 body[data-page="squad"] .squad-footnote{font-size:11px;line-height:1.5;color:#aaa39a;margin:13px 0 20px}
 @media(max-width:1050px){body[data-page="squad"] .squad-strip{grid-template-columns:repeat(3,minmax(0,1fr))}body[data-page="squad"] .squad-damage-list{grid-template-columns:repeat(4,minmax(0,1fr))}body[data-page="squad"] .squad-builds{grid-template-columns:1fr}}
 @media(max-width:700px){body[data-page="squad"] .squad-intro{align-items:start;flex-direction:column}body[data-page="squad"] .squad-strip{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-page="squad"] .squad-columns{grid-template-columns:1fr}body[data-page="squad"] .squad-builds{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-page="squad"] .squad-damage-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Squad build icons and aligned labels */
+body[data-page="squad"] .squad-build-link{flex-direction:row;align-items:center;gap:9px}
+body[data-page="squad"] .squad-build-icon{width:31px;height:31px;object-fit:contain;flex:0 0 31px}
+body[data-page="squad"] .squad-build-label{display:flex;flex-direction:column;gap:3px;min-width:0}
