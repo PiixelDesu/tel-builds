@@ -15,24 +15,23 @@
 <a class="brand" href="../"><img src="../assets/images/tel-logo.png" alt="The Emerging Light"><span><strong>The Emerging Light</strong><small>WvW Builds</small></span></a>
 <nav><a href="../">Zerg</a><a href="../roaming.html">Roaming</a></nav>
 </header>
-<main>
-<section class="hero matrix-hero"><div class="hero-mark"><img src="../assets/images/tel-logo.png" alt=""></div><p class="eyebrow">THE EMERGING LIGHT</p><h1>Squad Composition</h1><p class="lede">WvW ZERG · FIVE PLAYERS PER SUBGROUP</p></section>
-<section class="section squad-section">
-<div class="section-heading"><div><p class="eyebrow">STANDARD SUBGROUP</p><h2>1 Stability · 2 Damage · 2 Support</h2></div><p class="muted">A flexible starting point for organizing five players.</p></div>
-<div class="squad-five">
-<article class="squad-position primary"><span class="squad-index">01</span><span class="squad-role">Stability Support</span><strong>Luminary / Firebrand / Troubadour</strong><small>Primary stability and defensive boons</small></article>
-<article class="squad-position"><span class="squad-index">02</span><span class="squad-role">Damage</span><strong>DPS</strong><small>Damage or boon-strip pressure</small></article>
-<article class="squad-position"><span class="squad-index">03</span><span class="squad-role">Damage</span><strong>DPS</strong><small>Damage or boon-strip pressure</small></article>
-<article class="squad-position"><span class="squad-index">04</span><span class="squad-role">Support</span><strong>Healing / Cleanse</strong><small>Secondary support</small></article>
-<article class="squad-position"><span class="squad-index">05</span><span class="squad-role">Support</span><strong>Boons / Utility</strong><small>Third support; adapt to squad needs</small></article>
+<main class="squad-main">
+<div class="squad-intro"><div><p class="eyebrow">TEL · WvW ZERG</p><h1>Squad Composition</h1><p>One subgroup = <strong>1 Stability</strong> + <strong>2 Damage</strong> + <strong>1 Heal / Cleanse</strong> + <strong>1 Utility Support</strong></p></div><span class="squad-private">Direct link only · /squad/</span></div>
+<div class="squad-strip" aria-label="Five player subgroup">
+<div class="squad-slot squad-slot-first"><b>1</b><span><strong>First Support</strong><small>Stability / protection</small></span></div>
+<div class="squad-slot squad-slot-dps"><b>2</b><span><strong>Damage</strong><small>DPS / pressure</small></span></div>
+<div class="squad-slot squad-slot-dps"><b>3</b><span><strong>Damage</strong><small>DPS / pressure</small></span></div>
+<div class="squad-slot squad-slot-second"><b>4</b><span><strong>Second Support</strong><small>Heal / cleanse</small></span></div>
+<div class="squad-slot squad-slot-third"><b>5</b><span><strong>Third Support</strong><small>Utility / boons</small></span></div>
 </div>
-<p class="squad-explain">Repeat this structure for additional subgroups. Balance healing, cleansing, stability and boon coverage across the whole squad rather than treating every role as interchangeable.</p>
-</section>
-<section class="section squad-section">
-<div class="section-heading"><div><p class="eyebrow">TEL BUILD REFERENCE</p><h2>Which elite specs can fill each role?</h2></div><p class="muted">Based on the builds currently listed in TEL's ZERG library.</p></div>
-<div class="squad-role-grid"><div class="squad-role-panel"><h3>Damage</h3><p>Elite specializations with a Damage build.</p><div id="squad-damage" class="squad-spec-list"></div></div><div class="squad-role-panel"><h3>Support</h3><p>Elite specializations with a Support build.</p><div id="squad-support" class="squad-spec-list"></div></div></div>
-<p class="squad-explain">A specialization may appear in both columns if TEL has builds for both roles. This is a guild build reference, not an exhaustive list of all possible Guild Wars 2 builds.</p>
-</section>
+<div class="squad-guide"><strong>Choose one from each support column.</strong> The lists below are suggested assignments for TEL's current builds; adjust for your actual skill setup and squad-wide coverage. Click any specialization to open its build.</div>
+<div class="squad-columns">
+<section class="squad-col squad-col-first"><header><span class="squad-col-number">01</span><div><h2>First Support</h2><p>Stability &amp; defensive boons</p></div></header><div id="squad-first" class="squad-builds"><span class="squad-loading">Loading…</span></div></section>
+<section class="squad-col squad-col-second"><header><span class="squad-col-number">02</span><div><h2>Second Support</h2><p>Healing &amp; condition cleanse</p></div></header><div id="squad-second" class="squad-builds"><span class="squad-loading">Loading…</span></div></section>
+<section class="squad-col squad-col-third"><header><span class="squad-col-number">03</span><div><h2>Third Support</h2><p>Utility, boons &amp; control</p></div></header><div id="squad-third" class="squad-builds"><span class="squad-loading">Loading…</span></div></section>
+</div>
+<section class="squad-damage-section"><div class="squad-damage-head"><div><h2>Damage Builds <span id="squad-damage-count"></span></h2><p>Pick any two DPS builds that fit your squad's damage and boon-strip needs.</p></div></div><div id="squad-damage" class="squad-damage-list"><span class="squad-loading">Loading…</span></div></section>
+<p class="squad-footnote">Support categories are suggested placements, not exclusive capabilities. The page reads your current ZERG builds automatically; newly added support builds appear under “Unassigned” until assigned a <code>supportRole</code> in <code>data/builds.json</code>. This page is intentionally absent from site navigation.</p>
 </main>
 <footer><span>© <span id="year"></span> The Emerging Light · unofficial Guild Wars 2 community site</span><span>Guild Wars 2 and related assets are property of ArenaNet.</span></footer>
 </div>

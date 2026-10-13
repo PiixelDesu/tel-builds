@@ -1,20 +1,27 @@
 "use strict";
-const squadNames = {guardian:"Guardian",revenant:"Revenant",warrior:"Warrior",engineer:"Engineer",ranger:"Ranger",thief:"Thief",elementalist:"Elementalist",mesmer:"Mesmer",necromancer:"Necromancer"};
-document.getElementById("year").textContent = new Date().getFullYear();
-const squadText = value => String(value ?? "").replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[character]));
-fetch("../data/builds.json").then(response => {if(!response.ok) throw new Error("Unable to load ZERG builds");return response.json();}).then(builds => {
-  for (const role of ["damage","support"]) {
-    const destination = document.getElementById("squad-"+role);
-    const grouped = new Map();
-    for (const build of builds) {
-      if (String(build.category).toLowerCase() !== role) continue;
-      const profession = String(build.profession||"").toLowerCase();
-      const specialization = String(build.specialization||"").trim();
-      if (!specialization) continue;
-      if (!grouped.has(profession)) grouped.set(profession,new Map());
-      if (!grouped.get(profession).has(specialization)) grouped.get(profession).set(specialization,build.id);
-    }
-    const entries = [...grouped].sort((a,b)=>(squadNames[a[0]]||a[0]).localeCompare(squadNames[b[0]]||b[0]));
-    destination.innerHTML = entries.map(([profession,specs]) => `<div class="squad-profession"><h4>${squadText(squadNames[profession]||profession)}</h4><div class="squad-chips">${[...specs].sort((a,b)=>a[0].localeCompare(b[0])).map(([name,id])=>`<a href="../build.html?id=${encodeURIComponent(id)}">${squadText(name)}</a>`).join("")}</div></div>`).join("") || '<p class="muted">No builds listed yet.</p>';
+const squadProfessions={guardian:"Guardian",revenant:"Revenant",warrior:"Warrior",engineer:"Engineer",ranger:"Ranger",thief:"Thief",elementalist:"Elementalist",mesmer:"Mesmer",necromancer:"Necromancer"};
+// Each support build declares its own role in data/builds.json using supportRole.
+// Missing/invalid assignments are visibly shown under Unassigned instead of guessed.
+const validSupportRoles=new Set(["first","second","third"]);
+const escapeHTML=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const professionName=b=>squadProfessions[String(b.profession||"").toLowerCase()]||String(b.profession||"Unknown");
+const buildLink=b=>`<a class="squad-build-link" href="../build.html?id=${encodeURIComponent(String(b.id))}"><span class="squad-build-spec">${escapeHTML(b.specialization||b.name||"Build")}</span><small>${escapeHTML(professionName(b))}</small></a>`;
+const sortBuilds=(a,b)=>professionName(a).localeCompare(professionName(b))||String(a.specialization||"").localeCompare(String(b.specialization||""));
+document.getElementById("year").textContent=new Date().getFullYear();
+fetch("../data/builds.json").then(r=>{if(!r.ok)throw Error("Could not load ZERG builds");return r.json();}).then(builds=>{
+  if(!Array.isArray(builds))throw Error("Unexpected build data");
+  const supports=builds.filter(b=>String(b.category).toLowerCase()==="support");
+  for(const role of ["first","second","third"]){
+    const entries=supports.filter(b=>String(b.supportRole||"").toLowerCase()===role).sort(sortBuilds);
+    document.getElementById("squad-"+role).innerHTML=entries.map(buildLink).join("")||'<span class="squad-loading">No builds assigned</span>';
   }
-}).catch(() => {for(const role of ["damage","support"]) document.getElementById("squad-"+role).textContent="Build reference temporarily unavailable.";});
+  const unassigned=supports.filter(b=>!validSupportRoles.has(String(b.supportRole||"").toLowerCase()));
+  if(unassigned.length){
+    const box=document.createElement("div");box.className="squad-unassigned";
+    box.innerHTML=`<strong>Unassigned support builds</strong><div class="squad-builds">${unassigned.sort(sortBuilds).map(buildLink).join("")}</div>`;
+    document.querySelector(".squad-columns").after(box);
+  }
+  const damage=builds.filter(b=>String(b.category).toLowerCase()==="damage").sort(sortBuilds);
+  document.getElementById("squad-damage").innerHTML=damage.map(buildLink).join("")||'<span class="squad-loading">No damage builds listed</span>';
+  document.getElementById("squad-damage-count").textContent=`(${damage.length})`;
+}).catch(error=>{console.warn("Squad build list unavailable",error);for(const id of ["first","second","third","damage"])document.getElementById("squad-"+id).textContent="Build list unavailable";});

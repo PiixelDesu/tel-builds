@@ -632,3 +632,43 @@ body[data-page="squad"] .squad-section{margin-bottom:35px}
 .squad-chips a:hover{border-color:#ead391;color:#ead391}
 @media(max-width:1100px){.squad-five{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.squad-five{grid-template-columns:1fr}.squad-role-grid{grid-template-columns:1fr}.squad-position{padding:15px}.squad-role-panel{padding:16px}}
+
+
+/* Compact, one-page squad planner */
+body[data-page="squad"] .squad-main{padding-top:20px}
+body[data-page="squad"] .squad-intro{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 16px}
+body[data-page="squad"] .squad-intro h1{font-size:clamp(26px,3.3vw,42px);line-height:1.1;margin:2px 0 7px}
+body[data-page="squad"] .squad-intro p{margin:0;color:#aaa39a}
+body[data-page="squad"] .squad-intro p strong{color:#eeeae0}
+body[data-page="squad"] .squad-private{font-size:11px;color:#a9915f;white-space:nowrap}
+body[data-page="squad"] .squad-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-bottom:11px}
+body[data-page="squad"] .squad-slot{display:flex;gap:10px;align-items:center;padding:11px;background:#29231d;border:1px solid rgba(216,189,120,.28);border-radius:8px;min-width:0}
+body[data-page="squad"] .squad-slot b{color:#d8bd78;font-size:20px}
+body[data-page="squad"] .squad-slot span{display:flex;flex-direction:column;min-width:0;gap:2px}
+body[data-page="squad"] .squad-slot strong{font-size:12px;color:#eeeae0}
+body[data-page="squad"] .squad-slot small{font-size:10px;color:#aaa39a}
+body[data-page="squad"] .squad-slot-dps{background:#242220;border-color:rgba(190,190,190,.15)}
+body[data-page="squad"] .squad-guide{font-size:12px;line-height:1.5;color:#aaa39a;margin-bottom:15px}
+body[data-page="squad"] .squad-guide strong{color:#ead391}
+body[data-page="squad"] .squad-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;align-items:start}
+body[data-page="squad"] .squad-col{border:1px solid rgba(216,189,120,.22);border-radius:10px;background:#27221e;overflow:hidden;min-width:0}
+body[data-page="squad"] .squad-col header{display:flex;gap:11px;align-items:center;padding:13px 14px;border-bottom:1px solid rgba(216,189,120,.18);background:#30291f}
+body[data-page="squad"] .squad-col-number{font-size:22px;font-weight:800;color:#d8bd78}
+body[data-page="squad"] .squad-col h2{font-size:17px;color:#eeeae0;margin:0 0 3px}
+body[data-page="squad"] .squad-col header p{font-size:11px;color:#aaa39a;margin:0}
+body[data-page="squad"] .squad-builds{padding:9px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+body[data-page="squad"] .squad-build-link{display:flex;flex-direction:column;gap:3px;min-width:0;text-decoration:none;background:#1e1b18;border:1px solid rgba(216,189,120,.16);border-radius:6px;padding:9px 10px;transition:border-color .15s}
+body[data-page="squad"] .squad-build-link:hover{border-color:#d8bd78}
+body[data-page="squad"] .squad-build-spec{color:#eeeae0;font-weight:700;font-size:12px;overflow-wrap:anywhere}
+body[data-page="squad"] .squad-build-link small{color:#aaa39a;font-size:10px}
+body[data-page="squad"] .squad-loading{color:#aaa39a;font-size:12px}
+body[data-page="squad"] .squad-damage-section{margin-top:16px;padding:13px;border:1px solid rgba(216,189,120,.2);border-radius:10px;background:#27221e}
+body[data-page="squad"] .squad-damage-head h2{font-size:18px;color:#ead391;margin:0 0 3px}
+body[data-page="squad"] .squad-damage-head h2 span{color:#aaa39a;font-size:12px}
+body[data-page="squad"] .squad-damage-head p{font-size:11px;color:#aaa39a;margin:0 0 11px}
+body[data-page="squad"] .squad-damage-list{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+body[data-page="squad"] .squad-unassigned{padding:12px;margin-top:10px;border:1px dashed #a9915f;border-radius:8px}
+body[data-page="squad"] .squad-unassigned>strong{font-size:13px;color:#ead391}
+body[data-page="squad"] .squad-footnote{font-size:11px;line-height:1.5;color:#aaa39a;margin:13px 0 20px}
+@media(max-width:1050px){body[data-page="squad"] .squad-strip{grid-template-columns:repeat(3,minmax(0,1fr))}body[data-page="squad"] .squad-damage-list{grid-template-columns:repeat(4,minmax(0,1fr))}body[data-page="squad"] .squad-builds{grid-template-columns:1fr}}
+@media(max-width:700px){body[data-page="squad"] .squad-intro{align-items:start;flex-direction:column}body[data-page="squad"] .squad-strip{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-page="squad"] .squad-columns{grid-template-columns:1fr}body[data-page="squad"] .squad-builds{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-page="squad"] .squad-damage-list{grid-template-columns:repeat(2,minmax(0,1fr))}}

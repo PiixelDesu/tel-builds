@@ -9,7 +9,8 @@
     "gw2skills": "https://gw2skills.net/editor/?POwEYKNssCGCbhFyIxyVyrlez9UIrA-DWJYjR9fhEUSkZIUdF471hQEg9wbp9NLA-w",
     "status": "approved",
     "updated": "2026-10-06",
-    "notes": ""
+    "notes": "",
+    "supportRole": "second"
   },
   {
     "id": "support-firebrand",
@@ -21,7 +22,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PWwAYl7lRweYcMMmJe6X7PNA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "first"
   },
   {
     "id": "power-ritualist",
@@ -69,7 +71,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PixAw6Rl9ysYZsYGNe0TaTdA-DWJYjR3fhEUYkZCUdFp7vgQIg0/M/AYLtPsBA-w",
     "status": "approved",
     "updated": "2026-10-12",
-    "notes": ""
+    "notes": "",
+    "supportRole": "first"
   },
   {
     "id": "support-specter",
@@ -81,7 +84,8 @@
     "gw2skills": "https://gw2skills.net/editor/?Pa1AsqrlhySZrsQWLeqWXRfA-DWJYjR7fhEUCUdBkeY571hSEgt/bp9NLA-w",
     "status": "approved",
     "updated": "2026-10-12",
-    "notes": ""
+    "notes": "",
+    "supportRole": "second"
   },
   {
     "id": "power-amalgam",
@@ -105,7 +109,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PWwAYl7l5yiZYMZ2Ie8X6zKA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "first"
   },
   {
     "id": "power-evoker",
@@ -141,7 +146,8 @@
     "gw2skills": "https://en.gw2skills.net/editor/?PGhAYZlBzsYYMZWNm2WXTfluBAA-DWJYjRFfhkURkaEUdK471hQEg9wbp%2FNLA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "second"
   },
   {
     "id": "heal-scrapper",
@@ -153,7 +159,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PegAUVlNweYOMPWJe2SntUA-DWJYjRVfhkUgkZFUda471hQEg9zbp9NLA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "second"
   },
   {
     "id": "support-vindicator",
@@ -165,7 +172,8 @@
     "gw2skills": "",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "third"
   },
   {
     "id": "power-untamed",
@@ -189,7 +197,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PKwEYiNssX2HDmJzIx0/6c6B-DWJYjRNfhEUYUdBkeGo7vgQEg9wbp9LNA-w",
     "status": "approved",
     "updated": "2026-10-12",
-    "notes": ""
+    "notes": "",
+    "supportRole": "third"
   },
   {
     "id": "power-reaper",
@@ -213,7 +222,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PiwAw6RlZwsYNsM2Je0TetWA-DWJYjRHfZkZKUdFo7rhTIg8sHmmHcpBA-w",
     "status": "approved",
     "updated": "2026-10-05",
-    "notes": ""
+    "notes": "",
+    "supportRole": "third"
   },
   {
     "id": "power-scourge",
@@ -249,7 +259,8 @@
     "gw2skills": "https://gw2skills.net/editor/?PSgAEZlRwWZIMQWLO8T1RVA-DWRYjR0vaUAnSQC0MVUVLEiZGorbAhQA7BPNLtvZBA-w",
     "status": "approved",
     "updated": "2026-10-13",
-    "notes": ""
+    "notes": "",
+    "supportRole": "third"
   },
   {
     "id": "power-virtuoso",
@@ -333,6 +344,7 @@
     "gw2skills": "https://gw2skills.net/editor/?PmgEQrU2Cdw2IHmG1wyoH2I9xMoAmMXavWA-DWZYBRFpmBcoiynDB5QaSSUnIIdlgifGEgA2DvF6H3AA-w",
     "status": "approved",
     "updated": "2026-10-13",
-    "notes": ""
+    "notes": "",
+    "supportRole": "third"
   }
 ]
