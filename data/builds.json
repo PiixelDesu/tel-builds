@@ -173,7 +173,7 @@
     "status": "approved",
     "updated": "2026-10-05",
     "notes": "",
-    "supportRole": "third"
+    "supportRole": ["second", "third"]
   },
   {
     "id": "power-untamed",
@@ -223,7 +223,7 @@
     "status": "approved",
     "updated": "2026-10-05",
     "notes": "",
-    "supportRole": "third"
+    "supportRole": ["first", "third"]
   },
   {
     "id": "power-scourge",
