@@ -1990,5 +1990,66 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/109942.png"
+  },
+  "Superior Rune of Fireworks": {
+    "id": 89999,
+    "name": "Superior Rune of Fireworks",
+    "icon": "https://render.guildwars2.com/file/CECC01C8220163A9646171B0BAA528B73DE3D527/2100803.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Power",
+        "+5% Boon Duration",
+        "+50 Power",
+        "+10% Boon Duration",
+        "+100 Power",
+        "+10% Boon Duration"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": ""
+    },
+    "local_icon": "assets/gw2/items/89999.png"
+  },
+  "Potent Lucent Oil": {
+    "id": 89203,
+    "name": "Potent Lucent Oil",
+    "icon": "https://render.guildwars2.com/file/B4335597D7C65F33163D5DFAB83A4E2734D2E2D4/2063492.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+      "description": "Gain Concentration Equal to 3% of Your Power\nGain Concentration Equal to 3% of Your Precision\n+10% Experience from Kills"
+    },
+    "local_icon": "assets/gw2/items/89203.png"
+  },
+  "Relic of the Astral Ward": {
+    "id": 100388,
+    "name": "Relic of the Astral Ward",
+    "icon": "https://render.guildwars2.com/file/57A961A8ADFE279BC4F124A40CC4B5646BC8035F/3161446.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100388.png"
+  },
+  "Relic of the Herald": {
+    "id": 100219,
+    "name": "Relic of the Herald",
+    "icon": "https://render.guildwars2.com/file/DE62250A48F802DD09A1FAFF0D2BA804EA29A3B9/3122352.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100219.png"
   }
 }
