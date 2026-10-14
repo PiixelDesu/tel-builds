@@ -677,3 +677,55 @@ body[data-page="squad"] .squad-footnote{font-size:11px;line-height:1.5;color:#aa
 body[data-page="squad"] .squad-build-link{flex-direction:row;align-items:center;gap:9px}
 body[data-page="squad"] .squad-build-icon{width:31px;height:31px;object-fit:contain;flex:0 0 31px}
 body[data-page="squad"] .squad-build-label{display:flex;flex-direction:column;gap:3px;min-width:0}
+
+/* ZERG: profession + four build-role columns. ROAMING remains unchanged. */
+body[data-page="home"] .build-matrix{
+  grid-template-columns:150px repeat(4,minmax(195px,1fr));
+  min-width:950px;
+}
+body[data-page="home"] .matrix-head{padding-left:9px;padding-right:9px;text-align:center;letter-spacing:.10em}
+body[data-page="home"] .matrix-head.profession-col{text-align:left}
+body[data-page="home"] .matrix-cell.matrix-list{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:minmax(0,1fr)}
+body[data-page="home"] .matrix-list.build-count-1{grid-template-columns:1fr}
+body[data-page="home"] .matrix-list.build-count-3 .matrix-build-item:first-child,
+body[data-page="home"] .matrix-list.build-count-5 .matrix-build-item,
+body[data-page="home"] .matrix-list.build-count-5 .matrix-build-item:nth-child(n+3){grid-column:auto}
+body[data-page="home"] .matrix-list .matrix-build-item{padding:7px 6px;grid-template-columns:24px minmax(0,1fr);gap:5px}
+body[data-page="home"] .matrix-list .matrix-build-item strong{font-size:12px}
+body[data-page="home"] .matrix-list .matrix-build-item small{font-size:8px}
+body[data-page="home"] .matrix-list .spec-icon{width:24px;height:24px}
+@media(min-width:1000px) and (min-height:800px){
+  body[data-page="home"] .build-matrix{
+    grid-template-columns:135px repeat(4,minmax(0,1fr));
+    min-width:0;
+    grid-template-rows:34px repeat(9,minmax(0,1fr));
+  }
+  body[data-page="home"] .matrix-wrap{overflow:hidden}
+  body[data-page="home"] .matrix-list .matrix-build-item{padding:3px 5px}
+  body[data-page="home"] .matrix-list .matrix-build-item strong{font-size:11px}
+}
+@media(max-width:999px) and (min-width:761px){
+  body[data-page="home"] .matrix-wrap{overflow-x:auto}
+}
+@media(max-width:760px){
+  body[data-page="home"] .build-matrix{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}
+  body[data-page="home"] .matrix-profession{grid-column:1/-1}
+  body[data-page="home"] .matrix-cell{min-height:100px;border-radius:0!important}
+  body[data-page="home"] .matrix-cell[data-role="damage"]{border-left:1px solid var(--border2)}
+  body[data-page="home"] .matrix-cell[data-role="first"]{border-right:1px solid var(--border2)}
+  body[data-page="home"] .matrix-cell[data-role="second"]{border-left:1px solid var(--border2)}
+  body[data-page="home"] .matrix-cell[data-role="third"]{border-right:1px solid var(--border2)}
+  body[data-page="home"] .matrix-cell[data-role]::before{
+    content:attr(data-role) " Support";position:absolute;top:7px;left:10px;
+    z-index:2;font-size:9px;font-weight:800;letter-spacing:.07em;
+    text-transform:capitalize;color:var(--gold)
+  }
+  body[data-page="home"] .matrix-cell[data-role="damage"]::before{content:"Damage"}
+  body[data-page="home"] .matrix-cell.matrix-list{padding:27px 5px 5px!important}
+  body[data-page="home"] .matrix-list .matrix-build-item{text-align:left;align-items:center}
+}
+@media(max-width:430px){
+  body[data-page="home"] .build-matrix{grid-template-columns:1fr}
+  body[data-page="home"] .matrix-cell[data-role]{border-left:1px solid var(--border2);border-right:1px solid var(--border2)}
+  body[data-page="home"] .matrix-cell[data-role="third"]{border-radius:0 0 10px 10px!important}
+}

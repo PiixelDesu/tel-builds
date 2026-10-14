@@ -42,10 +42,19 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
        <span class="build-label"><strong>${GuildBuildPortal.esc(b.name)}</strong><small>${GuildBuildPortal.esc(b.specialization||"")}</small></span>
      </a>`).join("");
 
-   const cell=(p,cat)=>{
-     const list=builds.filter(x=>x.profession===p.id&&x.category===cat).slice(0,6);
-     if(!list.length)return `<div class="matrix-cell matrix-empty"><span>—</span></div>`;
-     return `<div class="matrix-cell matrix-list build-count-${list.length}">${cards(list)}</div>`;
+   // Shared with /squad/: each support build can occupy more than one role.
+   const supportRoles=b=>{
+     const raw=[b.supportRole,b.squadRoles].flatMap(v=>Array.isArray(v)?v:[v]);
+     return [...new Set(raw.flatMap(v=>typeof v==="string"?v.split(","):[])
+       .map(v=>v.trim().toLowerCase()).filter(v=>["first","second","third"].includes(v)))];
+   };
+   const cell=(p,role)=>{
+     const list=builds.filter(b=>b.profession===p.id&&(
+       role==="damage" ? b.category==="damage" :
+       b.category==="support"&&supportRoles(b).includes(role)
+     ));
+     if(!list.length)return `<div class="matrix-cell matrix-empty" data-role="${role}"><span>—</span></div>`;
+     return `<div class="matrix-cell matrix-list build-count-${Math.min(list.length,6)}" data-role="${role}">${cards(list)}</div>`;
    };
 
    const roamingCell=(p)=>{
@@ -65,12 +74,12 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      `).join("")}`:`
      <div class="matrix-head profession-col">Profession</div>
      <div class="matrix-head">Damage</div>
-     <div class="matrix-head">Support</div>
+     <div class="matrix-head">First Support</div>\n     <div class="matrix-head">Second Support</div>\n     <div class="matrix-head">Third Support</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
          <div class="profession-glyph">${icons.professions[p.id]?`<img src="${GuildBuildPortal.esc(icons.professions[p.id])}" alt="" loading="lazy">`:GuildBuildPortal.esc(p.glyph)}</div><strong>${GuildBuildPortal.esc(p.name)}</strong>
        </div>
-       ${cell(p,"damage")}${cell(p,"support")}
+       ${cell(p,"damage")}${cell(p,"first")}${cell(p,"second")}${cell(p,"third")}
      `).join("")}`;
  }catch(err){
    console.error(err);
