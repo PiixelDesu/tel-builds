@@ -74,7 +74,7 @@ document.querySelectorAll("#year").forEach(x=>x.textContent=new Date().getFullYe
      `).join("")}`:`
      <div class="matrix-head profession-col">Profession</div>
      <div class="matrix-head">Damage</div>
-     <div class="matrix-head">First Support</div>\n     <div class="matrix-head">Second Support</div>\n     <div class="matrix-head">Third Support</div>
+     <div class="matrix-head">First Support (Stability)</div>\n     <div class="matrix-head">Second Support (Heal/Cleans)</div>\n     <div class="matrix-head">Third Support (Boons/Utility)</div>
      ${professions.map(p=>`
        <div class="matrix-profession" style="--profession:${p.color}">
          <div class="profession-glyph">${icons.professions[p.id]?`<img src="${GuildBuildPortal.esc(icons.professions[p.id])}" alt="" loading="lazy">`:GuildBuildPortal.esc(p.glyph)}</div><strong>${GuildBuildPortal.esc(p.name)}</strong>
