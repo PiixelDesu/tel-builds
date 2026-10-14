@@ -337,8 +337,8 @@
     }
   },
   "support-firebrand": {
-    "chat_code": "[&DQENPS47PhpLFwAAehYAAEsBAAA2AQAAGBYAAAAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?PWwAYl7lRweYcMMmJe6X7PNA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
+    "chat_code": "[&DQExNi47PjpLFwAANgEAAEsBAAB6FgAAGBYAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PWwAYl7lRwwYcsHmJmsX7PdA-DWJYjR9/hEkwoaJQ6qAH+a4EBYP8aewlGA-w",
     "equipment": {
       "armor": [
         {
@@ -456,15 +456,15 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -489,15 +489,15 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Bounty",
-              "id": 81045,
-              "icon": "assets/gw2/items/81045.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -522,9 +522,9 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Bounty",
-              "id": 81045,
-              "icon": "assets/gw2/items/81045.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -543,29 +543,9 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -574,34 +554,6 @@
         {
           "slot": "Aquatic 2",
           "stat": "Minstrel",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ],
           "weaponType": "Trident"
         }
       ],
@@ -2792,24 +2744,24 @@
     }
   },
   "support-luminary": {
-    "chat_code": "[&DQENPi46URVhHQAAeB0AADYBAABXHQAANwEAAAAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?PWwAYl7l5yiZYMZ2Ie8X6zKA-DWJYjR9/hkmQITJaMrKH+a4EB4vmHcpBA-w",
+    "chat_code": "[&DQExJi47URVhHQAANgEAAEsBAAB4HQAAiRIAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PWwAYl7l5ywYcsYGJmMX7zKA-DWJYjR9fhkUYUdCkeFo7LhTEm9wbp9LNA-w",
     "equipment": {
       "armor": [
         {
           "slot": "Head",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2818,16 +2770,16 @@
           "slot": "Shoulders",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2836,16 +2788,16 @@
           "slot": "Chest",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2854,16 +2806,16 @@
           "slot": "Hands",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2872,16 +2824,16 @@
           "slot": "Legs",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2890,16 +2842,16 @@
           "slot": "Feet",
           "stat": "Minstrel",
           "rune": {
-            "name": "Superior Rune of Radiance",
-            "id": 67342,
-            "icon": "assets/gw2/items/67342.png",
+            "name": "Superior Rune of the Water",
+            "id": 24839,
+            "icon": "assets/gw2/items/24839.png",
             "type": "UpgradeComponent"
           },
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -2911,29 +2863,29 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
+              "name": "Superior Sigil of Transference",
+              "id": 74326,
+              "icon": "assets/gw2/items/74326.png",
               "type": "UpgradeComponent"
             }
           ],
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2944,29 +2896,29 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
+              "name": "Superior Sigil of Concentration",
+              "id": 72339,
+              "icon": "assets/gw2/items/72339.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Bounty",
-              "id": 81045,
-              "icon": "assets/gw2/items/81045.png",
+              "name": "Superior Sigil of Benevolence",
+              "id": 24584,
+              "icon": "assets/gw2/items/24584.png",
               "type": "UpgradeComponent"
             }
           ],
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2977,17 +2929,17 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Bounty",
-              "id": 81045,
-              "icon": "assets/gw2/items/81045.png",
+              "name": "Superior Sigil of Benevolence",
+              "id": 24584,
+              "icon": "assets/gw2/items/24584.png",
               "type": "UpgradeComponent"
             }
           ],
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2998,29 +2950,9 @@
           "stat": "Minstrel",
           "sigils": [
             {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Superior Sigil of Benevolence",
+              "id": 24584,
+              "icon": "assets/gw2/items/24584.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -3029,34 +2961,6 @@
         {
           "slot": "Aquatic 2",
           "stat": "Minstrel",
-          "sigils": [
-            {
-              "name": "Superior Sigil of Frenzy",
-              "id": 82876,
-              "icon": "assets/gw2/items/82876.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
-            }
-          ],
-          "infusions": [
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
-              "type": "UpgradeComponent"
-            }
-          ],
           "weaponType": "Trident"
         }
       ],
@@ -3078,21 +2982,21 @@
           "stat": "Minstrel",
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -3102,21 +3006,21 @@
           "stat": "Minstrel",
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -3126,9 +3030,9 @@
           "stat": "Minstrel",
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -3138,9 +3042,9 @@
           "stat": "Minstrel",
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -3150,24 +3054,24 @@
           "stat": "Minstrel",
           "infusions": [
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Healing WvW Infusion",
-              "id": 43250,
-              "icon": "assets/gw2/items/43250.png",
+              "name": "Concentration WvW Infusion",
+              "id": 86986,
+              "icon": "assets/gw2/items/86986.png",
               "type": "UpgradeComponent"
             }
           ]
         }
       ],
       "food": {
-        "name": "Plate of Peppercorn-Spiced Poultry Aspic",
-        "id": 91794,
-        "icon": "assets/gw2/items/91794.png",
+        "name": "Bowl of Fruit Salad with Mint Garnish",
+        "id": 91690,
+        "icon": "assets/gw2/items/91690.png",
         "type": "Consumable"
       },
       "utility": {
@@ -3177,9 +3081,9 @@
         "type": "Consumable"
       },
       "relic": {
-        "name": "Relic of Febe",
-        "id": 101116,
-        "icon": "assets/gw2/items/101116.png",
+        "name": "Relic of the Pack",
+        "id": 100752,
+        "icon": "assets/gw2/items/100752.png",
         "type": "Relic"
       }
     }
@@ -5528,8 +5432,8 @@
     }
   },
   "support-chronomancer": {
-    "chat_code": "[&DQctOhceKC1tAQAAhQEAAJMSAACEAQAAvAEAAAAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?PiwAw6RlZwsYNsM2Je0TetWA-DWJYjRHfZkZKUdFo7rhTIg8sHmmHcpBA-w",
+    "chat_code": "[&DQctOhceKCltAQAAhQEAAIQBAACCAQAAvAEAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PiwAw6RlZwsYZMF2Je0TetUA-DWJYjRHfhEUYkZCUdFo7rhTIg9QBPlPNP4SDA-w",
     "equipment": {
       "armor": [
         {
@@ -5543,9 +5447,9 @@
           },
           "infusions": [
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
           ]
@@ -5661,15 +5565,15 @@
           ],
           "infusions": [
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -5688,9 +5592,9 @@
           ],
           "infusions": [
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -5707,27 +5611,39 @@
               "type": "UpgradeComponent"
             },
             {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
           "infusions": [
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             },
             {
-              "name": "Concentration WvW Infusion",
-              "id": 86986,
-              "icon": "assets/gw2/items/86986.png",
+              "name": "Healing WvW Infusion",
+              "id": 43250,
+              "icon": "assets/gw2/items/43250.png",
               "type": "UpgradeComponent"
             }
           ],
           "weaponType": "Rifle"
+        },
+        {
+          "slot": "Aquatic 1",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Life",
+              "id": 24582,
+              "icon": "assets/gw2/items/24582.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
         }
       ],
       "trinkets": [

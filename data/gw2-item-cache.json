@@ -2051,5 +2051,13 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/100219.png"
+  },
+  "Relic of the Pack": {
+    "id": 100752,
+    "name": "Relic of the Pack",
+    "icon": "https://render.guildwars2.com/file/26503D1FF7BA354058789E371992A7500B3AA89B/3122364.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100752.png"
   }
 }
