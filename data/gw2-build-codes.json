@@ -1066,7 +1066,7 @@
       }
     }
   },
-  "power-boonstrip-necro": {
+  "power-necro": {
     "chat_code": "[&DQg1Pic6MicoDwAAdgEAAIEAAABzAQAAkgAAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://en.gw2skills.net/editor/?PSABc2tzlRwwYHMEGJO8L6rTA-DSRYiRPjO4DpORQmShcWA26sQACo3i+nRAA-e",
     "equipment": {
@@ -3399,7 +3399,7 @@
       }
     }
   },
-  "power-boonstrip-spellbreaker": {
+  "power-spellbreaker": {
     "chat_code": "[&DQIEHzM6PRUpDwAAsgAAACcWAACpAAAAnRYAAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PKhEYiW2ATkJxmYn44bp/qA-DWRYBBLGVvDpJRQdKqcmqS5sQAC4vF9PjAA-w",
     "equipment": {
