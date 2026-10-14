@@ -38,10 +38,10 @@
     "notes": ""
   },
   {
-    "id": "power-boonstrip-necro",
+    "id": "power-necro",
     "profession": "necromancer",
     "category": "damage",
-    "name": "Power Boonstrip Necro",
+    "name": "Power Necro",
     "specialization": "Core",
     "description": "Power Boonstrip Necro is a Guild Wars 2 WvW Damage build for Necromancer, focused on dealing high damage with boons and strips.",
     "gw2skills": "https://en.gw2skills.net/editor/?PSABc2tzlRwwYHMEGJO8L6rTA-DSRYiRPjO4DpORQmShcWA26sQACo3i+nRAA-e",
@@ -125,10 +125,10 @@
     "notes": ""
   },
   {
-    "id": "power-boonstrip-spellbreaker",
+    "id": "power-spellbreaker",
     "profession": "warrior",
     "category": "damage",
-    "name": "Power Boonstrip Spellbreaker",
+    "name": "Power Spellbreaker",
     "specialization": "Spellbreaker",
     "description": "Power Boonstrip Spellbreaker is a Guild Wars 2 WvW Damage build for Warrior, focused on dealing high damage with boons and strips.",
     "gw2skills": "https://gw2skills.net/editor/?PKhEYiW2ATkJxmYn44bp/qA-DWRYBBLGVvDpJRQdKqcmqS5sQAC4vF9PjAA-w",
