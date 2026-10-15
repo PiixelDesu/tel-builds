@@ -9070,6 +9070,350 @@
       }
     }
   },
+  "power-chronomancer": {
+    "chat_code": "[&DQcKFRglKD4jDwAAhxIAAAQTAACCAQAAsxIAAAAAAAAAAAAAAAAAAAAAAAA=]",
+    "source": "https://gw2skills.net/editor/?PigEEiWWBzhxwUYl4oaV28B-DWRYiR1tH/cIiGKlmSi6KgaDhKiApuFEgxRkA+tBJB8Wo/MCA-w",
+    "equipment": {
+      "armor": [
+        {
+          "slot": "Head",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Shoulders",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Chest",
+          "stat": "Dragon",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Hands",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Legs",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Feet",
+          "stat": "Marauder",
+          "rune": {
+            "name": "Superior Rune of Infiltration",
+            "id": 24703,
+            "icon": "assets/gw2/items/24703.png",
+            "type": "UpgradeComponent"
+          },
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "weapons": [
+        {
+          "slot": "Weapon set 1 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Fire",
+              "id": 24548,
+              "icon": "assets/gw2/items/24548.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Greatsword"
+        },
+        {
+          "slot": "Weapon set 2 · Main hand",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Force",
+              "id": 24615,
+              "icon": "assets/gw2/items/24615.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Superior Sigil of Impact",
+              "id": 24868,
+              "icon": "assets/gw2/items/24868.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Aquatic 1",
+          "stat": "Marauder",
+          "sigils": [
+            {
+              "name": "Superior Sigil of Bloodlust",
+              "id": 24575,
+              "icon": "assets/gw2/items/24575.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Spear"
+        },
+        {
+          "slot": "Aquatic 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            }
+          ],
+          "weaponType": "Trident"
+        }
+      ],
+      "trinkets": [
+        {
+          "slot": "Amulet",
+          "stat": "Dragon"
+        },
+        {
+          "slot": "Ring 1",
+          "stat": "Dragon",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Mighty WvW Infusion",
+              "id": 43254,
+              "icon": "assets/gw2/items/43254.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Malign WvW Infusion",
+              "id": 43253,
+              "icon": "assets/gw2/items/43253.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 1",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Precise WvW Infusion",
+              "id": 43255,
+              "icon": "assets/gw2/items/43255.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Accessory 2",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Precise WvW Infusion",
+              "id": 43255,
+              "icon": "assets/gw2/items/43255.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        },
+        {
+          "slot": "Back",
+          "stat": "Marauder",
+          "infusions": [
+            {
+              "name": "Precise WvW Infusion",
+              "id": 43255,
+              "icon": "assets/gw2/items/43255.png",
+              "type": "UpgradeComponent"
+            },
+            {
+              "name": "Precise WvW Infusion",
+              "id": 43255,
+              "icon": "assets/gw2/items/43255.png",
+              "type": "UpgradeComponent"
+            }
+          ]
+        }
+      ],
+      "food": {
+        "name": "Spherified Peppercorn-Spiced Oyster Soup",
+        "id": 91713,
+        "icon": "assets/gw2/items/91713.png",
+        "type": "Consumable"
+      },
+      "utility": {
+        "name": "Potent Superior Sharpening Stone",
+        "id": 43451,
+        "icon": "assets/gw2/items/43451.png",
+        "type": "Consumable"
+      },
+      "relic": {
+        "name": "Relic of Fireworks",
+        "id": 100262,
+        "icon": "assets/gw2/items/100262.png",
+        "type": "Relic"
+      }
+    }
+  },
   "celestial-amalgam-roamer": {
     "chat_code": "[&DQMGHRUnSyeAHQAAhR0AAIYAAACCHQAAex0AAAAAAAAAAAAAAAAAAAAAAAA=]",
     "source": "https://gw2skills.net/editor/?PeQEQLTmVz0Yzsbc0tOnnKQ4pnPA-DWRYVRBHvZQDlRmJSvFhaXLCQAbg3SVeVAA-w",
