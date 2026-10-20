@@ -169,9 +169,9 @@
     "name": "Support Vindicator",
     "specialization": "Vindicator",
     "description": "Support Vindicator is a Guild Wars 2 WvW Support build for Revenant, focused on providing utility and control.",
-    "gw2skills": "",
+    "gw2skills": "https://gw2skills.net/editor/?PmwAs6ZllQmMK6kNRpsKClFSqsBqknv0ZUHA-DWJYjR3fp0TBkUYkZEUdC47FhQEg/WafzCA-w",
     "status": "approved",
-    "updated": "2026-10-05",
+    "updated": "2026-10-20",
     "notes": "",
     "supportRole": ["second", "third"]
   },
