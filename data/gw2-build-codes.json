@@ -2741,22 +2741,22 @@
           "id": 1536,
           "name": "Obliterate",
           "slot": 1,
-          "source_path": "extra[2]",
-          "api_skill_id": 76806
+          "api_skill_id": 76806,
+          "source_path": "extra[2]"
         },
         {
           "id": 1535,
           "name": "Thorns",
           "slot": 2,
-          "source_path": "extra[3]",
-          "api_skill_id": 77163
+          "api_skill_id": 77163,
+          "source_path": "extra[3]"
         },
         {
           "id": 1538,
           "name": "Demolish",
           "slot": 3,
-          "source_path": "extra[4]",
-          "api_skill_id": 76927
+          "api_skill_id": 76927,
+          "source_path": "extra[4]"
         }
       ]
     }
@@ -15740,22 +15740,22 @@
           "id": 1536,
           "name": "Obliterate",
           "slot": 1,
-          "source_path": "extra[2]",
-          "api_skill_id": 76806
+          "api_skill_id": 76806,
+          "source_path": "extra[2]"
         },
         {
           "id": 1533,
           "name": "Cleanse",
           "slot": 2,
-          "source_path": "extra[3]",
-          "api_skill_id": 76798
+          "api_skill_id": 76798,
+          "source_path": "extra[3]"
         },
         {
           "id": 1539,
           "name": "Shred",
           "slot": 3,
-          "source_path": "extra[4]",
-          "api_skill_id": 77103
+          "api_skill_id": 77103,
+          "source_path": "extra[4]"
         }
       ]
     }
@@ -16091,22 +16091,22 @@
           "id": 1534,
           "name": "Protect",
           "slot": 1,
-          "source_path": "extra[2]",
-          "api_skill_id": 76959
+          "api_skill_id": 76959,
+          "source_path": "extra[2]"
         },
         {
           "id": 1533,
           "name": "Cleanse",
           "slot": 2,
-          "source_path": "extra[3]",
-          "api_skill_id": 76798
+          "api_skill_id": 76798,
+          "source_path": "extra[3]"
         },
         {
           "id": 1539,
           "name": "Shred",
           "slot": 3,
-          "source_path": "extra[4]",
-          "api_skill_id": 77103
+          "api_skill_id": 77103,
+          "source_path": "extra[4]"
         }
       ]
     }
