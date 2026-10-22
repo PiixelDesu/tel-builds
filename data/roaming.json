@@ -276,6 +276,18 @@
     "notes": ""
   },
   {
+    "id": "condition-burst-berserker",
+    "profession": "warrior",
+    "category": "roaming",
+    "name": "Condition Burst Berserker",
+    "specialization": "Berserker",
+    "description": "Condition Burst Berserker is a Guild Wars 2 WvW build for Warrior.",
+    "gw2skills": "https://gw2skills.net/editor/?PKABw+lzlNkwwCbNlswumZkeKX+tfA-DWJYkx/pEpQoSRQmKgOlAK8DQAC3vGQMXBA-w",
+    "status": "approved",
+    "updated": "2026-10-22",
+    "notes": ""
+  },
+  {
     "id": "power-axe-berserker",
     "profession": "warrior",
     "category": "roaming",
