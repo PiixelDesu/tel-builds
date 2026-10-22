@@ -395,6 +395,18 @@ def specialization_mechanics_from(preload, db, specialization=""):
                     selections.append({'id':skill_id,'name':AMALGAM_MORPH_NAMES.get(skill_id, f'Morph skill #{skill_id}'),
                                        'slot':slot,'api_skill_id':AMALGAM_MORPH_API_IDS.get(skill_id),'source_path':f'extra[{slot+1}]'})
                 return {'type':'morphs','selections':selections}
+    # Evoker familiar choice is stored in the first GW2Skills extra slot.
+    # Preserve its exact ID, even when the GW2Skills database has no usable
+    # localized name/icon for the selection.
+    if spec=='evoker':
+        extra=preload.get('extra') or []
+        if isinstance(extra,list) and extra and isinstance(extra[0],int) and extra[0]>0:
+            familiar_id=extra[0]
+            return {'type':'familiar','selections':[{
+                'id':familiar_id,
+                'name':f'Familiar #{familiar_id}',
+                'source_path':'extra[0]'
+            }]}
     needle='familiar' if spec=='evoker' else 'morph' 
 
     
