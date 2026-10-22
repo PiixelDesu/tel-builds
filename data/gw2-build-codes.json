@@ -3374,9 +3374,9 @@
         {
           "id": 29,
           "name": "Hare",
-          "source_path": "extra[0]",
           "element": "Air",
-          "icon": "assets/gw2/familiars/hare.svg"
+          "icon": "assets/gw2/familiars/hare.svg",
+          "source_path": "extra[0]"
         }
       ]
     }
@@ -4060,9 +4060,9 @@
         {
           "id": 27,
           "name": "Otter",
-          "source_path": "extra[0]",
           "element": "Water",
-          "icon": "assets/gw2/familiars/otter.svg"
+          "icon": "assets/gw2/familiars/otter.svg",
+          "source_path": "extra[0]"
         }
       ]
     }
@@ -13603,9 +13603,9 @@
         {
           "id": 29,
           "name": "Hare",
-          "source_path": "extra[0]",
           "element": "Air",
-          "icon": "assets/gw2/familiars/hare.svg"
+          "icon": "assets/gw2/familiars/hare.svg",
+          "source_path": "extra[0]"
         }
       ]
     }
@@ -13927,9 +13927,9 @@
         {
           "id": 31,
           "name": "Toad",
-          "source_path": "extra[0]",
           "element": "Earth",
-          "icon": "assets/gw2/familiars/toad.svg"
+          "icon": "assets/gw2/familiars/toad.svg",
+          "source_path": "extra[0]"
         }
       ]
     }
