@@ -366,7 +366,32 @@ def specialization_mechanics_from(preload, db, specialization=""):
     """
     spec=str(specialization or '').strip().lower()
     if spec not in ('evoker','amalgam') or not isinstance(preload,dict): return None
-    needle='familiar' if spec=='evoker' else 'morph'
+    # GW2Skills encodes Amalgam's three morph selections in extra[2:5].
+    # These are GW2Skills skill IDs, not official GW2 API skill IDs.
+    if spec=='amalgam':
+        extra=preload.get('extra') or []
+        if isinstance(extra,list):
+            chosen=[(slot,value) for slot,value in enumerate(extra[2:5],start=1)
+                    if isinstance(value,int) and value>0]
+            if chosen:
+                table=(db or {}).get('skill') or {}
+                desc=table.get('desc') or []
+                indexed={}
+                if 'id' in desc:
+                    id_col=desc.index('id')
+                    for row in table.get('rows') or []:
+                        if isinstance(row,list) and len(row)>id_col:
+                            indexed[row[id_col]]=row
+                selections=[]
+                for slot,skill_id in chosen:
+                    row=indexed.get(skill_id)
+                    # GW2Skills' database uses numeric IDs and image sprite keys;
+                    # it does not supply localized skill names in this table.
+                    # Keep the precise selected ID instead of inventing a name.
+                    selections.append({'id':skill_id,'name':f'Morph skill #{skill_id}',
+                                       'slot':slot,'source_path':f'extra[{slot+1}]'})
+                return {'type':'morphs','selections':selections}
+    needle='familiar' if spec=='evoker' else 'morph' 
 
     
     scalars=[]

@@ -2733,6 +2733,29 @@
         "icon": "assets/gw2/items/101580.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "morphs",
+      "selections": [
+        {
+          "id": 1536,
+          "name": "Morph skill #1536",
+          "slot": 1,
+          "source_path": "extra[2]"
+        },
+        {
+          "id": 1535,
+          "name": "Morph skill #1535",
+          "slot": 2,
+          "source_path": "extra[3]"
+        },
+        {
+          "id": 1538,
+          "name": "Morph skill #1538",
+          "slot": 3,
+          "source_path": "extra[4]"
+        }
+      ]
     }
   },
   "support-luminary": {
@@ -15706,6 +15729,29 @@
         "icon": "assets/gw2/items/102442.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "morphs",
+      "selections": [
+        {
+          "id": 1536,
+          "name": "Morph skill #1536",
+          "slot": 1,
+          "source_path": "extra[2]"
+        },
+        {
+          "id": 1533,
+          "name": "Morph skill #1533",
+          "slot": 2,
+          "source_path": "extra[3]"
+        },
+        {
+          "id": 1539,
+          "name": "Morph skill #1539",
+          "slot": 3,
+          "source_path": "extra[4]"
+        }
+      ]
     }
   },
   "condition-spear-amalgam": {
@@ -16031,6 +16077,29 @@
         "icon": "assets/gw2/items/104848.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "morphs",
+      "selections": [
+        {
+          "id": 1534,
+          "name": "Morph skill #1534",
+          "slot": 1,
+          "source_path": "extra[2]"
+        },
+        {
+          "id": 1533,
+          "name": "Morph skill #1533",
+          "slot": 2,
+          "source_path": "extra[3]"
+        },
+        {
+          "id": 1539,
+          "name": "Morph skill #1539",
+          "slot": 3,
+          "source_path": "extra[4]"
+        }
+      ]
     }
   },
   "power-rifle-holosmith": {
