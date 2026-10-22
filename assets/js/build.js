@@ -68,8 +68,21 @@
      const legendRows=d.profession==="Revenant"?[{title:"Terrestrial legends",ids:d.legends.slice(0,2)},{title:"Aquatic legends",ids:d.legends.slice(2,4)}].map(row=>({title:row.title,cards:row.ids.map((id,i)=>id?`<article class="pet-card mechanic-card">${legendIcons[id]?`<img src="${esc(legendIcons[id])}" alt="" loading="lazy">`:""}<div><span>Legend ${i+1}</span><strong>${esc(legendNames[id]||`Legend ${id}`)}</strong></div></article>`:"").filter(Boolean)})).filter(row=>row.cards.length):[];
      const legendsHtml=legendRows.length?`<section class="overview-block pet-overview"><h3>Legends</h3><div class="pet-rows">${legendRows.map(row=>`<div class="pet-row"><div class="pet-row-label">${esc(row.title)}</div><div class="pet-grid">${row.cards.join("")}</div></div>`).join("")}</div></section>`:"";
      const mech=entry.mechanics||null;
+     // GW2Skills morph IDs are unrelated to official GW2 skill IDs.
+     // Resolve official icons in one request; names remain available if API fails.
+     const morphSkillIds={1533:76798,1534:76959,1535:77163,1536:76806,1538:76927,1539:77103};
+     let morphIcons={};
+     if(mech?.type==="morphs"&&mech.selections?.length){
+       const ids=[...new Set(mech.selections.map(x=>Number(x.api_skill_id)||morphSkillIds[Number(x.id)]).filter(Boolean))];
+       if(ids.length){
+         try{const resolved=await api(`skills?ids=${ids.join(",")}`);
+           morphIcons=Object.fromEntries(resolved.filter(x=>x.icon).map(x=>[x.id,x.icon]));
+         }catch(error){console.warn("Amalgam morph icons unavailable",error)}
+       }
+     }
+
      const mechTitle=mech?.type==="familiar"?"Familiar":mech?.type==="morphs"?"Morph skills":"";
-     const mechanicsHtml=mechTitle&&mech?.selections?.length?`<section class="overview-block pet-overview"><h3>${esc(mechTitle)}</h3><div class="pet-grid mechanic-grid">${mech.selections.map((x,i)=>`<article class="pet-card mechanic-card"><div><span>${mech.type==="morphs"?`Morph ${i+1}`:"Selected familiar"}</span><strong>${esc(x.name||x.id)}</strong></div></article>`).join("")}</div></section>`:"";
+     const mechanicsHtml=mechTitle&&mech?.selections?.length?`<section class="overview-block pet-overview"><h3>${esc(mechTitle)}</h3><div class="pet-grid mechanic-grid">${mech.selections.map((x,i)=>`<article class="pet-card mechanic-card">${mech.type==="morphs"&&morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]]?`<img src="${esc(morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]])}" alt="" loading="lazy">`:""}<div><span>${mech.type==="morphs"?`Morph ${i+1}`:"Selected familiar"}</span><strong>${esc(x.name||x.id)}</strong></div></article>`).join("")}</div></section>`:"";
 
      const eq=entry.equipment||{};
 

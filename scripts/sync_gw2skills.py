@@ -357,6 +357,8 @@ def enrich_equipment(eq,items):
 
 
 AMALGAM_MORPH_NAMES = {1533: 'Cleanse', 1534: 'Protect', 1535: 'Thorns', 1536: 'Obliterate', 1537: 'Pierce', 1538: 'Demolish', 1539: 'Shred'}
+# Official GW2 API IDs (not GW2Skills IDs); used to render morph skill icons.
+AMALGAM_MORPH_API_IDS = {1533: 76798, 1534: 76959, 1535: 77163, 1536: 76806, 1538: 76927, 1539: 77103}
 
 def specialization_mechanics_from(preload, db, specialization=""):
     """Resolve GW2Skills-only Evoker/Amalgam quicklink selections.
@@ -391,7 +393,7 @@ def specialization_mechanics_from(preload, db, specialization=""):
                     # it does not supply localized skill names in this table.
                     # Keep the precise selected ID instead of inventing a name.
                     selections.append({'id':skill_id,'name':AMALGAM_MORPH_NAMES.get(skill_id, f'Morph skill #{skill_id}'),
-                                       'slot':slot,'source_path':f'extra[{slot+1}]'})
+                                       'slot':slot,'api_skill_id':AMALGAM_MORPH_API_IDS.get(skill_id),'source_path':f'extra[{slot+1}]'})
                 return {'type':'morphs','selections':selections}
     needle='familiar' if spec=='evoker' else 'morph' 
 

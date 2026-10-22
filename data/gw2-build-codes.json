@@ -2741,19 +2741,22 @@
           "id": 1536,
           "name": "Obliterate",
           "slot": 1,
-          "source_path": "extra[2]"
+          "source_path": "extra[2]",
+          "api_skill_id": 76806
         },
         {
           "id": 1535,
           "name": "Thorns",
           "slot": 2,
-          "source_path": "extra[3]"
+          "source_path": "extra[3]",
+          "api_skill_id": 77163
         },
         {
           "id": 1538,
           "name": "Demolish",
           "slot": 3,
-          "source_path": "extra[4]"
+          "source_path": "extra[4]",
+          "api_skill_id": 76927
         }
       ]
     }
@@ -15737,19 +15740,22 @@
           "id": 1536,
           "name": "Obliterate",
           "slot": 1,
-          "source_path": "extra[2]"
+          "source_path": "extra[2]",
+          "api_skill_id": 76806
         },
         {
           "id": 1533,
           "name": "Cleanse",
           "slot": 2,
-          "source_path": "extra[3]"
+          "source_path": "extra[3]",
+          "api_skill_id": 76798
         },
         {
           "id": 1539,
           "name": "Shred",
           "slot": 3,
-          "source_path": "extra[4]"
+          "source_path": "extra[4]",
+          "api_skill_id": 77103
         }
       ]
     }
@@ -16085,19 +16091,22 @@
           "id": 1534,
           "name": "Protect",
           "slot": 1,
-          "source_path": "extra[2]"
+          "source_path": "extra[2]",
+          "api_skill_id": 76959
         },
         {
           "id": 1533,
           "name": "Cleanse",
           "slot": 2,
-          "source_path": "extra[3]"
+          "source_path": "extra[3]",
+          "api_skill_id": 76798
         },
         {
           "id": 1539,
           "name": "Shred",
           "slot": 3,
-          "source_path": "extra[4]"
+          "source_path": "extra[4]",
+          "api_skill_id": 77103
         }
       ]
     }
