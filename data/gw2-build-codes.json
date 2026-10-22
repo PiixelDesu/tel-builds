@@ -3415,6 +3415,16 @@
         "icon": "assets/gw2/items/109942.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "familiar",
+      "selections": [
+        {
+          "id": 29,
+          "name": "Familiar #29",
+          "source_path": "extra[0]"
+        }
+      ]
     }
   },
   "power-spellbreaker": {
@@ -4089,6 +4099,16 @@
         "icon": "assets/gw2/items/101268.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "familiar",
+      "selections": [
+        {
+          "id": 27,
+          "name": "Familiar #27",
+          "source_path": "extra[0]"
+        }
+      ]
     }
   },
   "heal-scrapper": {
@@ -13704,6 +13724,16 @@
         "icon": "assets/gw2/items/104733.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "familiar",
+      "selections": [
+        {
+          "id": 25,
+          "name": "Familiar #25",
+          "source_path": "extra[0]"
+        }
+      ]
     }
   },
   "power-daggers-evoker": {
@@ -14022,6 +14052,16 @@
         "icon": "assets/gw2/items/102877.png",
         "type": "Relic"
       }
+    },
+    "mechanics": {
+      "type": "familiar",
+      "selections": [
+        {
+          "id": 25,
+          "name": "Familiar #25",
+          "source_path": "extra[0]"
+        }
+      ]
     }
   },
   "support-daggers-tempest": {
