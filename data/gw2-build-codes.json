@@ -2739,19 +2739,19 @@
       "selections": [
         {
           "id": 1536,
-          "name": "Morph skill #1536",
+          "name": "Obliterate",
           "slot": 1,
           "source_path": "extra[2]"
         },
         {
           "id": 1535,
-          "name": "Morph skill #1535",
+          "name": "Thorns",
           "slot": 2,
           "source_path": "extra[3]"
         },
         {
           "id": 1538,
-          "name": "Morph skill #1538",
+          "name": "Demolish",
           "slot": 3,
           "source_path": "extra[4]"
         }
@@ -15735,19 +15735,19 @@
       "selections": [
         {
           "id": 1536,
-          "name": "Morph skill #1536",
+          "name": "Obliterate",
           "slot": 1,
           "source_path": "extra[2]"
         },
         {
           "id": 1533,
-          "name": "Morph skill #1533",
+          "name": "Cleanse",
           "slot": 2,
           "source_path": "extra[3]"
         },
         {
           "id": 1539,
-          "name": "Morph skill #1539",
+          "name": "Shred",
           "slot": 3,
           "source_path": "extra[4]"
         }
@@ -16083,19 +16083,19 @@
       "selections": [
         {
           "id": 1534,
-          "name": "Morph skill #1534",
+          "name": "Protect",
           "slot": 1,
           "source_path": "extra[2]"
         },
         {
           "id": 1533,
-          "name": "Morph skill #1533",
+          "name": "Cleanse",
           "slot": 2,
           "source_path": "extra[3]"
         },
         {
           "id": 1539,
-          "name": "Morph skill #1539",
+          "name": "Shred",
           "slot": 3,
           "source_path": "extra[4]"
         }
