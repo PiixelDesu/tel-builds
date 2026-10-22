@@ -13241,7 +13241,7 @@
   },
   "power-fresh-air-evoker": {
     "chat_code": "[&DQYpKiU/UBV1AHUATwH2AHEdcR2QAOsAah1qHQAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?PGABs2t3lFUw2SZzNPv6Wd1WUX/zKlsBAA-DWRYiBPH9tCppootCo3Uw27FBIg9zbR/5KA-w",
+    "source": "https://gw2skills.net/editor/?PGABs2t3lFUw2SZzNPv6Wd1WUX/zKlwBAA-DWRYiBPH9tCppootCo3Uw27FBIg9zbR/5KA-w",
     "equipment": {
       "armor": [
         {
@@ -13597,8 +13597,8 @@
       "type": "familiar",
       "selections": [
         {
-          "id": 25,
-          "name": "Familiar #25",
+          "id": 29,
+          "name": "Familiar #29",
           "source_path": "extra[0]"
         }
       ]
@@ -13606,7 +13606,7 @@
   },
   "power-daggers-evoker": {
     "chat_code": "[&DQYpORo7UCp1AHUAch0cAU8B6wCQAHIdah2WAAAAAAAAAAAAAAAAAAAAAAA=]",
-    "source": "https://gw2skills.net/editor/?PGABgihjlFUwoLbb1NvoXdoWyP7TVlsBAA-DWJYiRPfZ0bCkdBY7HiAEwe4to/cFA-w",
+    "source": "https://gw2skills.net/editor/?PGABgihjlFUwoLbb1NvoXdoWyP7TVlyBAA-DWJYiRPfZ0bCkdBY7HiAEwe4to/cFA-w",
     "equipment": {
       "armor": [
         {
@@ -13919,8 +13919,8 @@
       "type": "familiar",
       "selections": [
         {
-          "id": 25,
-          "name": "Familiar #25",
+          "id": 31,
+          "name": "Familiar #31",
           "source_path": "extra[0]"
         }
       ]
