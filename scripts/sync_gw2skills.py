@@ -317,6 +317,13 @@ def equipment_from(preload,db,profession=""):
             offhand_key = 'w12' if key == 'w11' else 'w22'
             if weapon_types.get(offhand_key):
                 d = {'weaponType': 'Keep Empty', 'empty': True}
+        # GW2Skills repeats the complete weapon-set sigil pair on the main hand.
+        # When an offhand is equipped, only the first sigil belongs to the main hand;
+        # the second belongs to the offhand (which is stored separately).
+        if d and key in ('w11','w21') and weapon_kinds.get(key)!=2:
+            offhand_key='w12' if key=='w11' else 'w22'
+            if weapon_types.get(offhand_key) and len(d.get('sigils') or [])>1:
+                d['sigils']=d['sigils'][:1]
         if d:
             if weapon_types.get(key): d['weaponType']=weapon_types[key]
             else: print(f'WARN weapon type unresolved for {key}; slot data kept without guessing')

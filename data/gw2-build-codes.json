@@ -156,12 +156,6 @@
               "id": 74326,
               "icon": "assets/gw2/items/74326.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -492,12 +486,6 @@
               "name": "Superior Sigil of Concentration",
               "id": 72339,
               "icon": "assets/gw2/items/72339.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -837,12 +825,6 @@
               "name": "Superior Sigil of Force",
               "id": 24615,
               "icon": "assets/gw2/items/24615.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -1190,12 +1172,6 @@
               "id": 24572,
               "icon": "assets/gw2/items/24572.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "weaponType": "Axe"
@@ -1221,12 +1197,6 @@
               "name": "Superior Sigil of Fire",
               "id": 24548,
               "icon": "assets/gw2/items/24548.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -1837,12 +1807,6 @@
               "id": 81045,
               "icon": "assets/gw2/items/81045.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -2168,12 +2132,6 @@
               "name": "Superior Sigil of Transference",
               "id": 74326,
               "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -2917,12 +2875,6 @@
               "name": "Superior Sigil of Concentration",
               "id": 72339,
               "icon": "assets/gw2/items/72339.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Benevolence",
-              "id": 24584,
-              "icon": "assets/gw2/items/24584.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -4566,12 +4518,6 @@
               "id": 24592,
               "icon": "assets/gw2/items/24592.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Transference",
-              "id": 74326,
-              "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -5295,12 +5241,6 @@
               "id": 81045,
               "icon": "assets/gw2/items/81045.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Concentration",
-              "id": 72339,
-              "icon": "assets/gw2/items/72339.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -5660,12 +5600,6 @@
               "id": 24615,
               "icon": "assets/gw2/items/24615.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -5991,12 +5925,6 @@
               "name": "Superior Sigil of Transference",
               "id": 74326,
               "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -6363,12 +6291,6 @@
               "name": "Superior Sigil of Bloodlust",
               "id": 24575,
               "icon": "assets/gw2/items/24575.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Fire",
-              "id": 24548,
-              "icon": "assets/gw2/items/24548.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -8956,12 +8878,6 @@
               "id": 24575,
               "icon": "assets/gw2/items/24575.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Hydromancy",
-              "id": 24597,
-              "icon": "assets/gw2/items/24597.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -9975,12 +9891,6 @@
               "id": 24554,
               "icon": "assets/gw2/items/24554.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Blood",
-              "id": 24570,
-              "icon": "assets/gw2/items/24570.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -10982,12 +10892,6 @@
               "id": 24597,
               "icon": "assets/gw2/items/24597.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -11682,12 +11586,6 @@
               "name": "Superior Sigil of Cleansing",
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -12437,12 +12335,6 @@
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -12793,12 +12685,6 @@
               "name": "Superior Sigil of Cleansing",
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Celerity",
-              "id": 24865,
-              "icon": "assets/gw2/items/24865.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -13151,12 +13037,6 @@
               "id": 24607,
               "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -13483,12 +13363,6 @@
               "id": 24554,
               "icon": "assets/gw2/items/24554.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -13536,12 +13410,6 @@
               "name": "Superior Sigil of Bloodlust",
               "id": 24575,
               "icon": "assets/gw2/items/24575.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -13859,12 +13727,6 @@
               "name": "Superior Sigil of Ruthlessness",
               "id": 71130,
               "icon": "assets/gw2/items/71130.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -14188,12 +14050,6 @@
               "id": 74326,
               "icon": "assets/gw2/items/74326.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Life",
-              "id": 24582,
-              "icon": "assets/gw2/items/24582.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -14241,12 +14097,6 @@
               "name": "Superior Sigil of Transference",
               "id": 74326,
               "icon": "assets/gw2/items/74326.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Renewal",
-              "id": 44947,
-              "icon": "assets/gw2/items/44947.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -14879,12 +14729,6 @@
               "name": "Superior Sigil of Cleansing",
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Vision",
-              "id": 24600,
-              "icon": "assets/gw2/items/24600.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -16600,12 +16444,6 @@
               "id": 24607,
               "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Cleansing",
-              "id": 67340,
-              "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -16956,12 +16794,6 @@
               "name": "Superior Sigil of Bloodlust",
               "id": 24575,
               "icon": "assets/gw2/items/24575.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Force",
-              "id": 24615,
-              "icon": "assets/gw2/items/24615.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -17330,12 +17162,6 @@
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -17659,12 +17485,6 @@
               "id": 24607,
               "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Hydromancy",
-              "id": 24597,
-              "icon": "assets/gw2/items/24597.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -17712,12 +17532,6 @@
               "name": "Superior Sigil of Geomancy",
               "id": 24605,
               "icon": "assets/gw2/items/24605.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Doom",
-              "id": 24609,
-              "icon": "assets/gw2/items/24609.png",
               "type": "UpgradeComponent"
             }
           ],
@@ -18037,12 +17851,6 @@
               "id": 24601,
               "icon": "assets/gw2/items/24601.png",
               "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Hydromancy",
-              "id": 24597,
-              "icon": "assets/gw2/items/24597.png",
-              "type": "UpgradeComponent"
             }
           ],
           "infusions": [
@@ -18090,12 +17898,6 @@
               "name": "Superior Sigil of Cleansing",
               "id": 67340,
               "icon": "assets/gw2/items/67340.png",
-              "type": "UpgradeComponent"
-            },
-            {
-              "name": "Superior Sigil of Energy",
-              "id": 24607,
-              "icon": "assets/gw2/items/24607.png",
               "type": "UpgradeComponent"
             }
           ],
