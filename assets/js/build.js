@@ -82,7 +82,7 @@
      }
 
      const mechTitle=mech?.type==="familiar"?"Familiar":mech?.type==="morphs"?"Morph skills":"";
-     const mechanicsHtml=mechTitle&&mech?.selections?.length?`<section class="overview-block pet-overview"><h3>${esc(mechTitle)}</h3><div class="pet-grid mechanic-grid">${mech.selections.map((x,i)=>`<article class="pet-card mechanic-card">${mech.type==="morphs"&&morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]]?`<img src="${esc(morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]])}" alt="" loading="lazy">`:mech.type==="familiar"?`<span class="familiar-choice-symbol" aria-hidden="true">✦</span>`:""}<div><span>${mech.type==="morphs"?`Morph ${i+1}`:"Selected familiar"}</span><strong>${esc(x.name||x.id)}</strong></div></article>`).join("")}</div></section>`:"";
+     const mechanicsHtml=mechTitle&&mech?.selections?.length?`<section class="overview-block pet-overview"><h3>${esc(mechTitle)}</h3><div class="pet-grid mechanic-grid">${mech.selections.map((x,i)=>`<article class="pet-card mechanic-card">${mech.type==="morphs"&&morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]]?`<img src="${esc(morphIcons[Number(x.api_skill_id)||morphSkillIds[Number(x.id)]])}" alt="" loading="lazy">`:mech.type==="familiar"?(x.icon?.startsWith("assets/gw2/familiars/")?`<img class="familiar-choice-icon" src="${esc(x.icon)}" alt="" loading="lazy">`:`<span class="familiar-choice-symbol" aria-hidden="true">✦</span>`):""}<div><span>${mech.type==="morphs"?`Morph ${i+1}`:"Selected familiar"}</span><strong>${esc(x.name||x.id)}</strong></div></article>`).join("")}</div></section>`:"";
 
      const eq=entry.equipment||{};
 

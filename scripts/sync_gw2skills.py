@@ -367,6 +367,11 @@ AMALGAM_MORPH_NAMES = {1533: 'Cleanse', 1534: 'Protect', 1535: 'Thorns', 1536: '
 # Official GW2 API IDs (not GW2Skills IDs); used to render morph skill icons.
 AMALGAM_MORPH_API_IDS = {1533: 76798, 1534: 76959, 1535: 77163, 1536: 76806, 1538: 76927, 1539: 77103}
 
+EVOKER_FAMILIARS = {
+    25: ('Fox', 'Fire'), 27: ('Otter', 'Water'),
+    29: ('Hare', 'Air'), 31: ('Toad', 'Earth'),
+}
+
 def specialization_mechanics_from(preload, db, specialization=""):
     """Resolve GW2Skills-only Evoker/Amalgam quicklink selections.
 
@@ -411,7 +416,9 @@ def specialization_mechanics_from(preload, db, specialization=""):
             familiar_id=extra[0]
             return {'type':'familiar','selections':[{
                 'id':familiar_id,
-                'name':f'Familiar #{familiar_id}',
+                'name':EVOKER_FAMILIARS.get(familiar_id, (f'Familiar #{familiar_id}', ''))[0],
+                'element':EVOKER_FAMILIARS.get(familiar_id, ('', ''))[1],
+                'icon':f"assets/gw2/familiars/{EVOKER_FAMILIARS[familiar_id][0].lower()}.svg" if familiar_id in EVOKER_FAMILIARS else None,
                 'source_path':'extra[0]'
             }]}
     needle='familiar' if spec=='evoker' else 'morph' 

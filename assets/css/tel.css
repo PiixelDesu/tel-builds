@@ -732,3 +732,5 @@ body[data-page="home"] .matrix-list .spec-icon{width:24px;height:24px}
 
 /* Evoker familiar choice visual */
 .familiar-choice-symbol{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px;border:1px solid rgba(216,189,120,.55);border-radius:9px;background:radial-gradient(circle at 45% 35%,#655337,#29221b 70%);color:#ead391;font-size:30px;text-shadow:0 0 12px rgba(216,189,120,.5)}
+
+.familiar-choice-icon{width:54px;height:54px;object-fit:contain;flex:0 0 54px;border-radius:9px}

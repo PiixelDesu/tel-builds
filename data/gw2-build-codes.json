@@ -3373,8 +3373,10 @@
       "selections": [
         {
           "id": 29,
-          "name": "Familiar #29",
-          "source_path": "extra[0]"
+          "name": "Hare",
+          "source_path": "extra[0]",
+          "element": "Air",
+          "icon": "assets/gw2/familiars/hare.svg"
         }
       ]
     }
@@ -4057,8 +4059,10 @@
       "selections": [
         {
           "id": 27,
-          "name": "Familiar #27",
-          "source_path": "extra[0]"
+          "name": "Otter",
+          "source_path": "extra[0]",
+          "element": "Water",
+          "icon": "assets/gw2/familiars/otter.svg"
         }
       ]
     }
@@ -13598,8 +13602,10 @@
       "selections": [
         {
           "id": 29,
-          "name": "Familiar #29",
-          "source_path": "extra[0]"
+          "name": "Hare",
+          "source_path": "extra[0]",
+          "element": "Air",
+          "icon": "assets/gw2/familiars/hare.svg"
         }
       ]
     }
@@ -13920,8 +13926,10 @@
       "selections": [
         {
           "id": 31,
-          "name": "Familiar #31",
-          "source_path": "extra[0]"
+          "name": "Toad",
+          "source_path": "extra[0]",
+          "element": "Earth",
+          "icon": "assets/gw2/familiars/toad.svg"
         }
       ]
     }
