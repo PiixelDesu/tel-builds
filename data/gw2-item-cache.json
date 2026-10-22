@@ -2059,5 +2059,487 @@
     "type": "Relic",
     "details": {},
     "local_icon": "assets/gw2/items/100752.png"
+  },
+  "Superior Sigil of Celerity": {
+    "id": 24865,
+    "name": "Superior Sigil of Celerity",
+    "icon": "https://render.guildwars2.com/file/731850AB48F9944BB5FE4A050A71366C0903253E/221167.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1019,
+        "buff": {
+          "skill_id": 24208,
+          "description": "Gain quickness for 5 seconds after disabling a foe. (Cooldown: 20 Seconds)"
+        },
+        "attributes": []
+      },
+      "suffix": "of Celerity"
+    },
+    "local_icon": "assets/gw2/items/24865.png"
+  },
+  "Superior Sigil of Corruption": {
+    "id": 24578,
+    "name": "Superior Sigil of Corruption",
+    "icon": "https://render.guildwars2.com/file/D574E4D29FA31DB815F76FD5FE4CA1EBFACA22B9/220668.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 221,
+        "buff": {
+          "skill_id": 9377,
+          "description": "Gain a charge of +10 condition damage each time you kill a foe, five charges if you kill an enemy player. <c=@reminder>(Max 25 stacks; ends on down.)</c> <br><c=@reminder>(Only one attribute-stacking sigil can be active at a time.)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Corruption"
+    },
+    "local_icon": "assets/gw2/items/24578.png"
+  },
+  "Superior Sigil of Vision": {
+    "id": 24600,
+    "name": "Superior Sigil of Vision",
+    "icon": "https://render.guildwars2.com/file/1F41DBAFFA5979D7496F2BB9E4D9AE0F2FA4F940/220685.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 243,
+        "buff": {
+          "skill_id": 53276,
+          "description": "Critically strike an enemy for 3 seconds after swapping to this weapon in combat. <c=@reminder>(Cooldown: 9 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Vision"
+    },
+    "local_icon": "assets/gw2/items/24600.png"
+  },
+  "Superior Sigil of Battle": {
+    "id": 24601,
+    "name": "Superior Sigil of Battle",
+    "icon": "https://render.guildwars2.com/file/A25A5E7D74A6B293B5C6B8EC7EDA1A06C649CBEF/220691.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 245,
+        "buff": {
+          "skill_id": 9424,
+          "description": "Gain 5 stacks of might for 12 seconds when swapping to this weapon in combat. (Cooldown: 9 Seconds)"
+        },
+        "attributes": []
+      },
+      "suffix": "of Battle"
+    },
+    "local_icon": "assets/gw2/items/24601.png"
+  },
+  "Superior Sigil of Accuracy": {
+    "id": 24618,
+    "name": "Superior Sigil of Accuracy",
+    "icon": "https://render.guildwars2.com/file/4B0EFF29FD064E5E93E4F8616BE309A451450AED/220661.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 264,
+        "buff": {
+          "skill_id": 9325,
+          "description": "+7% Critical Chance"
+        },
+        "attributes": []
+      },
+      "suffix": "of Accuracy"
+    },
+    "local_icon": "assets/gw2/items/24618.png"
+  },
+  "Potion Of Karka Toughness": {
+    "id": 42428,
+    "name": "Potion Of Karka Toughness",
+    "icon": "https://render.guildwars2.com/file/72E638C510AC04A068DDBC3C7B3C49D1A860C114/222670.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Utility",
+      "duration_ms": 3600000,
+      "apply_count": 1,
+      "name": "Enhancement",
+      "icon": "https://render.guildwars2.com/file/C10DFF73E45D6D7E987FBE40A8B22FCABE37BAB0/582466.png",
+      "description": "+150 toughness"
+    },
+    "local_icon": "assets/gw2/items/42428.png"
+  },
+  "Superior Sigil of Torment": {
+    "id": 48911,
+    "name": "Superior Sigil of Torment",
+    "icon": "https://render.guildwars2.com/file/E42EB6198022E5B4D71C5EE41465DD4EB84A0465/665778.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 763,
+        "buff": {
+          "skill_id": 21824,
+          "description": "Inflict 2 stacks of torment for 5 seconds to enemies around your target upon landing a critical hit. <br><c=@reminder>(Cooldown: 5 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Torment"
+    },
+    "local_icon": "assets/gw2/items/48911.png"
+  },
+  "Superior Sigil of Ruthlessness": {
+    "id": 71130,
+    "name": "Superior Sigil of Ruthlessness",
+    "icon": "https://render.guildwars2.com/file/2ACE6E1BF2372CD3BEBE541666A7070BA90F5114/1201530.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Sigil",
+      "flags": [
+        "ShortBow",
+        "Dagger",
+        "Focus",
+        "Greatsword",
+        "Hammer",
+        "Harpoon",
+        "Mace",
+        "Pistol",
+        "Rifle",
+        "Scepter",
+        "Shield",
+        "Speargun",
+        "Axe",
+        "Staff",
+        "Sword",
+        "Torch",
+        "Trident",
+        "Warhorn",
+        "LongBow"
+      ],
+      "infusion_upgrade_flags": [],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 1127,
+        "buff": {
+          "skill_id": 32496,
+          "description": "Gain 5 stacks of might for 10 seconds when interrupting a foe. <c=@reminder>(Cooldown: 3 Seconds)</c>"
+        },
+        "attributes": []
+      },
+      "suffix": "of Ruthlessness"
+    },
+    "local_icon": "assets/gw2/items/71130.png"
+  },
+  "Superior Rune of Leadership": {
+    "id": 70600,
+    "name": "Superior Rune of Leadership",
+    "icon": "https://render.guildwars2.com/file/0CD614069C9917057D1BEC5B060E689E18E8EE51/1201517.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+8 to All Stats",
+        "+5% Boon Duration",
+        "+12 to All Stats",
+        "+10% Boon Duration",
+        "+16 to All Stats",
+        "+10% Boon Duration"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of Leadership"
+    },
+    "local_icon": "assets/gw2/items/70600.png"
+  },
+  "Superior Rune of Surging": {
+    "id": 76813,
+    "name": "Superior Rune of Surging",
+    "icon": "https://render.guildwars2.com/file/5C75473F560F80E6A6444147EA5C66F959C46E59/1201524.png",
+    "type": "UpgradeComponent",
+    "details": {
+      "type": "Rune",
+      "flags": [
+        "HeavyArmor",
+        "LightArmor",
+        "MediumArmor"
+      ],
+      "infusion_upgrade_flags": [],
+      "bonuses": [
+        "+25 Power",
+        "+5% Boon Duration",
+        "+50 Power",
+        "+10% Boon Duration",
+        "+100 Power",
+        "+25% Movement Speed"
+      ],
+      "attribute_adjustment": 0,
+      "infix_upgrade": {
+        "id": 112,
+        "attributes": []
+      },
+      "suffix": "of Surging"
+    },
+    "local_icon": "assets/gw2/items/76813.png"
+  },
+  "Holographic Super Cake": {
+    "id": 87367,
+    "name": "Holographic Super Cake",
+    "icon": "https://render.guildwars2.com/file/F50BFFCB31322EDCCEE0479C0FC70FE7766E2BD2/1964004.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food",
+      "duration_ms": 1800000,
+      "apply_count": 1,
+      "name": "Nourishment",
+      "icon": "https://render.guildwars2.com/file/779D3F0ABE5B46C09CFC57374DA8CC3A495F291C/436367.png",
+      "description": "Gain Health Every Second\n+30% to Endurance Regeneration\n+20% Magic Find"
+    },
+    "local_icon": "assets/gw2/items/87367.png"
+  },
+  "Sesame-Asparagus and Cured Meat Flatbread": {
+    "id": 91867,
+    "name": "Sesame-Asparagus and Cured Meat Flatbread",
+    "icon": "https://render.guildwars2.com/file/70FC0F07541C377D3601D44E9939D2EE0A740509/2191046.png",
+    "type": "Consumable",
+    "details": {
+      "type": "Food"
+    },
+    "local_icon": "assets/gw2/items/91867.png"
+  },
+  "Relic of Akeem": {
+    "id": 100432,
+    "name": "Relic of Akeem",
+    "icon": "https://render.guildwars2.com/file/594C437E9606A167F4F372BCEB0C2B7C7828037B/3122330.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100432.png"
+  },
+  "Relic of Peitha": {
+    "id": 100177,
+    "name": "Relic of Peitha",
+    "icon": "https://render.guildwars2.com/file/949A6A4179F514FCDEF3AC3D9C292B38D5E0047D/3122365.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100177.png"
+  },
+  "Relic of Evasion": {
+    "id": 100614,
+    "name": "Relic of Evasion",
+    "icon": "https://render.guildwars2.com/file/19296379D120EF9FF10EE0B0CDD7711DA5E7A9AF/3122347.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100614.png"
+  },
+  "Relic of the Defender": {
+    "id": 100934,
+    "name": "Relic of the Defender",
+    "icon": "https://render.guildwars2.com/file/E854AFDE03F40ED335C0A30DE90BD9973612BD75/3122343.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/100934.png"
+  },
+  "Relic of Mosyn": {
+    "id": 101801,
+    "name": "Relic of Mosyn",
+    "icon": "https://render.guildwars2.com/file/CAB064E2F11609D2309E356062BA93107F9F605E/3302017.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/101801.png"
+  },
+  "Relic of Rivers": {
+    "id": 102442,
+    "name": "Relic of Rivers",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/102442.png"
+  },
+  "Relic of the Claw": {
+    "id": 102877,
+    "name": "Relic of the Claw",
+    "icon": "https://render.guildwars2.com/file/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA/3255567.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/102877.png"
+  },
+  "Relic of the Mists Tide": {
+    "id": 103901,
+    "name": "Relic of the Mists Tide",
+    "icon": "https://render.guildwars2.com/file/2ADA1A4509057D7B3854EEE9149A0F45CCD0EAA2/3441972.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/103901.png"
+  },
+  "Relic of the Living City": {
+    "id": 104928,
+    "name": "Relic of the Living City",
+    "icon": "https://render.guildwars2.com/file/6CAF0358FBD9DDD84AB3302E2D67329A3AA83DEC/3629398.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/104928.png"
+  },
+  "Relic of Castora": {
+    "id": 105652,
+    "name": "Relic of Castora",
+    "icon": "https://render.guildwars2.com/file/349EA123E7D870C4199AB268250973FAEC0ADC94/3709379.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/105652.png"
+  },
+  "Relic of the Pirate Queen": {
+    "id": 106221,
+    "name": "Relic of the Pirate Queen",
+    "icon": "https://render.guildwars2.com/file/6C7D53936BFC0DFD52BACDD9A2C7F0909E424F0D/3709382.png",
+    "type": "Relic",
+    "details": {},
+    "local_icon": "assets/gw2/items/106221.png"
   }
 }
